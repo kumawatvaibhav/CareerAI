@@ -2,7 +2,8 @@
 import React from 'react';
 import Button from './Button';
 import FadeIn from './animations/FadeIn';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight} from 'lucide-react';
+import { Link, Navigate } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -38,13 +39,18 @@ const Hero = () => {
             
             <FadeIn direction="up" delay={300}>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="rounded-full min-w-[140px] font-medium">
-                  Get Started
-                </Button>
-                <Button variant="outline" size="lg" className="rounded-full min-w-[140px] font-medium group">
-                  <span>Explore Features</span>
-                  <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
+                <Link to="/sign-in">
+                    <Button size="lg" className="rounded-full min-w-[140px] font-medium">
+                      Get Started
+                    </Button>
+                </Link>
+
+                <Link to="#feature">
+                    <Button variant="outline" size="lg" className="rounded-full min-w-[140px] font-medium group">
+                      <span>Explore Features</span>
+                      <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                    </Button>
+                </Link>
               </div>
             </FadeIn>
             

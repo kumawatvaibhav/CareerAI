@@ -31,9 +31,9 @@ const NavBar = () => {
   };
 
   const navItems = [
-    { name: 'Features', href: '#features' },
-    { name: 'Resume Builder', href: '#resume-builder' },
-    { name: 'Career Guide', href: '#career-guide' },
+    { name: 'Features', href: '#feature' },
+    { name: 'Resume Builder', href: '#Resume' },
+    { name: 'Career Guide', href: '#AI-ChatBot' },
     { name: 'About', href: '#about' },
   ];
 

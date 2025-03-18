@@ -27,6 +27,7 @@ const Index = () => {
       }
     };
 
+    
     document.addEventListener('click', handleAnchorClick);
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
@@ -37,10 +38,13 @@ const Index = () => {
       
       <main className="flex-1">
         <Hero />
+
+        <section id="feature">
         <Features />
+        </section>
         
         {/* Career Guide Section */}
-        <section id="career-guide" className="py-24 bg-secondary/50">
+        <section id="AI-ChatBot" className="py-24 bg-secondary/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <FadeIn direction="right">
@@ -81,7 +85,7 @@ const Index = () => {
         </section>
         
         {/* Resume Builder Preview */}
-        <section id="resume-builder" className="py-24">
+        <section id="Resume" className="py-24">
           <div className="container mx-auto px-4">
             <FadeIn direction="up">
               <div className="text-center mb-16">
