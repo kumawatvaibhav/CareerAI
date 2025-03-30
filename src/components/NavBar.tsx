@@ -1,10 +1,9 @@
-
-import React, { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
-import Button from './Button';
-import { X, Menu, LogOut } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
-import useAuth from '@/hooks/useAuth';
+import React, { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import Button from "./Button";
+import { X, Menu, LogOut } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "@/hooks/useAuth";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,8 +16,8 @@ const NavBar = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMobileMenu = () => {
@@ -27,29 +26,33 @@ const NavBar = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/');
+    navigate("/");
   };
 
   const navItems = [
-    { name: 'Features', href: '#feature' },
-    { name: 'Resume Builder', href: '#Resume' },
-    { name: 'Career Guide', href: '#AI-ChatBot' },
-    { name: 'About', href: '#about' },
+    { name: "Features", href: "#feature" },
+    { name: "Resume Builder", href: "/resume-builder" },
+    { name: "Career Guide", href: "#AI-ChatBot" },
+    { name: "About", href: "#about" },
   ];
 
   const authenticatedNavItems = [
-    { name: 'Dashboard', href: '/dashboard' },
-    { name: 'Resume Builder', href: '/resume-builder' },
-    { name: 'Career Guide', href: '/career-guide' },
+    { name: "Dashboard", href: "/dashboard" },
+    { name: "Resume Builder", href: "/resume-builder" },
+    { name: "Career Guide", href: "/career-guide" },
   ];
 
   const displayNavItems = isLoggedIn ? authenticatedNavItems : navItems;
 
   return (
-    <header className={cn(
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      isScrolled ? 'py-3 bg-background/80 backdrop-blur-xl shadow-sm' : 'py-5 bg-transparent'
-    )}>
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "py-3 bg-background/80 backdrop-blur-xl shadow-sm"
+          : "py-5 bg-transparent"
+      )}
+    >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <span className="text-xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
@@ -60,11 +63,7 @@ const NavBar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
           {displayNavItems.map((item) => (
-            <Link 
-              key={item.name}
-              to={item.href}
-              className="nav-item"
-            >
+            <Link key={item.name} to={item.href} className="nav-item">
               {item.name}
             </Link>
           ))}
@@ -78,10 +77,14 @@ const NavBar = () => {
             </Button>
           ) : (
             <>
-              <Button variant="outline" size="sm" onClick={() => navigate('/sign-in')}>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => navigate("/sign-in")}
+              >
                 Sign In
               </Button>
-              <Button size="sm" onClick={() => navigate('/sign-up')}>
+              <Button size="sm" onClick={() => navigate("/sign-up")}>
                 Get Started
               </Button>
             </>
@@ -89,7 +92,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           onClick={toggleMobileMenu}
           className="md:hidden p-2 text-foreground rounded-md focus:outline-none"
           aria-label="Toggle menu"
@@ -99,10 +102,12 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={cn(
-        "fixed inset-0 z-40 bg-background/95 backdrop-blur-md transition-transform duration-300 ease-out-expo md:hidden",
-        mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-      )}>
+      <div
+        className={cn(
+          "fixed inset-0 z-40 bg-background/95 backdrop-blur-md transition-transform duration-300 ease-out-expo md:hidden",
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        )}
+      >
         <div className="flex flex-col h-full px-4 pt-24 pb-6">
           <nav className="flex flex-col space-y-6">
             {displayNavItems.map((item) => (
@@ -124,10 +129,21 @@ const NavBar = () => {
               </Button>
             ) : (
               <>
-                <Button variant="outline" onClick={() => { navigate('/sign-in'); setMobileMenuOpen(false); }}>
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    navigate("/sign-in");
+                    setMobileMenuOpen(false);
+                  }}
+                >
                   Sign In
                 </Button>
-                <Button onClick={() => { navigate('/sign-up'); setMobileMenuOpen(false); }}>
+                <Button
+                  onClick={() => {
+                    navigate("/sign-up");
+                    setMobileMenuOpen(false);
+                  }}
+                >
                   Get Started
                 </Button>
               </>
