@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center">
               <span className="text-2xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                CareerCanvas
+                Career.ai
               </span>
             </div>
             
@@ -87,7 +87,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} CareerCanvas. All rights reserved.
+            © {currentYear} Career.ai. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

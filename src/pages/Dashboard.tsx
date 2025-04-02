@@ -6,6 +6,7 @@ import { Briefcase, FileText, GraduationCap, Brain, ArrowRight } from 'lucide-re
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import FadeIn from '@/components/animations/FadeIn';
+import NavBar from '@/components/NavBar';
 
 // This is a mock authentication check - we'll replace with actual auth later
 const useAuth = () => {
@@ -73,8 +74,8 @@ const Dashboard = () => {
       className: "border-green-100 hover:border-green-300"
     },
     {
-      title: "Job Matcher",
-      description: "Find job opportunities that match your skills, experience, and career aspirations.",
+      title: "Road Maps",
+      description: "Find the perfect road maps for your career goals, including skills, courses, and certifications.",
       icon: Briefcase,
       link: "/job-matcher",
       className: "border-purple-100 hover:border-purple-300"
@@ -90,7 +91,9 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <header className="bg-white shadow">
+      <NavBar/>
+      
+      <header className="bg-gray mt-20">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
           <p className="text-gray-500">Welcome back! Let's continue building your career.</p>

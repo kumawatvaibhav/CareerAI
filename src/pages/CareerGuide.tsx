@@ -2,6 +2,7 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import FadeIn from '@/components/animations/FadeIn';
+import NavBar from '@/components/NavBar';
 
 // Mock authentication check - will be replaced with actual auth later
 const useAuth = () => {
@@ -18,6 +19,8 @@ const CareerGuide = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 pt-16">
+      <NavBar/>
+
       <FadeIn>
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold mb-6">Career Guidance</h1>
