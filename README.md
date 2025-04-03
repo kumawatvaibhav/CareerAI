@@ -1,40 +1,101 @@
-# Welcome to Career.ai
+# CareerAI - Career Guidance and Resume Builder
 
-## Project info
+A modern web application that helps users build professional resumes and receive career guidance using AI-powered insights.
 
-This is Career Guidance and Resume builder application
+## Features
 
-**Use your preferred IDE**
+- Resume Builder with professional templates
+- Career Guidance based on user profiles
+- Modern, responsive UI with dark/light mode support
+- PDF export functionality
+- Interactive form components
+- Real-time validation and feedback
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**:
+  - Tailwind CSS
+  - shadcn/ui components
+  - Material-UI components
+- **Form Handling**: React Hook Form with Zod validation
+- **State Management**: React Query
+- **Routing**: React Router DOM
+- **PDF Generation**: html2pdf.js
+- **UI Components**:
+  - Radix UI primitives
+  - Material-UI components
+  - Custom components
 
-Follow these steps:
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or bun package manager
+
+## Getting Started
+
+1. Clone the repository:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
 
+2. Navigate to the project directory:
 
-## What technologies are used for this project?
+```sh
+cd CareerAI
+```
 
-This project is built with .
+3. Install dependencies:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```sh
+npm install
+# or
+bun install
+```
 
-## Deploy Link : 
+4. Start the development server:
+
+```sh
+npm run dev
+# or
+bun run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## Project Structure
+
+```
+CareerAI/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── utils/         # Utility functions
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Library configurations
+│   └── App.tsx        # Main application component
+├── public/            # Static assets
+└── package.json       # Project dependencies and scripts
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
