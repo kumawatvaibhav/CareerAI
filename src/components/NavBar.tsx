@@ -11,14 +11,14 @@ const NavBar = () => {
   const { isLoggedIn, logout } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 10);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -32,8 +32,7 @@ const NavBar = () => {
   const navItems = [
     { name: "Features", href: "#feature" },
     { name: "Resume Builder", href: "/resume-builder" },
-    { name: "Career Guide", href: "#AI-ChatBot" },
-    { name: "About", href: "#about" },
+    { name: "Career Guide", href: "/AI-ChatBot" },
   ];
 
   const authenticatedNavItems = [
@@ -55,18 +54,24 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-            Career.ai
+          <span className="text-2xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
+            NIRDESHAK.ai
           </span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
-          {displayNavItems.map((item) => (
-            <Link key={item.name} to={item.href} className="nav-item">
-              {item.name}
-            </Link>
-          ))}
+          {displayNavItems.map((item) =>
+            item.href.startsWith("#") ? (
+              <a key={item.name} href={item.href} className="nav-item">
+                {item.name}
+              </a>
+            ) : (
+              <Link key={item.name} to={item.href} className="nav-item">
+                {item.name}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -78,13 +83,13 @@ const NavBar = () => {
           ) : (
             <>
               <Button
-                variant="outline"
+                variant="link"
                 size="sm"
                 onClick={() => navigate("/sign-in")}
               >
                 Sign In
               </Button>
-              <Button size="sm" onClick={() => navigate("/sign-up")}>
+              <Button size="sm" className="bg-primary" onClick={() => navigate("/sign-up")}>
                 Get Started
               </Button>
             </>
@@ -110,16 +115,27 @@ const NavBar = () => {
       >
         <div className="flex flex-col h-full px-4 pt-24 pb-6">
           <nav className="flex flex-col space-y-6">
-            {displayNavItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg font-medium px-2 py-1 transition-colors duration-200 hover:text-primary"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {displayNavItems.map((item) =>
+              item.href.startsWith("#") ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-lg font-medium px-2 py-1 transition-colors duration-200 hover:text-primary"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-lg font-medium px-2 py-1 transition-colors duration-200 hover:text-primary"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </nav>
           <div className="mt-auto flex flex-col space-y-4">
             {isLoggedIn ? (

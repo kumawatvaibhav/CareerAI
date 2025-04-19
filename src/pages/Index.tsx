@@ -9,31 +9,12 @@ import FadeIn from '@/components/animations/FadeIn';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import CTA from '@/components/CTA';
 
 const Index = () => {
-  useEffect(() => {
-    const handleAnchorClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
-        e.preventDefault();
-        const id = target.getAttribute('href')?.substring(1);
-        const element = document.getElementById(id || '');
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-        }
-      }
-    };
-
-    
-    document.addEventListener('click', handleAnchorClick);
-    return () => document.removeEventListener('click', handleAnchorClick);
-  }, []);
-
+  
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="bg-stone-50 min-h-screen flex flex-col">
       <NavBar />
       
       <main className="flex-1">
@@ -44,16 +25,17 @@ const Index = () => {
         </section>
         
         {/* Career Guide Section */}
-        <section id="AI-ChatBot" className="py-24 bg-secondary/50">
+        <section id="AI-ChatBot" className="py-24">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <FadeIn direction="right">
                 <div className="max-w-xl">
-                  <span className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full mb-4">
-                    AI Career Assistant
+                  <span className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 rounded-full text-sm font-medium mb-6">
+                  <span className="w-2 h-2 bg-orange-300 rounded-full animate-pulse-slow"></span>
+                  AI Career Assistant
                   </span>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Get Personalized Career Guidance
+                    Get Personalized <span className="text-4xl bg-gradient-to-r from-[#60a5fa] via-[#c4b5fd] to-[#f87171] text-transparent bg-clip-text">Career Guidance</span>
                   </h2>
                   <p className="text-muted-foreground mb-8">
                     Our AI assistant analyzes your skills, experience, and goals to provide tailored career advice. Ask questions about job trends, skill development, or career transitions.
@@ -93,7 +75,7 @@ const Index = () => {
                   ATS Resume Builder
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Create ATS-Optimized Resumes
+                  Create ATS-Optimized <span className="text-4xl bg-gradient-to-r from-[#60a5fa] via-[#c4b5fd] to-[#f87171] text-transparent bg-clip-text">Resumes</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Build professional resumes that pass Applicant Tracking Systems and impress hiring managers.
@@ -113,7 +95,7 @@ const Index = () => {
                     <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500 mr-auto"></div>
-                    <span className="text-sm font-medium">Resume Builder</span>
+                    <span className="text-sm font-medium text-orange-500">Resume Builder</span>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
@@ -156,7 +138,7 @@ const Index = () => {
                     <div className="md:col-span-2 bg-white rounded-lg shadow-sm overflow-hidden">
                       <div className="p-6 space-y-4">
                         <div className="text-center mb-4">
-                          <h1 className="text-xl font-bold">Taylor Morgan</h1>
+                          <h1 className="text-xl font-bold">Vaibhav Kumawat</h1>
                           <p className="text-sm text-muted-foreground">Product Manager</p>
                         </div>
                         
@@ -200,20 +182,8 @@ const Index = () => {
         </section>
         
         {/* Call to Action Section */}
-        <section id="cta" className="py-20 bg-primary/5">
-          <div className="container mx-auto px-4 text-center">
-            <FadeIn direction="up">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Transform Your Career Journey?
-              </h2>
-              <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join thousands of professionals who have accelerated their career growth with our AI-powered tools.
-              </p>
-              <Button asChild className="px-8 py-6 rounded-full text-lg h-auto">
-                <Link to="/sign-up">Get Started for Free</Link>
-              </Button>
-            </FadeIn>
-          </div>
+        <section id="cta" className="py-20">
+          <CTA/>
         </section>
       </main>
       

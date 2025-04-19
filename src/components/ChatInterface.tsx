@@ -52,11 +52,10 @@ const ChatInterface = () => {
     // Simulate AI response after a delay
     setTimeout(() => {
       const aiResponses = [
-        "Based on your experience, I'd recommend exploring roles in product management or UX design. Both leverage your creative and analytical skills.",
-        "Looking at current trends, data analytics is a growing field with excellent career prospects. Your background makes you a strong candidate.",
-        "To enhance your resume, try quantifying your achievements with specific metrics and results. This makes your impact more tangible to recruiters.",
-        "For career advancement, consider obtaining certification in project management or taking specialized courses in your field to demonstrate expertise.",
-        "Your skills align well with emerging opportunities in digital marketing. Consider highlighting your analytical abilities alongside your creative talents."
+        "Please Enter Your Name.",
+        "This is only demo version, Please Login to get full access.",
+        "I can help you with career advice, resume tips, and job market trends.",
+        "For personalized career guidance, please provide your skills and experience.",
       ];
       
       const randomResponse = aiResponses[Math.floor(Math.random() * aiResponses.length)];
@@ -89,7 +88,7 @@ const ChatInterface = () => {
       <div className="flex justify-between items-center p-4 border-b border-border">
         <h2 className="text-lg font-semibold">Career Assistant</h2>
         <Button 
-          variant="ghost" 
+          variant="outline" 
           size="sm" 
           onClick={handleReset}
           className="flex items-center gap-1 text-sm"

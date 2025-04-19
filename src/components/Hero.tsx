@@ -1,4 +1,4 @@
-
+import { motion } from 'framer-motion';
 import React from 'react';
 import Button from './Button';
 import FadeIn from './animations/FadeIn';
@@ -19,15 +19,15 @@ const Hero = () => {
           {/* Left column - Text content */}
           <div className="max-w-xl">
             <FadeIn direction="up">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary rounded-full text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-primary rounded-full animate-pulse-slow"></span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 rounded-full text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-orange-300 rounded-full animate-pulse-slow"></span>
                 AI-Powered Career Guidance
               </div>
             </FadeIn>
             
             <FadeIn direction="up" delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Craft Your Perfect Career Path with <span className="text-gradient">AI Precision</span>
+                Your Career, <span className="bg-gradient-to-r from-[#60a5fa] via-[#c4b5fd] to-[#f87171] text-transparent bg-clip-text">Accelerated by AI</span>
               </h1>
             </FadeIn>
             
@@ -59,12 +59,12 @@ const Hero = () => {
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-muted overflow-hidden">
-                      <div className="w-full h-full bg-secondary/80"></div>
+                      <div className="w-full h-full bg-primary/20"></div>
                     </div>
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium">1,200+</span> professionals advanced their careers today
+                  <span className="font-medium"></span> Trusted by professionals 
                 </p>
               </div>
             </FadeIn>

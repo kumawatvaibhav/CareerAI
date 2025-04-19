@@ -1,6 +1,12 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import {
+  TwitterIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  GithubIcon,
+} from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,16 +18,15 @@ const Footer = () => {
         { name: 'Features', href: '#features' },
         { name: 'Resume Builder', href: '#resume-builder' },
         { name: 'Career Guide', href: '#career-guide' },
-        { name: 'Pricing', href: '#pricing' },
+        { name: 'Get Started', href: '#cta' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { name: 'Blog', href: '#blog' },
-        { name: 'Career Tips', href: '#career-tips' },
+        { name: 'Blog', href: 'https://medium.com/' },
         { name: 'Job Market Trends', href: '#job-market' },
-        { name: 'Resume Examples', href: '#resume-examples' },
+        { name: 'Resume Examples', href: 'https://resume-example.com/' },
       ],
     },
     {
@@ -43,7 +48,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center">
               <span className="text-2xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                Career.ai
+              NIRDESHAK.ai
               </span>
             </div>
             
@@ -59,7 +64,10 @@ const Footer = () => {
                   className="p-2 rounded-full bg-secondary hover:bg-primary/10 transition-colors"
                   aria-label={social}
                 >
-                  <div className="w-5 h-5 rounded-full bg-muted-foreground/30"></div>
+                  {social === 'Twitter' && <TwitterIcon size={20} />}
+                  {social === 'LinkedIn' && <LinkedinIcon size={20} />}
+                  {social === 'Instagram' && <InstagramIcon size={20} />}
+                  {social === 'GitHub' && <GithubIcon size={20} />}
                 </a>
               ))}
             </div>
@@ -87,7 +95,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} Career.ai. All rights reserved.
+            © {currentYear} NIRDESHAK.ai. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

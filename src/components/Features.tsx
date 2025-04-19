@@ -1,71 +1,145 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { 
+  Brain, 
+  FileText, 
+  BarChart4, 
+  UserCheck, 
+  BriefcaseBusiness, 
+  LineChart, 
+  ArrowRight, 
+  Sparkles,
+  MapIcon, 
+} from "lucide-react";
 
-import React from 'react';
-import FadeIn from './animations/FadeIn';
-import { ArrowRight, BarChart, FileText, MessageSquare, UserCheck } from 'lucide-react';
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  link: string;
+  color: "blue" | "purple" | "green" | "pink" | "orange";
+  index: number;
+}
+
+const FeatureCard = ({ icon, title, description, link, color, index }: FeatureCardProps) => {
+  const colorClasses = {
+    blue: {
+      bg: "bg-ai-blue",
+      light: "bg-ai-blue/10",
+      text: "text-ai-blue",
+    },
+    purple: {
+      bg: "bg-ai-purple",
+      light: "bg-ai-purple/10",
+      text: "text-ai-purple",
+    },
+    green: {
+      bg: "bg-ai-green",
+      light: "bg-ai-green/10",
+      text: "text-ai-green",
+    },
+    pink: {
+      bg: "bg-ai-pink",
+      light: "bg-ai-pink/10",
+      text: "text-ai-pink",
+    },
+    orange: {
+      bg: "bg-ai-orange",
+      light: "bg-ai-orange/10",
+      text: "text-ai-orange",
+    }
+  };
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="group"
+    >
+      <div className="neo-card p-6 h-full floating-card pulsing-card">
+        <div className={`h-14 w-14 rounded-2xl ${colorClasses[color].bg} flex items-center justify-center mb-6`}>
+          {React.cloneElement(icon as React.ReactElement, { className: "h-7 w-7 text-white" })}
+        </div>
+        <h3 className="text-xl font-semibold mb-3">{title}</h3>
+        <p className="text-foreground/70 mb-6">{description}</p>
+        <Link 
+          to={link} 
+          className={`flex items-center gap-2 ${colorClasses[color].text} font-medium text-sm group-hover:gap-3 transition-all`}
+        >
+          Explore feature <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
+    </motion.div>
+  );
+};
 
 const Features = () => {
   const features = [
     {
-      icon: <MessageSquare size={24} className="text-primary" />,
-      title: "AI Career Guidance",
-      description: "Get personalized career recommendations based on your skills, experience, and goals.",
-      delay: 0,
+      icon: <Brain />,
+      title: "AI Career Guide",
+      description: "Receive personalized career path recommendations based on your skills, experience, and goals.",
+      link: "/career-guidance",
+      color: "blue" as const,
     },
     {
-      icon: <FileText size={24} className="text-primary" />,
-      title: "ATS Resume Builder",
-      description: "Create ATS-optimized resumes with real-time feedback to boost your application success rate.",
-      delay: 100,
+      icon: <FileText />,
+      title: "Smart Resume Builder",
+      description: "Create ATS-optimized resumes with real-time feedback and keyword suggestions.",
+      link: "/resume-builder",
+      color: "purple" as const,
     },
     {
-      icon: <BarChart size={24} className="text-primary" />,
-      title: "Skill Gap Analysis",
-      description: "Identify skill gaps between your profile and dream jobs with customized learning recommendations.",
-      delay: 200,
-    },
-    {
-      icon: <UserCheck size={24} className="text-primary" />,
-      title: "Interview Preparation",
-      description: "Practice with AI-powered mock interviews tailored to your target positions and industries.",
-      delay: 300,
+      icon: <MapIcon/>,
+      title: "Roadmaps",
+      description: "Identify and bridge your skill gaps with custom learning recommendations.",
+      link: "/dashboard",
+      color: "orange" as const,
     },
   ];
 
   return (
-    <section id="feature" className="py-24">
-      <div className="container mx-auto px-4">
-        <FadeIn direction="up">
-          <div className="text-center mb-16">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full mb-4">
-              Features
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Elevate Your Career Journey
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive tools designed to transform your career path with AI-powered insights and guidance.
-            </p>
+    <section className="py-24 px-4 relative">
+      {/* Background elements */}
+      <div className="absolute top-0 left-0 w-full h-full bg-futuristic-grid bg-grid opacity-10 z-0"></div>
+      
+      <div className="container mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full neo-card text-ai-blue mb-4">
+            <Sparkles className="h-4 w-4" />
+            <span className="text-sm font-medium">Powerful Features</span>
           </div>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Accelerate Your Career with <span className="bg-gradient-to-r from-ai-blue via-ai-purple to-ai-red text-transparent bg-clip-text">Smart Tools</span>
+          </h2>
+          
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            Our comprehensive suite of AI-powered tools helps you make informed career decisions
+            and stand out in today's competitive job market.
+          </p>
+        </motion.div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <FadeIn key={index} direction="up" delay={feature.delay} className="h-full">
-              <div className="glass-card h-full rounded-xl p-6 flex flex-col">
-                <div className="mb-4 p-3 bg-primary/10 rounded-lg w-fit">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground mb-4 flex-1">{feature.description}</p>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center text-primary font-medium mt-auto group"
-                >
-                  Learn more 
-                  <ArrowRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
-              </div>
-            </FadeIn>
+            <FeatureCard
+              key={feature.title}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+              link={feature.link}
+              color={feature.color}
+              index={index}
+            />
           ))}
         </div>
       </div>

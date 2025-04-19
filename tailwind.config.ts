@@ -20,6 +20,15 @@ export default {
 		},
 		extend: {
 			colors: {
+				ai:{
+					red: "#f87171",
+                    green: "#86efac",
+                    blue: "#60a5fa",
+                    purple: "#c4b5fd",
+                    pink: "#f9a8d4",
+                    orange: "#fdba74",
+                    yellow: "#fde047",
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -53,6 +62,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				career: {
+                    100: "#E0F2FE",
+                    200: "#BAE6FD",
+                    300: "#7DD3FC",
+                    400: "#38BDF8",
+                    500: "#0EA5E9",
+                    600: "#0284C7",
+                    700: "#1E293B",
+                },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
