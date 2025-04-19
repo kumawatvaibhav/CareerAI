@@ -1,52 +1,40 @@
-import { Variants } from "framer-motion";
+import { useRef, useEffect } from "react";
+import { useAnimation, useInView } from "framer-motion";
 
-export const containerVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 70,
-      damping: 12,
-      when: "beforeChildren",
-      staggerChildren: 0.2,
+export const useFormAnimation = (isVisible = true) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const controls = useAnimation();
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isVisible && inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView, isVisible]);
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 12,
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
     },
-  },
-};
+  };
 
-export const inputVariants: Variants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
-
-export const buttonVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 120,
-      damping: 10,
-      delay: 0.6,
-    },
-  },
-};
-
-// Hook simply returns variants and animation props to use in your form
-export const useFormAnimation = (isVisible: boolean = true) => {
   return {
-    container: {
+    ref,
+    animationProps: {
       initial: "hidden",
-      animate: isVisible ? "visible" : "hidden",
+      animate: controls,
       variants: containerVariants,
-    },
-    input: {
-      variants: inputVariants,
-    },
-    button: {
-      variants: buttonVariants,
     },
   };
 };
