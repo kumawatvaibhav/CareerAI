@@ -27,7 +27,7 @@ const App = () => (
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/resume-builder" element={<ResumeBuilder />} />
-            <Route path="/career-guide" element={<CareerGuide />} />
+            <Route path="/CareerGuide" element={<CareerGuide />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
@@ -35,6 +35,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
 
 export default App;

@@ -38,7 +38,7 @@ const NavBar = () => {
   const authenticatedNavItems = [
     { name: "Dashboard", href: "/dashboard" },
     { name: "Resume Builder", href: "/resume-builder" },
-    { name: "Career Guide", href: "/career-guide" },
+    { name: "Career Guide", href: "/CareerGuide" },
   ];
 
   const displayNavItems = isLoggedIn ? authenticatedNavItems : navItems;
@@ -60,19 +60,21 @@ const NavBar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {displayNavItems.map((item) =>
-            item.href.startsWith("#") ? (
-              <a key={item.name} href={item.href} className="nav-item">
-                {item.name}
-              </a>
-            ) : (
-              <Link key={item.name} to={item.href} className="nav-item">
-                {item.name}
-              </Link>
-            )
-          )}
-        </nav>
+        <div className="flex items-center ml-[-65px]">
+          <nav className="hidden md:flex items-center space-x-1">
+            {displayNavItems.map((item) =>
+              item.href.startsWith("#") ? (
+                <a key={item.name} href={item.href} className="nav-item">
+                  {item.name}
+                </a>
+              ) : (
+                <Link key={item.name} to={item.href} className="nav-item">
+                  {item.name}
+                </Link>
+              )
+            )}
+          </nav>
+        </div>
 
         <div className="hidden md:flex items-center space-x-4">
           {isLoggedIn ? (
@@ -89,7 +91,11 @@ const NavBar = () => {
               >
                 Sign In
               </Button>
-              <Button size="sm" className="bg-primary" onClick={() => navigate("/sign-up")}>
+              <Button
+                size="sm"
+                className="bg-primary"
+                onClick={() => navigate("/sign-up")}
+              >
                 Get Started
               </Button>
             </>

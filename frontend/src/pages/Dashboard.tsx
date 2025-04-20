@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { useAuth } from "../contexts/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { 
-  FileText, 
-  MessageCircleQuestion, 
-  GraduationCap, 
-  PenTool, 
-  BriefcaseBusiness, 
-  Users, 
+import {
+  FileText,
+  MessageCircleQuestion,
+  GraduationCap,
+  PenTool,
+  BriefcaseBusiness,
+  Users,
   BarChart3,
   Award,
   BookOpen,
@@ -18,20 +18,20 @@ import {
   Loader2,
   AlertCircle,
   LogOut,
-  Home
+  Home,
 } from "lucide-react";
-import { 
-  SidebarProvider, 
-  Sidebar, 
-  SidebarContent, 
-  SidebarHeader, 
+import {
+  SidebarProvider,
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
   SidebarFooter,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
   SidebarGroup,
   SidebarGroupLabel,
-  SidebarGroupContent
+  SidebarGroupContent,
 } from "@/components/ui/sidebar";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -45,40 +45,40 @@ const Dashboard = () => {
   const { user, logout } = useAuth();
   const [activeSection, setActiveSection] = useState("overview");
   const navigate = useNavigate();
-  
+
   // Handle sign out
   const handleSignOut = () => {
     logout();
-    navigate('/');
+    navigate("/");
   };
 
   // Fetch dashboard data
-  const { 
-    data: dashboardData, 
+  const {
+    data: dashboardData,
     isLoading: isLoadingDashboard,
-    error: dashboardError
+    error: dashboardError,
   } = useQuery({
-    queryKey: ['dashboard'],
+    queryKey: ["dashboard"],
     queryFn: dashboardService.getDashboardData,
   });
-  
+
   // Fetch resume data
   const {
     data: resumes,
     isLoading: isLoadingResumes,
-    error: resumesError
+    error: resumesError,
   } = useQuery({
-    queryKey: ['resumes'],
+    queryKey: ["resumes"],
     queryFn: resumeService.getResumes,
   });
-  
+
   // Fetch chat histories
   const {
     data: chatHistories,
     isLoading: isLoadingChats,
-    error: chatsError
+    error: chatsError,
   } = useQuery({
-    queryKey: ['chats'],
+    queryKey: ["chats"],
     queryFn: chatService.getChatHistories,
   });
 
@@ -91,22 +91,22 @@ const Dashboard = () => {
       icon: FileText,
       link: "/resume-builder",
       color: "bg-gradient-to-r from-blue-500 to-cyan-500",
-      count: isLoadingResumes 
-        ? "Loading..." 
-        : resumesError 
-          ? "Not available" 
-          : resumes?.length === 0 
-            ? "No resumes" 
-            : `${resumes?.length} Resume${resumes?.length !== 1 ? 's' : ''}`
+      count: isLoadingResumes
+        ? "Loading..."
+        : resumesError
+        ? "Not available"
+        : resumes?.length === 0
+        ? "No resumes"
+        : `${resumes?.length} Resume${resumes?.length !== 1 ? "s" : ""}`,
     },
     {
       id: 2,
       title: "Career Guidance",
       description: "Get personalized career advice from our AI assistant",
       icon: MessageCircleQuestion,
-      link: "/career-guidance",
+      link: "/CareerGuide",
       color: "bg-ai-blue/40",
-      count: "24/7 Support"
+      count: "24/7 Support",
     },
     {
       id: 3,
@@ -115,7 +115,7 @@ const Dashboard = () => {
       icon: GraduationCap,
       link: "#",
       color: "bg-gradient-to-r from-amber-500 to-orange-500",
-      count: "3 Paths"
+      count: "3 Paths",
     },
     {
       id: 4,
@@ -124,7 +124,7 @@ const Dashboard = () => {
       icon: PenTool,
       link: "#",
       color: "bg-gradient-to-r from-emerald-500 to-green-500",
-      count: "5 Templates"
+      count: "5 Templates",
     },
     {
       id: 5,
@@ -133,11 +133,13 @@ const Dashboard = () => {
       icon: BriefcaseBusiness,
       link: "#",
       color: "bg-gradient-to-r from-rose-500 to-pink-500",
-      count: isLoadingDashboard 
-        ? "Loading..." 
-        : dashboardError 
-          ? "Not available" 
-          : `${dashboardData?.dashboard?.stats?.jobApplications || 0} Applications`
+      count: isLoadingDashboard
+        ? "Loading..."
+        : dashboardError
+        ? "Not available"
+        : `${
+            dashboardData?.dashboard?.stats?.jobApplications || 0
+          } Applications`,
     },
     {
       id: 6,
@@ -146,40 +148,50 @@ const Dashboard = () => {
       icon: Users,
       link: "#",
       color: "bg-gradient-to-r from-violet-500 to-purple-500",
-      count: "Network Growth"
-    }
+      count: "Network Growth",
+    },
   ];
 
   // Default stats with fallback values when dashboard data isn't available
   const stats = [
     {
       title: "Profile Strength",
-      value: dashboardError ? "N/A" : `${dashboardData?.dashboard?.stats?.profileStrength || 0}%`,
+      value: dashboardError
+        ? "N/A"
+        : `${dashboardData?.dashboard?.stats?.profileStrength || 0}%`,
       icon: BarChart3,
-      color: "text-blue-500"
+      color: "text-blue-500",
     },
     {
       title: "Skills Added",
-      value: dashboardError ? "N/A" : (dashboardData?.dashboard?.stats?.skillsAdded || 0).toString(),
+      value: dashboardError
+        ? "N/A"
+        : (dashboardData?.dashboard?.stats?.skillsAdded || 0).toString(),
       icon: Award,
-      color: "text-purple-500"
+      color: "text-purple-500",
     },
     {
       title: "Learning Progress",
-      value: dashboardError ? "N/A" : `${dashboardData?.dashboard?.stats?.learningProgress || 0}%`,
+      value: dashboardError
+        ? "N/A"
+        : `${dashboardData?.dashboard?.stats?.learningProgress || 0}%`,
       icon: BookOpen,
-      color: "text-amber-500"
+      color: "text-amber-500",
     },
     {
       title: "Job Applications",
-      value: dashboardError ? "N/A" : (dashboardData?.dashboard?.stats?.jobApplications || 0).toString(),
+      value: dashboardError
+        ? "N/A"
+        : (dashboardData?.dashboard?.stats?.jobApplications || 0).toString(),
       icon: Briefcase,
-      color: "text-green-500"
-    }
+      color: "text-green-500",
+    },
   ];
 
   // Get recent activity with fallback for errors
-  const recentActivity = dashboardError ? [] : (dashboardData?.dashboard?.recentActivity || []);
+  const recentActivity = dashboardError
+    ? []
+    : dashboardData?.dashboard?.recentActivity || [];
 
   // Loading indicator for the entire dashboard
   if (isLoadingDashboard && isLoadingResumes && isLoadingChats) {
@@ -198,14 +210,18 @@ const Dashboard = () => {
       {/* Top right navigation buttons */}
       <div className="absolute top-2 right-6 flex gap-2 z-10">
         <Link to="/">
-          <Button variant="outline" size="sm" className="flex items-center gap-1 bg-ai-blue/20">
+          <Button
+            variant="outline"
+            size="sm"
+            className="flex items-center gap-1 bg-ai-blue/20"
+          >
             <Home className="h-4 w-4" />
             <span>Home</span>
           </Button>
         </Link>
-        <Button 
+        <Button
           onClick={handleSignOut}
-          variant="outline" 
+          variant="outline"
           size="sm"
           className="flex items-center gap-1 text-red-500 hover:text-red-600 hover:bg-red-50"
         >
@@ -222,7 +238,9 @@ const Dashboard = () => {
                 <div className="h-8 w-8 rounded-lg gradient-bg flex items-center justify-center">
                   <BriefcaseBusiness className="text-white h-5 w-5" />
                 </div>
-                <span className="font-bold text-2xl gradient-text text-ai-blue">Dashboard</span>
+                <span className="font-bold text-2xl gradient-text text-ai-blue">
+                  Dashboard
+                </span>
               </div>
             </SidebarHeader>
             <SidebarContent>
@@ -231,7 +249,7 @@ const Dashboard = () => {
                 <SidebarGroupContent>
                   <SidebarMenu>
                     <SidebarMenuItem>
-                      <SidebarMenuButton 
+                      <SidebarMenuButton
                         onClick={() => setActiveSection("overview")}
                         isActive={activeSection === "overview"}
                         tooltip="Overview"
@@ -241,7 +259,7 @@ const Dashboard = () => {
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
-                      <SidebarMenuButton 
+                      <SidebarMenuButton
                         onClick={() => setActiveSection("activity")}
                         isActive={activeSection === "activity"}
                         tooltip="Activity"
@@ -253,15 +271,15 @@ const Dashboard = () => {
                   </SidebarMenu>
                 </SidebarGroupContent>
               </SidebarGroup>
-              
+
               <SidebarGroup>
                 <SidebarGroupLabel>Tools</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
-                    {features.slice(0, 4).map(feature => (
+                    {features.slice(0, 4).map((feature) => (
                       <SidebarMenuItem key={feature.id}>
-                        <SidebarMenuButton 
-                          asChild={feature.link !== "#"} 
+                        <SidebarMenuButton
+                          asChild={feature.link !== "#"}
                           tooltip={feature.title}
                         >
                           {feature.link !== "#" ? (
@@ -273,7 +291,12 @@ const Dashboard = () => {
                             <div className="flex items-center w-full">
                               <feature.icon className="h-4 w-4" />
                               <span>{feature.title}</span>
-                              <Badge className="ml-auto text-xs" variant="outline">Soon</Badge>
+                              <Badge
+                                className="ml-auto text-xs"
+                                variant="outline"
+                              >
+                                Soon
+                              </Badge>
                             </div>
                           )}
                         </SidebarMenuButton>
@@ -282,15 +305,15 @@ const Dashboard = () => {
                   </SidebarMenu>
                 </SidebarGroupContent>
               </SidebarGroup>
-              
+
               <SidebarGroup>
                 <SidebarGroupLabel>Management</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
-                    {features.slice(4).map(feature => (
+                    {features.slice(4).map((feature) => (
                       <SidebarMenuItem key={feature.id}>
-                        <SidebarMenuButton 
-                          asChild={feature.link !== "#"} 
+                        <SidebarMenuButton
+                          asChild={feature.link !== "#"}
                           tooltip={feature.title}
                         >
                           {feature.link !== "#" ? (
@@ -302,7 +325,12 @@ const Dashboard = () => {
                             <div className="flex items-center w-full">
                               <feature.icon className="h-4 w-4" />
                               <span>{feature.title}</span>
-                              <Badge className="ml-auto text-xs" variant="outline">Soon</Badge>
+                              <Badge
+                                className="ml-auto text-xs"
+                                variant="outline"
+                              >
+                                Soon
+                              </Badge>
                             </div>
                           )}
                         </SidebarMenuButton>
@@ -320,7 +348,9 @@ const Dashboard = () => {
                       {user?.name?.charAt(0).toUpperCase() || "U"}
                     </div>
                     <div className="truncate">
-                      <p className="text-sm font-medium">{user?.name || "User"}</p>
+                      <p className="text-sm font-medium">
+                        {user?.name || "User"}
+                      </p>
                       <p className="text-xs text-black">{user?.email}</p>
                     </div>
                   </div>
@@ -328,7 +358,7 @@ const Dashboard = () => {
               </div>
             </SidebarFooter>
           </Sidebar>
-          
+
           <div className="flex-1 overflow-auto p-6">
             {/* Display error alerts when APIs fail, but continue showing the dashboard */}
             {(dashboardError || resumesError || chatsError) && (
@@ -336,11 +366,12 @@ const Dashboard = () => {
                 <AlertCircle className="h-4 w-4" />
                 <AlertTitle>Some data couldn't be loaded</AlertTitle>
                 <AlertDescription>
-                  We're having trouble loading some of your data. Parts of your dashboard may show limited information.
+                  We're having trouble loading some of your data. Parts of your
+                  dashboard may show limited information.
                 </AlertDescription>
               </Alert>
             )}
-            
+
             <AnimatePresence mode="wait">
               {activeSection === "overview" ? (
                 <motion.div
@@ -351,12 +382,15 @@ const Dashboard = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="mb-8">
-                    <h1 className="text-3xl font-bold">Welcome back, {user?.name || "User"}!</h1>
+                    <h1 className="text-3xl font-bold">
+                      Welcome back, {user?.name || "User"}!
+                    </h1>
                     <p className="text-muted-foreground mt-2">
-                      Manage your career growth and job search from your personal dashboard.
+                      Manage your career growth and job search from your
+                      personal dashboard.
                     </p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                     {stats.map((stat, index) => (
                       <motion.div
@@ -368,10 +402,14 @@ const Dashboard = () => {
                         <Card className="p-4 border hover:shadow-md transition-all duration-300">
                           <div className="flex items-center justify-between">
                             <div>
-                              <p className="text-sm text-muted-foreground">{stat.title}</p>
+                              <p className="text-sm text-muted-foreground">
+                                {stat.title}
+                              </p>
                               <p className="text-2xl font-bold">{stat.value}</p>
                             </div>
-                            <div className={`p-2 rounded-full bg-muted ${stat.color}`}>
+                            <div
+                              className={`p-2 rounded-full bg-muted ${stat.color}`}
+                            >
                               <stat.icon className="h-5 w-5" />
                             </div>
                           </div>
@@ -379,7 +417,7 @@ const Dashboard = () => {
                       </motion.div>
                     ))}
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <motion.div
                       initial={{ opacity: 0, scale: 0.95 }}
@@ -389,8 +427,10 @@ const Dashboard = () => {
                     >
                       <Card className="h-full">
                         <div className="p-6">
-                          <h3 className="text-xl font-semibold mb-4">Quick Access</h3>
-                          {(!features || features.length === 0) ? (
+                          <h3 className="text-xl font-semibold mb-4">
+                            Quick Access
+                          </h3>
+                          {!features || features.length === 0 ? (
                             <EmptyState
                               title="No features available"
                               description="Features will appear here once they're available"
@@ -399,20 +439,33 @@ const Dashboard = () => {
                           ) : (
                             <div className="space-y-3">
                               {features.slice(0, 3).map((feature, index) => (
-                                <motion.div 
+                                <motion.div
                                   key={feature.id}
                                   initial={{ opacity: 0, x: -20 }}
                                   animate={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: 0.3 + (index * 0.1), duration: 0.3 }}
+                                  transition={{
+                                    delay: 0.3 + index * 0.1,
+                                    duration: 0.3,
+                                  }}
                                 >
-                                  <Link to={feature.link !== "#" ? feature.link : "#"}>
+                                  <Link
+                                    to={
+                                      feature.link !== "#" ? feature.link : "#"
+                                    }
+                                  >
                                     <div className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors group">
-                                      <div className={`${feature.color} p-2 rounded-lg mr-4`}>
+                                      <div
+                                        className={`${feature.color} p-2 rounded-lg mr-4`}
+                                      >
                                         <feature.icon className="h-5 w-5 text-white" />
                                       </div>
                                       <div className="flex-grow">
-                                        <p className="font-medium">{feature.title}</p>
-                                        <p className="text-sm text-muted-foreground truncate">{feature.count}</p>
+                                        <p className="font-medium">
+                                          {feature.title}
+                                        </p>
+                                        <p className="text-sm text-muted-foreground truncate">
+                                          {feature.count}
+                                        </p>
                                       </div>
                                       <ChevronRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                                     </div>
@@ -424,7 +477,7 @@ const Dashboard = () => {
                         </div>
                       </Card>
                     </motion.div>
-                    
+
                     <motion.div
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -433,13 +486,17 @@ const Dashboard = () => {
                     >
                       <Card className="h-full">
                         <div className="p-6">
-                          <h3 className="text-xl font-semibold mb-4">Upcoming Tasks</h3>
+                          <h3 className="text-xl font-semibold mb-4">
+                            Upcoming Tasks
+                          </h3>
                           {dashboardError ? (
                             <div className="flex flex-col items-center justify-center p-6 text-center">
                               <AlertCircle className="h-10 w-10 text-muted-foreground mb-2" />
-                              <p className="text-muted-foreground">Task data currently unavailable</p>
+                              <p className="text-muted-foreground">
+                                Task data currently unavailable
+                              </p>
                             </div>
-                          ) : (!recentActivity || recentActivity.length === 0) ? (
+                          ) : !recentActivity || recentActivity.length === 0 ? (
                             <EmptyState
                               title="No tasks yet"
                               description="Your upcoming tasks will appear here"
@@ -452,8 +509,12 @@ const Dashboard = () => {
                                   <PenTool className="h-5 w-5 text-amber-600" />
                                 </div>
                                 <div>
-                                  <p className="font-medium">Update your resume</p>
-                                  <p className="text-sm text-muted-foreground">Add your recent experience</p>
+                                  <p className="font-medium">
+                                    Update your resume
+                                  </p>
+                                  <p className="text-sm text-muted-foreground">
+                                    Add your recent experience
+                                  </p>
                                 </div>
                               </div>
                               <div className="flex items-start p-3 rounded-lg bg-muted/50">
@@ -461,8 +522,12 @@ const Dashboard = () => {
                                   <GraduationCap className="h-5 w-5 text-blue-600" />
                                 </div>
                                 <div>
-                                  <p className="font-medium">Complete skill assessment</p>
-                                  <p className="text-sm text-muted-foreground">15 minutes remaining</p>
+                                  <p className="font-medium">
+                                    Complete skill assessment
+                                  </p>
+                                  <p className="text-sm text-muted-foreground">
+                                    15 minutes remaining
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -471,11 +536,11 @@ const Dashboard = () => {
                       </Card>
                     </motion.div>
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold mb-4">All Features</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {features.map((feature, index) => (
-                      <motion.div 
+                      <motion.div
                         key={feature.id}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -485,14 +550,27 @@ const Dashboard = () => {
                       >
                         <Card className="border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
                           <div className="p-6 flex flex-col h-full">
-                            <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}>
+                            <div
+                              className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}
+                            >
                               <feature.icon className="h-6 w-6 text-white" />
                             </div>
-                            <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                            <p className="text-muted-foreground mb-4 flex-grow">{feature.description}</p>
+                            <h3 className="text-xl font-bold mb-2">
+                              {feature.title}
+                            </h3>
+                            <p className="text-muted-foreground mb-4 flex-grow">
+                              {feature.description}
+                            </p>
                             <Link to={feature.link}>
-                              <Button variant={feature.link !== "#" ? "outline" : "secondary"} className="w-full">
-                                {feature.link !== "#" ? "Get Started" : "Coming Soon"}
+                              <Button
+                                variant={
+                                  feature.link !== "#" ? "outline" : "secondary"
+                                }
+                                className="w-full"
+                              >
+                                {feature.link !== "#"
+                                  ? "Get Started"
+                                  : "Coming Soon"}
                               </Button>
                             </Link>
                           </div>
@@ -515,16 +593,20 @@ const Dashboard = () => {
                       Track your progress and recent actions
                     </p>
                   </div>
-                  
+
                   <Card className="mb-8">
                     <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-6">Activity Timeline</h3>
+                      <h3 className="text-xl font-semibold mb-6">
+                        Activity Timeline
+                      </h3>
                       {dashboardError ? (
                         <div className="flex flex-col items-center justify-center p-6 text-center">
                           <AlertCircle className="h-10 w-10 text-muted-foreground mb-2" />
-                          <p className="text-muted-foreground">Activity data currently unavailable</p>
+                          <p className="text-muted-foreground">
+                            Activity data currently unavailable
+                          </p>
                         </div>
-                      ) : (!recentActivity || recentActivity.length === 0) ? (
+                      ) : !recentActivity || recentActivity.length === 0 ? (
                         <EmptyState
                           title="No activity yet"
                           description="Your recent activities will appear here"
@@ -558,21 +640,27 @@ const Dashboard = () => {
                       )}
                     </div>
                   </Card>
-                  
+
                   <div className="grid grid-cols-1 gap-6">
                     <Card>
                       <div className="p-6">
-                        <h3 className="text-xl font-semibold mb-4">Weekly Progress</h3>
+                        <h3 className="text-xl font-semibold mb-4">
+                          Weekly Progress
+                        </h3>
                         {dashboardError ? (
                           <div className="h-64 flex items-center justify-center bg-muted/30 rounded-lg">
                             <div className="text-center">
                               <AlertCircle className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
-                              <p className="text-muted-foreground">Progress data currently unavailable</p>
+                              <p className="text-muted-foreground">
+                                Progress data currently unavailable
+                              </p>
                             </div>
                           </div>
                         ) : (
                           <div className="h-64 flex items-center justify-center bg-muted/30 rounded-lg">
-                            <p className="text-muted-foreground">Progress chart will appear here</p>
+                            <p className="text-muted-foreground">
+                              Progress chart will appear here
+                            </p>
                           </div>
                         )}
                       </div>
