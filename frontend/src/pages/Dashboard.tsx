@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useAuth } from "../contexts/authContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { 
   FileText, 
@@ -16,7 +16,9 @@ import {
   ChevronRight,
   Info,
   Loader2,
-  AlertCircle
+  AlertCircle,
+  LogOut,
+  Home
 } from "lucide-react";
 import { 
   SidebarProvider, 
@@ -40,8 +42,15 @@ import { useQuery } from "@tanstack/react-query";
 import EmptyState from "@/components/EmptyState";
 
 const Dashboard = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const [activeSection, setActiveSection] = useState("overview");
+  const navigate = useNavigate();
+  
+  // Handle sign out
+  const handleSignOut = () => {
+    logout();
+    navigate('/');
+  };
 
   // Fetch dashboard data
   const { 
@@ -96,7 +105,7 @@ const Dashboard = () => {
       description: "Get personalized career advice from our AI assistant",
       icon: MessageCircleQuestion,
       link: "/career-guidance",
-      color: "bg-gradient-to-r from-career-primary to-career-secondary",
+      color: "bg-ai-blue/40",
       count: "24/7 Support"
     },
     {
@@ -185,7 +194,26 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="pt-16 min-h-screen bg-background">
+    <div className="pt-16 min-h-screen bg-background relative">
+      {/* Top right navigation buttons */}
+      <div className="absolute top-2 right-6 flex gap-2 z-10">
+        <Link to="/">
+          <Button variant="outline" size="sm" className="flex items-center gap-1 bg-ai-blue/20">
+            <Home className="h-4 w-4" />
+            <span>Home</span>
+          </Button>
+        </Link>
+        <Button 
+          onClick={handleSignOut}
+          variant="outline" 
+          size="sm"
+          className="flex items-center gap-1 text-red-500 hover:text-red-600 hover:bg-red-50"
+        >
+          <LogOut className="h-4 w-4" />
+          <span>Sign Out</span>
+        </Button>
+      </div>
+
       <SidebarProvider defaultOpen={true}>
         <div className="flex min-h-[calc(100vh-4rem)] w-full">
           <Sidebar>
@@ -194,7 +222,7 @@ const Dashboard = () => {
                 <div className="h-8 w-8 rounded-lg gradient-bg flex items-center justify-center">
                   <BriefcaseBusiness className="text-white h-5 w-5" />
                 </div>
-                <span className="font-bold text-lg gradient-text">Dashboard</span>
+                <span className="font-bold text-2xl gradient-text text-ai-blue">Dashboard</span>
               </div>
             </SidebarHeader>
             <SidebarContent>
@@ -292,8 +320,8 @@ const Dashboard = () => {
                       {user?.name?.charAt(0).toUpperCase() || "U"}
                     </div>
                     <div className="truncate">
-                      <p className="text-sm font-medium">{user?.name}</p>
-                      <p className="text-xs text-muted-foreground">{user?.email}</p>
+                      <p className="text-sm font-medium">{user?.name || "User"}</p>
+                      <p className="text-xs text-black">{user?.email}</p>
                     </div>
                   </div>
                 </div>

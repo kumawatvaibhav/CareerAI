@@ -34,10 +34,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for saved user in localStorage
+    // Check for saved user in localStorage - FIXED: case-sensitive key "user"
     const savedUser = localStorage.getItem("user");
     if (savedUser) {
-      setUser(JSON.parse(savedUser));
+      try {
+        setUser(JSON.parse(savedUser));
+      } catch (error) {
+        console.error("Failed to parse user data from localStorage:", error);
+        localStorage.removeItem("user");
+      }
     }
     setLoading(false);
   }, []);
@@ -55,6 +60,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
       
       const data = await response.json();
+
+      console.log("Login response:", data); // Debugging line
       
       if (!response.ok) {
         throw new Error(data.message || 'Login failed');
@@ -62,14 +69,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       
       // Format user data
       const userData = {
-        id: data._id,
-        name: data.name,
-        email: data.email,
+        id: data.user._id,
+        name: data.user.name,
+        email: data.user.email, // FIXED: use data.user.email instead of data.email
         token: data.token
       };
       
       setUser(userData);
-      localStorage.setItem("User", JSON.stringify(userData));
+      // FIXED: use lowercase "user" consistently
+      localStorage.setItem("user", JSON.stringify(userData));
       localStorage.setItem("isLoggedIn", "true");
       toast.success("Logged in successfully");
     } catch (error) {
@@ -122,6 +130,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const logout = () => {
     setUser(null);
     localStorage.removeItem("user");
+    localStorage.removeItem("isLoggedIn");
     toast.success("Logged out successfully");
   };
 
