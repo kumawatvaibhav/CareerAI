@@ -1,40 +1,211 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { Card } from "../components/ui/card";
-import { ScrollArea } from "../components/ui/scroll-area";
-import NavBar from "../components/NavBar";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { Loader2 } from "lucide-react";
+import styles from "./CareerGuide.module.css";
+
+interface Career {
+  id: number;
+  name: string;
+  category: string;
+}
 
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
 
+interface CategorySelections {
+  [key: string]: string[];
+}
+
 const CareerGuide: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [selections, setSelections] = useState<CategorySelections>({
+    "Technical Skills": [],
+    Interests: [],
+    Hobbies: [],
+  });
+  const [loading, setLoading] = useState(false);
+  const [showChat, setShowChat] = useState(false);
+  const [inputMessage, setInputMessage] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  const categories = {
+    "Technical Skills": [
+      "Programming (Python/Java/C++)",
+      "Web Development (HTML/CSS/JS)",
+      "Data Analysis",
+      "Network Security",
+      "Machine Learning",
+      "Cloud Computing",
+      "Embedded Systems",
+      "UI/UX Design",
+      "Database Management",
+      "IoT Development",
+      "Cryptography",
+      "Version Control (Git)",
+      "Containerization (Docker/K8s)",
+      "Mobile App Development",
+      "API Development",
+      "CI/CD Pipelines",
+      "Data Structures & Algorithms",
+      "Linux/Command Line",
+      "Blockchain Basics",
+      "DevOps Tools (Jenkins/GitHub Actions)",
+    ],
+    Interests: [
+      "Artificial Intelligence Research",
+      "Ethical Hacking",
+      "Robotics Design",
+      "Big Data Patterns",
+      "Human-Computer Interaction",
+      "Hardware Tinkering",
+      "Game Mechanics",
+      "Business Process Optimization",
+      "Biomedical Tech",
+      "Renewable Energy Systems",
+      "Smart Cities & IoT",
+      "Autonomous Vehicles",
+      "AR/VR Technologies",
+      "Natural Language Processing",
+      "Open Source Community",
+      "Cyber Law and Policy",
+      "Financial Technologies (FinTech)",
+      "Digital Art & Visualization",
+      "Digital Twins",
+      "AI in Healthcare",
+    ],
+    Hobbies: [
+      "Competitive Coding",
+      "CTF (Capture The Flag) Challenges",
+      "DIY Electronics Projects",
+      "Open Source Contributions",
+      "3D Modeling/Game Modding",
+      "Tech Blogging",
+      "Drone Building",
+      "Home Automation Projects",
+      "Data Visualization Art",
+      "VR World Creation",
+      "Tinkering with Raspberry Pi / Arduino",
+      "Attending Hackathons",
+      "Building Personal Portfolio Sites",
+      "Creating YouTube Tech Tutorials",
+      "Reverse Engineering Apps",
+      "Simulations & Virtual Labs",
+      "Playing Strategy Games",
+      "Creating Discord Bots",
+      "Podcasting on Tech Topics",
+      "Experimenting with AI Art Tools",
+    ],
   };
 
   useEffect(() => {
-    scrollToBottom();
+    // Initial greeting message
+    setMessages([
+      {
+        role: "assistant",
+        content:
+          "Hello! I'm your career assistant. Let's find the perfect career path for you. Please select your technical skills, interests, and hobbies from the categories below.",
+      },
+    ]);
+  }, []);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim()) return;
+  const handleSelect = (category: string, item: string) => {
+    setSelections((prev) => {
+      const newSelection = prev[category].includes(item)
+        ? prev[category].filter((i) => i !== item)
+        : [...prev[category], item];
+      return { ...prev, [category]: newSelection };
+    });
+  };
 
-    const userMessage: Message = { role: "user", content: input };
-    setMessages((prev) => [...prev, userMessage]);
-    setInput("");
-    setIsLoading(true);
+  const getSuggestions = async () => {
+    setLoading(true);
+    try {
+      const hasSelections = Object.values(selections).some(
+        (items) => items.length > 0
+      );
+      if (!hasSelections) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content:
+              "Please select at least one skill or interest to get suggestions.",
+          },
+        ]);
+        setLoading(false);
+        return;
+      }
+
+      // Add user's selections as a message
+      const userSelections = Object.entries(selections)
+        .filter(([_, items]) => items.length > 0)
+        .map(([category, items]) => `${category}: ${items.join(", ")}`)
+        .join("\n");
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "user",
+          content: userSelections,
+        },
+      ]);
+
+      const response = await fetch("http://localhost:8000/api/suggestions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(selections),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
+      // Format the careers into a readable message
+      const careersMessage = data.careers
+        .map((career: Career) => `${career.id}. ${career.name}`)
+        .join("\n");
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: careersMessage,
+        },
+      ]);
+
+      setShowChat(true);
+    } catch (error) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content:
+            "Sorry, I encountered an error while processing your request. Please try again.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSendMessage = async () => {
+    if (!inputMessage.trim()) return;
+
+    const userMessage = inputMessage.trim();
+    setInputMessage("");
+    setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
 
     try {
       const response = await fetch("http://localhost:8000/api/chat", {
@@ -42,127 +213,101 @@ const CareerGuide: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        mode: "cors",
         body: JSON.stringify({
-          messages: [...messages, userMessage],
+          message: userMessage,
+          messages: messages,
         }),
       });
 
       if (!response.ok) {
-        const errorText = await response.text();
-        console.error("Server error:", errorText);
-        return;
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
-      setMessages((prev) => [...prev, data]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: data.response },
+      ]);
     } catch (error) {
-      console.error("Error:", error);
-    } finally {
-      setIsLoading(false);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content:
+            "Sorry, I encountered an error while processing your message. Please try again.",
+        },
+      ]);
     }
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <NavBar />
-      <div className="container mx-auto p-4 max-w-4xl pt-20">
-        <div className="flex flex-col items-center mb-8">
-          <h1 className="text-3xl font-bold text-primary mb-[-10px]">
-            AI-powered career assistant
-          </h1>
+    <div className={styles.careerGuideContainer}>
+      <div className={styles.chatContainer}>
+        <div className={styles.messagesContainer}>
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`${styles.message} ${
+                message.role === "user"
+                  ? styles.userMessage
+                  : styles.assistantMessage
+              }`}
+            >
+              <div className={styles.messageContent}>{message.content}</div>
+            </div>
+          ))}
+          <div ref={messagesEndRef} />
         </div>
 
-        <Card className="p-4 mb-4 shadow-lg rounded-xl">
-          <ScrollArea className="h-[65vh] pr-4">
-            <div className="flex flex-col gap-6">
-              {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={`flex ${
-                    message.role === "user" ? "justify-end" : "justify-start"
-                  }`}
-                >
-                  <div
-                    className={`p-4 rounded-2xl max-w-[80%] ${
-                      message.role === "user"
-                        ? "bg-primary text-primary-foreground shadow-md"
-                        : "bg-muted text-muted-foreground shadow-sm"
-                    }`}
-                  >
-                    <div
-                      className={`prose prose-sm ${
-                        message.role === "user"
-                          ? "text-primary-foreground"
-                          : "text-foreground"
-                      } max-w-none`}
-                    >
-                      <ReactMarkdown
-                        remarkPlugins={[remarkGfm]}
-                        components={{
-                          h2: ({ node, ...props }) => (
-                            <h3
-                              className="text-xl font-semibold mt-4 mb-2"
-                              {...props}
-                            />
-                          ),
-                          ul: ({ node, ...props }) => (
-                            <ul
-                              className="pl-6 list-disc space-y-1"
-                              {...props}
-                            />
-                          ),
-                          ol: ({ node, ...props }) => (
-                            <ol
-                              className="pl-6 list-decimal space-y-1"
-                              {...props}
-                            />
-                          ),
-                          code: ({ node, ...props }) => (
-                            <code
-                              className="bg-accent/50 px-1.5 py-0.5 rounded text-sm font-mono"
-                              {...props}
-                            />
-                          ),
-                        }}
-                      >
-                        {message.content}
-                      </ReactMarkdown>
-                    </div>
+        {!showChat ? (
+          <div className={styles.selectionContainer}>
+            <div className={styles.categorySelectors}>
+              {Object.entries(categories).map(([category, items]) => (
+                <div key={category} className={styles.categoryBox}>
+                  <h3>{category}</h3>
+                  <div className={styles.dropdown}>
+                    {items.map((item) => (
+                      <label key={item} className={styles.dropdownItem}>
+                        <input
+                          type="checkbox"
+                          checked={selections[category].includes(item)}
+                          onChange={() => handleSelect(category, item)}
+                        />
+                        {item}
+                      </label>
+                    ))}
                   </div>
                 </div>
               ))}
-              {isLoading && (
-                <div className="flex justify-start animate-pulse">
-                  <div className="bg-muted p-4 rounded-xl max-w-[85%]">
-                    <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
-                  </div>
-                </div>
-              )}
-              <div ref={messagesEndRef} />
             </div>
-          </ScrollArea>
-        </Card>
 
-        <form
-          onSubmit={handleSubmit}
-          className="flex gap-4 items-center shadow-lg"
-        >
-          <Input
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask about career paths, skills, or industries..."
-            className="flex-1 rounded-xl py-4 text-lg"
-            disabled={isLoading}
-          />
-          <Button
-            type="submit"
-            className="py-4 px-8 text-lg rounded-xl"
-            disabled={isLoading}
-          >
-            {isLoading ? "Sending..." : "Ask"}
-          </Button>
-        </form>
+            <button
+              onClick={getSuggestions}
+              disabled={loading}
+              className={styles.submitButton}
+            >
+              {loading ? "Generating Suggestions..." : "Get Career Suggestions"}
+            </button>
+          </div>
+        ) : (
+          <div className={styles.chatInputContainer}>
+            <input
+              type="text"
+              value={inputMessage}
+              onChange={(e) => setInputMessage(e.target.value)}
+              placeholder="Ask me anything about the suggested careers..."
+              className={styles.chatInput}
+              onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+            />
+            <button
+              onClick={handleSendMessage}
+              disabled={!inputMessage.trim()}
+              className={styles.sendButton}
+            >
+              Send
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

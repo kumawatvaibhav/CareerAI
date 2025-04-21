@@ -1,0 +1,1494 @@
+{
+  "careers": [
+    {
+      "title": "Software Developer",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Junior Developer", "Senior Developer", "Technical Lead", "Architect"],
+      "required_skills": ["Programming", "Problem Solving", "Debugging", "Version Control"]
+    },
+    {
+      "title": "Full Stack Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Frontend Developer", "Backend Developer", "Full Stack Engineer", "Tech Lead"],
+      "required_skills": ["Frontend Development", "Backend Development", "Database Management", "API Design"]
+    },
+    {
+      "title": "Frontend Developer",
+      "salary_range": {
+        "entry_level": "$55,000 - $75,000",
+        "mid_level": "$75,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["UI Developer", "React Developer", "Angular Developer", "Frontend Architect"],
+      "required_skills": ["HTML/CSS", "JavaScript", "UI/UX Design", "Responsive Design"]
+    },
+    {
+      "title": "Backend Developer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Backend Engineer", "Database Developer", "API Developer", "System Architect"],
+      "required_skills": ["Server-Side Programming", "Database Management", "API Development", "Security"]
+    },
+    {
+      "title": "Web Developer",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $140,000"
+      },
+      "roles_offered": ["Junior Web Developer", "Senior Web Developer", "Webmaster", "Freelance Developer"],
+      "required_skills": ["HTML/CSS", "JavaScript", "Responsive Design", "SEO Optimization"]
+    },
+    {
+      "title": "Mobile App Developer",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["iOS Developer", "Android Developer", "Cross-Platform Developer", "Mobile Architect"],
+      "required_skills": ["Mobile Development", "Cross-Platform Tools", "UI/UX Design", "App Store Deployment"]
+    },
+    {
+      "title": "Game Developer",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["Game Designer", "Game Programmer", "Graphics Programmer", "Game Engine Developer"],
+      "required_skills": ["Game Engines", "Graphics Programming", "Physics Simulation", "Scripting"]
+    },
+    {
+      "title": "Embedded Systems Engineer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Firmware Developer", "Hardware Engineer", "IoT Developer", "Embedded Architect"],
+      "required_skills": ["Microcontroller Programming", "Hardware Design", "Real-Time Systems", "Debugging"]
+    },
+    {
+      "title": "QA Engineer / Tester",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Manual Tester", "Automation Tester", "QA Lead", "Test Architect"],
+      "required_skills": ["Testing Frameworks", "Bug Tracking", "Automation Testing", "Test Case Design"]
+    },
+    {
+      "title": "DevOps Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["CI/CD Engineer", "Cloud Engineer", "Automation Engineer", "Site Reliability Engineer"],
+      "required_skills": ["CI/CD Pipelines", "Containerization", "Infrastructure as Code", "Monitoring Tools"]
+    },
+    {
+      "title": "Database Administrator",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["Junior DBA", "Senior DBA", "Database Architect", "Data Engineer"],
+      "required_skills": ["Database Management", "SQL", "Data Modeling", "Backup/Recovery"]
+    },
+    {
+      "title": "Cloud Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Cloud Architect", "Cloud Developer", "DevOps Engineer", "SRE"],
+      "required_skills": ["Cloud Platforms", "Networking", "Scalability", "Automation"]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["SRE Engineer", "DevOps Engineer", "Automation Specialist", "Monitoring Expert"],
+      "required_skills": ["Monitoring Tools", "Automation", "Incident Response", "Scripting"]
+    },
+    {
+      "title": "Systems Engineer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["IT Systems Engineer", "Network Engineer", "Infrastructure Engineer", "System Architect"],
+      "required_skills": ["System Architecture", "Network Design", "Troubleshooting", "Security"]
+    },
+    {
+      "title": "UI/UX Designer",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $140,000"
+      },
+      "roles_offered": ["UI Designer", "UX Designer", "Interaction Designer", "Design Lead"],
+      "required_skills": ["Wireframing", "Prototyping", "User Research", "Graphic Design"]
+    },
+    {
+      "title": "Product Manager",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Associate Product Manager", "Senior Product Manager", "Product Owner", "Head of Product"],
+      "required_skills": ["Project Management", "Agile Methodologies", "Stakeholder Communication", "Market Research"]
+    },
+    {
+      "title": "Technical Support Engineer",
+      "salary_range": {
+        "entry_level": "$45,000 - $65,000",
+        "mid_level": "$65,000 - $90,000",
+        "senior_level": "$90,000 - $120,000"
+      },
+      "roles_offered": ["Help Desk Technician", "Support Specialist", "Customer Success Engineer", "Support Manager"],
+      "required_skills": ["Troubleshooting", "Customer Service", "Documentation", "Communication"]
+    },
+    {
+      "title": "Network Administrator",
+      "salary_range": {
+        "entry_level": "$55,000 - $75,000",
+        "mid_level": "$75,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Network Engineer", "IT Administrator", "Network Architect", "Cybersecurity Specialist"],
+      "required_skills": ["Networking", "Firewall Configuration", "Troubleshooting", "Security"]
+    },
+    {
+      "title": "IT Consultant",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["IT Advisor", "Business Analyst", "Technology Consultant", "Solutions Architect"],
+      "required_skills": ["IT Strategy", "Business Analysis", "Client Communication", "Problem Solving"]
+    },
+    {
+      "title": "Data Analyst",
+      "salary_range": {
+        "entry_level": "$55,000 - $75,000",
+        "mid_level": "$75,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["Junior Data Analyst", "Senior Data Analyst", "BI Analyst", "Data Scientist"],
+      "required_skills": ["Data Cleaning", "Statistical Analysis", "Visualization", "SQL"]
+    },
+    {
+      "title": "Business Analyst",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["Junior Business Analyst", "Senior Business Analyst", "Process Analyst", "BA Lead"],
+      "required_skills": ["Business Analysis", "Process Improvement", "Stakeholder Communication", "Data Analysis"]
+    },
+    {
+      "title": "IT Project Manager",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Project Coordinator", "Project Manager", "Program Manager", "PMO Lead"],
+      "required_skills": ["Project Management", "Agile Methodologies", "Stakeholder Communication", "Risk Management"]
+    },
+    {
+      "title": "Database Architect",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Database Designer", "Data Architect", "Solution Architect", "Data Governance Lead"],
+      "required_skills": ["Database Design", "Data Modeling", "Performance Tuning", "SQL"]
+    },
+    {
+      "title": "Application Support Engineer",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Support Engineer", "Application Specialist", "Technical Support Lead", "Escalation Engineer"],
+      "required_skills": ["Troubleshooting", "Application Maintenance", "Customer Service", "Documentation"]
+    },
+    {
+      "title": "Computer Systems Analyst",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["Systems Analyst", "Business Systems Analyst", "IT Analyst", "Lead Analyst"],
+      "required_skills": ["System Analysis", "Process Improvement", "Data Analysis", "Problem Solving"]
+    },
+    {
+      "title": "Desktop Application Developer",
+      "salary_range": {
+        "entry_level": "$55,000 - $75,000",
+        "mid_level": "$75,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Software Developer", "Application Programmer", "Desktop App Lead", "App Architect"],
+      "required_skills": ["Desktop Development", "Programming", "Debugging", "UI/UX Design"]
+    },
+    {
+      "title": "Software Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Solution Architect", "Enterprise Architect", "Technical Architect", "Chief Architect"],
+      "required_skills": ["System Architecture", "Design Patterns", "Programming", "Leadership"]
+    },
+    {
+      "title": "Release Manager",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Release Coordinator", "Deployment Manager", "DevOps Engineer", "CI/CD Specialist"],
+      "required_skills": ["Release Management", "CI/CD Pipelines", "Automation", "Coordination"]
+    },
+    {
+      "title": "Automation Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Automation Specialist", "Test Automation Engineer", "RPA Developer", "Automation Lead"],
+      "required_skills": ["Automation Tools", "Scripting", "Testing Frameworks", "Process Optimization"]
+    },
+    {
+      "title": "Technical Writer",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Documentation Specialist", "Content Writer", "Technical Editor", "Knowledge Base Manager"],
+      "required_skills": ["Writing", "Documentation", "Research", "Communication"]
+    },
+    {
+      "title": "VLSI Design Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["IC Designer", "Hardware Engineer", "Chip Architect", "EDA Specialist"],
+      "required_skills": ["VLSI Design", "Hardware Description Languages", "Simulation", "Debugging"]
+    },
+    {
+      "title": "SAP Consultant",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["SAP Functional Consultant", "SAP Technical Consultant", "SAP Basis Admin", "SAP Architect"],
+      "required_skills": ["SAP Modules", "ERP Systems", "Business Processes", "Configuration"]
+    },
+    {
+      "title": "PLM Engineer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["PLM Specialist", "Product Lifecycle Analyst", "CAD Engineer", "PLM Architect"],
+      "required_skills": ["PLM Tools", "Product Design", "Data Management", "Collaboration"]
+    },
+    {
+      "title": "Mainframe Developer",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["Mainframe Programmer", "COBOL Developer", "DB2 Specialist", "Mainframe Architect"],
+      "required_skills": ["Mainframe Programming", "COBOL", "JCL", "DB2"]
+    },
+    {
+      "title": "Solutions Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Solution Architect", "Enterprise Architect", "Cloud Architect", "Technical Architect"],
+      "required_skills": ["System Design", "Cloud Platforms", "Integration", "Leadership"]
+    },
+    {
+      "title": "Tech Evangelist",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Developer Advocate", "Technical Speaker", "Community Manager", "Brand Ambassador"],
+      "required_skills": ["Public Speaking", "Technical Knowledge", "Marketing", "Communication"]
+    },
+    {
+      "title": "Data Center Engineer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Data Center Technician", "Infrastructure Engineer", "DCIM Specialist", "Data Center Manager"],
+      "required_skills": ["Data Center Operations", "Networking", "Server Management", "Cooling Systems"]
+    },
+    {
+      "title": "Technical Recruiter",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Recruiter", "Talent Acquisition Specialist", "HR Consultant", "Recruitment Lead"],
+      "required_skills": ["Recruitment", "Interviewing", "Candidate Sourcing", "Negotiation"]
+    },
+    {
+      "title": "AR/VR Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["AR Developer", "VR Developer", "XR Developer", "Immersive Tech Lead"],
+      "required_skills": ["AR/VR Tools", "3D Modeling", "Game Engines", "Programming"]
+    },
+    {
+      "title": "Integration Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Integration Specialist", "API Developer", "Middleware Engineer", "Integration Architect"],
+      "required_skills": ["API Integration", "Middleware", "Data Mapping", "Testing"]
+    },
+    {
+      "title": "Platform Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Platform Developer", "Cloud Engineer", "DevOps Engineer", "Platform Architect"],
+      "required_skills": ["Cloud Platforms", "Infrastructure as Code", "Automation", "Scalability"]
+    },
+    {
+      "title": "SCM Engineer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["SCM Specialist", "Version Control Engineer", "Build Engineer", "SCM Architect"],
+      "required_skills": ["Version Control", "Build Tools", "CI/CD Pipelines", "Scripting"]
+    },
+    {
+      "title": "Build and Release Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Build Engineer", "Release Engineer", "DevOps Engineer", "CI/CD Specialist"],
+      "required_skills": ["Build Tools", "Release Management", "Automation", "Scripting"]
+    },
+    {
+      "title": "System Administrator",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["SysAdmin", "IT Administrator", "Network Admin", "System Architect"],
+      "required_skills": ["System Administration", "Networking", "Troubleshooting", "Security"]
+    },
+    {
+      "title": "Game Tester",
+      "salary_range": {
+        "entry_level": "$40,000 - $60,000",
+        "mid_level": "$60,000 - $90,000",
+        "senior_level": "$90,000 - $120,000"
+      },
+      "roles_offered": ["QA Tester", "Game Tester", "QA Lead", "Test Automation Engineer"],
+      "required_skills": ["Testing", "Bug Reporting", "Game Mechanics", "Attention to Detail"]
+    },
+    {
+      "title": "Firmware Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Firmware Developer", "Embedded Systems Engineer", "IoT Developer", "Firmware Architect"],
+      "required_skills": ["Firmware Development", "Microcontroller Programming", "Real-Time Systems", "Debugging"]
+    },
+    {
+      "title": "Compiler Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Compiler Developer", "Language Engineer", "Toolchain Specialist", "Compiler Architect"],
+      "required_skills": ["Compiler Design", "Programming Languages", "Optimization", "Debugging"]
+    },
+    {
+      "title": "Version Control Specialist",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $140,000"
+      },
+      "roles_offered": ["Version Control Engineer", "SCM Specialist", "Build Engineer", "DevOps Engineer"],
+      "required_skills": ["Version Control", "CI/CD Pipelines", "Scripting", "Collaboration"]
+    },
+    {
+      "title": "Middleware Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Middleware Engineer", "Integration Specialist", "API Developer", "Middleware Architect"],
+      "required_skills": ["Middleware", "API Integration", "Data Mapping", "Testing"]
+    },
+    {
+      "title": "IT Auditor",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["IT Auditor", "Compliance Specialist", "Risk Analyst", "Audit Manager"],
+      "required_skills": ["Auditing", "Compliance", "Risk Management", "Documentation"]
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["ML Engineer", "Data Scientist", "AI Researcher", "AI Architect"],
+      "required_skills": ["Machine Learning", "Data Analysis", "Programming", "Deep Learning"]
+    },
+    {
+      "title": "AI Research Scientist",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Research Scientist", "AI Specialist", "Algorithm Developer", "Scientific Consultant"],
+      "required_skills": ["Research", "Mathematics", "Machine Learning", "Programming"]
+    },
+    {
+      "title": "Data Scientist",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Junior Data Scientist", "Senior Data Scientist", "Principal Data Scientist", "AI Specialist"],
+      "required_skills": ["Data Analysis", "Statistical Modeling", "Machine Learning", "Visualization"]
+    },
+    {
+      "title": "NLP Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["NLP Developer", "AI Linguist", "Natural Language Engineer", "NLP Architect"],
+      "required_skills": ["Natural Language Processing", "Machine Learning", "Text Mining", "Programming"]
+    },
+    {
+      "title": "Deep Learning Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Deep Learning Specialist", "Neural Network Engineer", "AI Developer", "DL Architect"],
+      "required_skills": ["Deep Learning", "Neural Networks", "TensorFlow", "PyTorch"]
+    },
+    {
+      "title": "Computer Vision Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Vision Engineer", "Image Processing Specialist", "AI Developer", "CV Architect"],
+      "required_skills": ["Computer Vision", "Image Processing", "OpenCV", "Machine Learning"]
+    },
+    {
+      "title": "AI Product Manager",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["AI Product Owner", "AI Project Manager", "AI Strategy Lead", "Head of AI Products"],
+      "required_skills": ["Product Management", "AI/ML Knowledge", "Stakeholder Communication", "Agile Methodologies"]
+    },
+    {
+      "title": "Robotics Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Robotics Developer", "Automation Engineer", "Mechatronics Engineer", "Robotics Architect"],
+      "required_skills": ["Robotics Programming", "Hardware Design", "Control Systems", "AI Integration"]
+    },
+    {
+      "title": "Research Scientist - AI",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["AI Researcher", "Scientific Consultant", "Algorithm Developer", "Principal Scientist"],
+      "required_skills": ["Research", "Machine Learning", "Mathematics", "Data Analysis"]
+    },
+    {
+      "title": "AI Ethics Researcher",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Ethics Specialist", "AI Policy Advisor", "Responsible AI Lead", "Ethics Researcher"],
+      "required_skills": ["AI Ethics", "Policy Development", "Philosophy", "Regulatory Compliance"]
+    },
+    {
+      "title": "Data Science Consultant",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Data Science Advisor", "Analytics Consultant", "Business Intelligence Specialist", "Consulting Lead"],
+      "required_skills": ["Data Analysis", "Statistical Modeling", "Consulting", "Communication"]
+    },
+    {
+      "title": "AI Software Developer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["AI Developer", "Software Engineer", "AI Systems Architect", "AI Integration Lead"],
+      "required_skills": ["Programming", "AI/ML Frameworks", "Software Development", "Debugging"]
+    },
+    {
+      "title": "AI Trainer (for LLMs, CV, etc.)",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["AI Trainer", "Data Labeling Specialist", "Annotation Expert", "Training Lead"],
+      "required_skills": ["Data Labeling", "Annotation Tools", "AI Models", "Attention to Detail"]
+    },
+    {
+      "title": "MLOps Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["MLOps Specialist", "AI DevOps Engineer", "Model Deployment Lead", "Pipeline Architect"],
+      "required_skills": ["CI/CD Pipelines", "Model Deployment", "Automation", "Cloud Platforms"]
+    },
+    {
+      "title": "Cognitive Computing Developer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Cognitive Developer", "AI Systems Engineer", "NLP Specialist", "Cognitive Architect"],
+      "required_skills": ["Cognitive Computing", "AI Frameworks", "NLP", "Problem Solving"]
+    },
+    {
+      "title": "Autonomous Vehicle Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Self-Driving Engineer", "Vehicle Systems Developer", "ADAS Specialist", "Autonomous Architect"],
+      "required_skills": ["Autonomous Systems", "Sensor Fusion", "AI", "Embedded Systems"]
+    },
+    {
+      "title": "Reinforcement Learning Researcher",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["RL Researcher", "Algorithm Developer", "Game AI Specialist", "Research Lead"],
+      "required_skills": ["Reinforcement Learning", "Mathematics", "Simulation", "Programming"]
+    },
+    {
+      "title": "Generative AI Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Generative AI Developer", "Creative AI Engineer", "AI Artist", "Generative Architect"],
+      "required_skills": ["Generative Models", "GANs", "Diffusion Models", "AI Art"]
+    },
+    {
+      "title": "Human-Centered AI Specialist",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["HCI Specialist", "UX AI Designer", "Ethical AI Lead", "Human-Centered Architect"],
+      "required_skills": ["Human-Computer Interaction", "AI Ethics", "User Research", "Design Thinking"]
+    },
+    {
+      "title": "Biomedical Data Scientist",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Biomedical Analyst", "Healthcare Data Scientist", "Bioinformatics Specialist", "Research Lead"],
+      "required_skills": ["Data Analysis", "Biomedical Informatics", "Machine Learning", "Healthcare Systems"]
+    },
+    {
+      "title": "Speech Recognition Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Speech Engineer", "Voice AI Developer", "Audio Processing Specialist", "Speech Architect"],
+      "required_skills": ["Speech Recognition", "Signal Processing", "Natural Language Processing", "AI"]
+    },
+    {
+      "title": "AI Developer in Gaming",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Game AI Developer", "AI Game Designer", "Game Engine Specialist", "AI Architect"],
+      "required_skills": ["Game Engines", "AI Algorithms", "Game Mechanics", "Scripting"]
+    },
+    {
+      "title": "AI in Finance Analyst",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Financial AI Analyst", "Risk Modeler", "Quantitative Analyst", "AI Finance Lead"],
+      "required_skills": ["Financial Modeling", "AI/ML", "Risk Analysis", "Data Analysis"]
+    },
+    {
+      "title": "AI for Healthcare Specialist",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Healthcare AI Developer", "Medical AI Specialist", "Clinical Data Analyst", "AI Health Lead"],
+      "required_skills": ["Healthcare Systems", "AI/ML", "Medical Data", "Patient Privacy"]
+    },
+    {
+      "title": "Recommendation System Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Recommendation Engineer", "Personalization Specialist", "AI Developer", "System Architect"],
+      "required_skills": ["Recommendation Algorithms", "Data Analysis", "Machine Learning", "User Behavior"]
+    },
+    {
+      "title": "AI Solutions Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["AI Architect", "Solution Designer", "AI Integration Lead", "Chief Architect"],
+      "required_skills": ["System Design", "AI Frameworks", "Integration", "Leadership"]
+    },
+    {
+      "title": "Language Model Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["NLP Engineer", "LLM Developer", "AI Linguist", "Language Architect"],
+      "required_skills": ["Language Models", "NLP", "Deep Learning", "Text Generation"]
+    },
+    {
+      "title": "AI Hardware Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["AI Chip Developer", "Hardware Engineer", "AI Accelerator Specialist", "Hardware Architect"],
+      "required_skills": ["Hardware Design", "AI Chips", "Neural Networks", "Optimization"]
+    },
+    {
+      "title": "Edge AI Developer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Edge AI Engineer", "IoT AI Developer", "Real-Time AI Specialist", "Edge Architect"],
+      "required_skills": ["Edge Computing", "AI Frameworks", "IoT", "Real-Time Systems"]
+    },
+    {
+      "title": "Computer Vision Analyst",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Vision Analyst", "Image Processing Specialist", "AI Developer", "CV Architect"],
+      "required_skills": ["Computer Vision", "Image Processing", "OpenCV", "Machine Learning"]
+    },
+    {
+      "title": "AI-based Personal Assistant Dev",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["AI Assistant Developer", "Voice AI Engineer", "Chatbot Developer", "Assistant Architect"],
+      "required_skills": ["NLP", "Speech Recognition", "AI Frameworks", "User Interaction"]
+    },
+    {
+      "title": "Data Labeling & Annotation Expert",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $130,000"
+      },
+      "roles_offered": ["Data Labeler", "Annotation Specialist", "Quality Assurance Lead", "Labeling Manager"],
+      "required_skills": ["Data Labeling", "Annotation Tools", "Attention to Detail", "AI Models"]
+    },
+    {
+      "title": "Federated Learning Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Federated Learning Specialist", "Privacy AI Engineer", "AI Developer", "FL Architect"],
+      "required_skills": ["Federated Learning", "Distributed Systems", "AI Privacy", "Collaboration"]
+    },
+    {
+      "title": "AI Compliance Officer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Compliance Specialist", "AI Policy Advisor", "Regulatory Analyst", "Compliance Lead"],
+      "required_skills": ["AI Ethics", "Regulatory Compliance", "Legal Knowledge", "Documentation"]
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Junior Cybersecurity Analyst", "Senior Cybersecurity Analyst", "Security Operations Analyst", "Threat Analyst"],
+      "required_skills": ["Cybersecurity", "Network Security", "Threat Detection", "Incident Response"]
+    },
+    {
+      "title": "Penetration Tester (Ethical Hacker)",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Penetration Tester", "Ethical Hacker", "Vulnerability Analyst", "Red Team Member"],
+      "required_skills": ["Penetration Testing", "Exploit Development", "Network Security", "Scripting"]
+    },
+    {
+      "title": "Security Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Security Architect", "Network Security Engineer", "Cloud Security Engineer", "Security Lead"],
+      "required_skills": ["Security Architecture", "Firewall Configuration", "Encryption", "Risk Management"]
+    },
+    {
+      "title": "SOC Analyst (Security Operations Center)",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["SOC Analyst", "Threat Intelligence Analyst", "Incident Responder", "SOC Manager"],
+      "required_skills": ["Security Monitoring", "Incident Response", "Log Analysis", "Threat Intelligence"]
+    },
+    {
+      "title": "Malware Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Malware Researcher", "Reverse Engineer", "Threat Analyst", "Malware Specialist"],
+      "required_skills": ["Malware Analysis", "Reverse Engineering", "Programming", "Forensics"]
+    },
+    {
+      "title": "Network Security Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Network Security Specialist", "Firewall Engineer", "Network Architect", "Security Lead"],
+      "required_skills": ["Network Security", "Firewall Configuration", "Intrusion Detection", "Routing Protocols"]
+    },
+    {
+      "title": "Cybersecurity Consultant",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Security Advisor", "Compliance Consultant", "Risk Analyst", "Consulting Lead"],
+      "required_skills": ["Cybersecurity Strategy", "Risk Assessment", "Compliance", "Client Communication"]
+    },
+    {
+      "title": "Forensic Analyst",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Digital Forensics Specialist", "Incident Investigator", "Forensic Analyst", "Forensic Lead"],
+      "required_skills": ["Digital Forensics", "Data Recovery", "Evidence Collection", "Legal Knowledge"]
+    },
+    {
+      "title": "Application Security Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["AppSec Engineer", "Security Tester", "Vulnerability Analyst", "Security Lead"],
+      "required_skills": ["Application Security", "Penetration Testing", "Code Review", "Threat Modeling"]
+    },
+    {
+      "title": "Information Security Manager",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Security Manager", "CISO", "Security Director", "Risk Manager"],
+      "required_skills": ["Information Security", "Risk Management", "Policy Development", "Leadership"]
+    },
+    {
+      "title": "Threat Intelligence Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Threat Analyst", "Intelligence Specialist", "Security Researcher", "Intelligence Lead"],
+      "required_skills": ["Threat Intelligence", "Data Analysis", "Malware Analysis", "Communication"]
+    },
+    {
+      "title": "Incident Response Specialist",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Incident Responder", "Response Coordinator", "Forensic Analyst", "Response Lead"],
+      "required_skills": ["Incident Response", "Forensics", "Security Tools", "Problem Solving"]
+    },
+    {
+      "title": "Risk & Compliance Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Compliance Analyst", "Risk Manager", "Audit Specialist", "Compliance Lead"],
+      "required_skills": ["Risk Assessment", "Compliance", "Regulatory Knowledge", "Documentation"]
+    },
+    {
+      "title": "Cloud Security Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Cloud Security Specialist", "Cloud Architect", "Security Engineer", "Cloud Security Lead"],
+      "required_skills": ["Cloud Security", "IAM", "Encryption", "DevSecOps"]
+    },
+    {
+      "title": "Identity & Access Management Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["IAM Engineer", "Access Control Specialist", "Security Architect", "IAM Lead"],
+      "required_skills": ["Identity Management", "Access Control", "Authentication", "Authorization"]
+    },
+    {
+      "title": "Red Team Member",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Red Team Operator", "Penetration Tester", "Ethical Hacker", "Red Team Lead"],
+      "required_skills": ["Penetration Testing", "Social Engineering", "Exploitation", "Network Security"]
+    },
+    {
+      "title": "Blue Team Analyst",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Blue Team Member", "SOC Analyst", "Defense Specialist", "Blue Team Lead"],
+      "required_skills": ["Threat Detection", "Incident Response", "Security Tools", "Monitoring"]
+    },
+    {
+      "title": "Security Auditor",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["IT Auditor", "Compliance Auditor", "Security Assessor", "Audit Lead"],
+      "required_skills": ["Auditing", "Compliance", "Risk Assessment", "Documentation"]
+    },
+    {
+      "title": "GRC Analyst (Governance, Risk & Compliance)",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["GRC Specialist", "Compliance Analyst", "Risk Manager", "GRC Lead"],
+      "required_skills": ["Governance", "Risk Management", "Compliance", "Policy Development"]
+    },
+    {
+      "title": "Cryptographer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Cryptography Specialist", "Encryption Expert", "Security Researcher", "Cryptographic Architect"],
+      "required_skills": ["Cryptography", "Encryption Algorithms", "Mathematics", "Cybersecurity"]
+    },
+    {
+      "title": "Secure Software Developer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Secure Developer", "Application Security Engineer", "Security-Centric Programmer", "Secure Dev Lead"],
+      "required_skills": ["Secure Coding", "Application Security", "Vulnerability Analysis", "Code Review"]
+    },
+    {
+      "title": "Security Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Security Designer", "Network Security Architect", "Cloud Security Architect", "Chief Architect"],
+      "required_skills": ["Security Architecture", "Risk Management", "System Design", "Leadership"]
+    },
+    {
+      "title": "Cybersecurity Educator / Trainer",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["Cybersecurity Trainer", "Security Instructor", "Workshop Leader", "Training Lead"],
+      "required_skills": ["Cybersecurity Knowledge", "Teaching", "Communication", "Training Development"]
+    },
+    {
+      "title": "CISO (Chief Information Security Officer)",
+      "salary_range": {
+        "entry_level": "$120,000 - $150,000",
+        "mid_level": "$150,000 - $200,000",
+        "senior_level": "$200,000 - $300,000"
+      },
+      "roles_offered": ["CISO", "Security Director", "VP of Security", "Chief Security Officer"],
+      "required_skills": ["Information Security", "Leadership", "Risk Management", "Strategic Planning"]
+    },
+    {
+      "title": "Cybersecurity Policy Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Policy Analyst", "Compliance Specialist", "Regulatory Advisor", "Policy Lead"],
+      "required_skills": ["Cybersecurity Policy", "Regulatory Compliance", "Legal Knowledge", "Documentation"]
+    },
+    {
+      "title": "Cybersecurity Researcher",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Research Scientist", "Security Researcher", "Threat Analyst", "Research Lead"],
+      "required_skills": ["Cybersecurity Research", "Threat Intelligence", "Data Analysis", "Innovation"]
+    },
+    {
+      "title": "IoT Security Specialist",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["IoT Security Engineer", "IoT Risk Analyst", "IoT Security Architect", "IoT Security Lead"],
+      "required_skills": ["IoT Security", "Network Security", "Device Security", "Vulnerability Assessment"]
+    },
+    {
+      "title": "Blockchain Security Expert",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Blockchain Security Engineer", "Smart Contract Auditor", "Blockchain Architect", "Security Lead"],
+      "required_skills": ["Blockchain Technology", "Smart Contracts", "Cryptography", "Security Auditing"]
+    },
+    {
+      "title": "Security DevOps (DevSecOps) Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["DevSecOps Engineer", "Security Automation Specialist", "CI/CD Security Engineer", "DevSecOps Lead"],
+      "required_skills": ["DevOps", "Automation", "Security Integration", "CI/CD Pipelines"]
+    },
+    {
+      "title": "Email Security Analyst",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Email Security Specialist", "Phishing Analyst", "Email Threat Researcher", "Security Lead"],
+      "required_skills": ["Email Security", "Phishing Detection", "Spam Filtering", "Incident Response"]
+    },
+    {
+      "title": "Privacy Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Privacy Specialist", "Data Protection Engineer", "Privacy Architect", "Privacy Lead"],
+      "required_skills": ["Data Privacy", "GDPR Compliance", "Encryption", "Risk Management"]
+    },
+    {
+      "title": "Mobile Security Expert",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Mobile Security Engineer", "App Security Specialist", "Mobile Threat Analyst", "Security Lead"],
+      "required_skills": ["Mobile Security", "App Penetration Testing", "Encryption", "Device Security"]
+    },
+    {
+      "title": "Zero Trust Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["Zero Trust Engineer", "Security Architect", "Trust Model Specialist", "Architect Lead"],
+      "required_skills": ["Zero Trust Architecture", "Network Security", "Access Control", "Identity Management"]
+    },
+    {
+      "title": "Vulnerability Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Vulnerability Researcher", "Penetration Tester", "Risk Analyst", "Security Lead"],
+      "required_skills": ["Vulnerability Assessment", "Penetration Testing", "Exploit Development", "Security Tools"]
+    },
+    {
+      "title": "Bug Bounty Hunter",
+      "salary_range": {
+        "entry_level": "$50,000 - $70,000",
+        "mid_level": "$70,000 - $100,000",
+        "senior_level": "$100,000 - $150,000"
+      },
+      "roles_offered": ["Ethical Hacker", "Bug Bounty Specialist", "Penetration Tester", "Security Researcher"],
+      "required_skills": ["Bug Hunting", "Penetration Testing", "Vulnerability Reporting", "Scripting"]
+    },
+    {
+      "title": "IoT Developer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["IoT Programmer", "Embedded Developer", "IoT Solutions Engineer", "IoT Lead"],
+      "required_skills": ["IoT Development", "Embedded Systems", "Networking", "Cloud Integration"]
+    },
+    {
+      "title": "IoT Systems Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["IoT Engineer", "Systems Integrator", "IoT Architect", "Engineering Lead"],
+      "required_skills": ["IoT Systems", "Device Management", "Networks", "Troubleshooting"]
+    },
+    {
+      "title": "Embedded Firmware Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Firmware Engineer", "Embedded Systems Developer", "IoT Firmware Specialist", "Firmware Lead"],
+      "required_skills": ["Embedded Programming", "Microcontroller Design", "Real-Time Systems", "Debugging"]
+    },
+    {
+      "title": "IoT Architect",
+      "salary_range": {
+        "entry_level": "$90,000 - $110,000",
+        "mid_level": "$110,000 - $150,000",
+        "senior_level": "$150,000 - $200,000"
+      },
+      "roles_offered": ["IoT Solutions Architect", "System Architect", "Cloud IoT Architect", "Architect Lead"],
+      "required_skills": ["IoT Architecture", "Cloud Platforms", "Scalability", "Integration"]
+    },
+    {
+      "title": "IoT Hardware Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Hardware Engineer", "Device Developer", "IoT Hardware Specialist", "Hardware Lead"],
+      "required_skills": ["Hardware Design", "Electronics", "Prototyping", "Testing"]
+    },
+    {
+      "title": "Smart Devices Application Developer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Smart Device Developer", "App Developer", "IoT App Engineer", "Development Lead"],
+      "required_skills": ["Mobile App Development", "IoT Integration", "UI/UX Design", "Cloud Services"]
+    },
+    {
+      "title": "Wireless Communication Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Wireless Engineer", "RF Engineer", "Communication Specialist", "Wireless Lead"],
+      "required_skills": ["Wireless Networks", "RF Design", "Signal Processing", "Protocols"]
+    },
+    {
+      "title": "Embedded Linux Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Linux Developer", "Embedded Systems Engineer", "Kernel Developer", "Linux Lead"],
+      "required_skills": ["Linux OS", "Embedded Programming", "Kernel Development", "Scripting"]
+    },
+    {
+      "title": "Industrial IoT (IIoT) Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["IIoT Engineer", "Industrial Systems Developer", "IoT Solutions Engineer", "IIoT Lead"],
+      "required_skills": ["Industrial Automation", "IoT Systems", "Sensors", "Data Analytics"]
+    },
+    {
+      "title": "IoT Security Analyst",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["IoT Security Specialist", "Device Security Analyst", "IoT Threat Researcher", "Security Lead"],
+      "required_skills": ["IoT Security", "Device Security", "Network Security", "Vulnerability Assessment"]
+    },
+    {
+      "title": "Sensor Network Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Sensor Engineer", "Network Engineer", "IoT Sensor Specialist", "Sensor Lead"],
+      "required_skills": ["Sensor Networks", "Data Collection", "Wireless Communication", "IoT Integration"]
+    },
+    {
+      "title": "IoT Cloud Integration Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Cloud Integration Engineer", "IoT Cloud Developer", "Cloud Architect", "Integration Lead"],
+      "required_skills": ["Cloud Platforms", "IoT Integration", "APIs", "Scalability"]
+    },
+    {
+      "title": "Smart Home Automation Specialist",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["Home Automation Engineer", "Smart Home Developer", "IoT Specialist", "Automation Lead"],
+      "required_skills": ["Home Automation", "IoT Devices", "Smart Systems", "User Experience"]
+    },
+    {
+      "title": "IoT Test Engineer",
+      "salary_range": {
+        "entry_level": "$60,000 - $80,000",
+        "mid_level": "$80,000 - $110,000",
+        "senior_level": "$110,000 - $150,000"
+      },
+      "roles_offered": ["IoT Tester", "QA Engineer", "Test Automation Specialist", "Testing Lead"],
+      "required_skills": ["Testing Frameworks", "IoT Systems", "Automation", "Debugging"]
+    },
+    {
+      "title": "Connected Vehicle Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Vehicle Systems Engineer", "IoT Developer", "Connected Car Specialist", "Engineering Lead"],
+      "required_skills": ["Vehicle Systems", "IoT Integration", "Networking", "Embedded Systems"]
+    },
+    {
+      "title": "Wearable Tech Developer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Wearable Developer", "IoT Engineer", "Hardware Developer", "Development Lead"],
+      "required_skills": ["Wearable Technology", "Embedded Systems", "UI/UX Design", "Sensor Integration"]
+    },
+    {
+      "title": "IoT Data Analyst",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["IoT Data Specialist", "Data Analyst", "Analytics Engineer", "Data Lead"],
+      "required_skills": ["Data Analysis", "IoT Systems", "Big Data Tools", "Visualization"]
+    },
+    {
+      "title": "Real-time Systems Developer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Real-time Developer", "Systems Engineer", "Embedded Developer", "Development Lead"],
+      "required_skills": ["Real-Time Systems", "Embedded Programming", "Concurrency", "Debugging"]
+    },
+    {
+      "title": "Edge Computing Specialist",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Edge Computing Engineer", "IoT Edge Developer", "Cloud Engineer", "Edge Architect"],
+      "required_skills": ["Edge Computing", "IoT Systems", "Cloud Platforms", "Real-Time Processing"]
+    },
+    {
+      "title": "IoT AI/ML Engineer",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["AI/ML Engineer", "IoT Developer", "Machine Learning Specialist", "AI Lead"],
+      "required_skills": ["AI/ML Algorithms", "IoT Systems", "Data Analytics", "Programming"]
+    },
+    {
+      "title": "Digital Twin Specialist",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Digital Twin Engineer", "Simulation Specialist", "IoT Developer", "Twin Architect"],
+      "required_skills": ["Digital Twin Technology", "Simulation", "IoT Systems", "Data Modeling"]
+    },
+    {
+      "title": "Smart Grid Engineer",
+      "salary_range": {
+        "entry_level": "$75,000 - $95,000",
+        "mid_level": "$95,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Grid Engineer", "Energy Systems Developer", "IoT Engineer", "Grid Architect"],
+      "required_skills": ["Smart Grids", "Energy Management", "IoT Systems", "Automation"]
+    },
+    {
+      "title": "LPWAN/LoRaWAN Engineer",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["LPWAN Engineer", "LoRaWAN Specialist", "Wireless Engineer", "Network Architect"],
+      "required_skills": ["LPWAN Protocols", "LoRaWAN", "Wireless Communication", "IoT Networks"]
+    },
+    {
+      "title": "IoT Platform Engineer",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Platform Engineer", "IoT Developer", "Cloud Engineer", "Platform Architect"],
+      "required_skills": ["IoT Platforms", "Cloud Services", "APIs", "Scalability"]
+    },
+    {
+      "title": "IoT Business Analyst",
+      "salary_range": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$90,000 - $130,000",
+        "senior_level": "$130,000 - $170,000"
+      },
+      "roles_offered": ["Business Analyst", "IoT Consultant", "Strategy Analyst", "Business Lead"],
+      "required_skills": ["Business Analysis", "IoT Systems", "Market Research", "Stakeholder Communication"]
+    },
+    {
+      "title": "IoT Solutions Consultant",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["IoT Consultant", "Solutions Architect", "Business Advisor", "Consulting Lead"],
+      "required_skills": ["IoT Solutions", "Client Communication", "Problem Solving", "Technical Knowledge"]
+    },
+    {
+      "title": "Robotics and IoT Integrator",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Robotics Engineer", "IoT Integrator", "Automation Specialist", "Integration Lead"],
+      "required_skills": ["Robotics", "IoT Systems", "Automation", "Embedded Systems"]
+    },
+    {
+      "title": "Healthcare IoT Specialist",
+      "salary_range": {
+        "entry_level": "$80,000 - $100,000",
+        "mid_level": "$100,000 - $140,000",
+        "senior_level": "$140,000 - $180,000"
+      },
+      "roles_offered": ["Healthcare IoT Engineer", "Medical Device Developer", "IoT Specialist", "Healthcare Lead"],
+      "required_skills": ["Healthcare Systems", "IoT Devices", "Patient Monitoring", "Data Security"]
+    },
+    {
+      "title": "IoT UI/UX Designer",
+      "salary_range": {
+        "entry_level": "$65,000 - $85,000",
+        "mid_level": "$85,000 - $120,000",
+        "senior_level": "$120,000 - $160,000"
+      },
+      "roles_offered": ["UI/UX Designer", "IoT Designer", "Interaction Designer", "Design Lead"],
+      "required_skills": ["UI/UX Design", "Prototyping", "User Research", "IoT Systems"]
+    },
+    {
+      "title": "IoT Product Manager",
+      "salary_range": {
+        "entry_level": "$85,000 - $105,000",
+        "mid_level": "$105,000 - $145,000",
+        "senior_level": "$145,000 - $190,000"
+      },
+      "roles_offered": ["Product Manager", "IoT Product Owner", "Product Lead", "Head of IoT Products"],
+      "required_skills": ["Product Management", "IoT Systems", "Stakeholder Communication", "Agile Methodologies"]
+    }
+  ]
+}

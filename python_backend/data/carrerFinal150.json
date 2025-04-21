@@ -1,0 +1,604 @@
+{
+  "careers": [
+    {
+      "title": "Software Developer",
+      "description": "Designs, develops, and maintains software applications using programming languages and frameworks. Works on creating solutions that meet user requirements."
+    },
+    {
+      "title": "Full Stack Developer",
+      "description": "Develops both frontend (user interface) and backend (server-side logic) components of web applications, ensuring seamless functionality."
+    },
+    {
+      "title": "Frontend Developer",
+      "description": "Focuses on building the visual and interactive parts of websites or applications, ensuring a smooth user experience."
+    },
+    {
+      "title": "Backend Developer",
+      "description": "Handles server-side development, including databases, APIs, and application logic, to support frontend interactions."
+    },
+    {
+      "title": "Web Developer",
+      "description": "Creates and maintains websites, ensuring they are functional, responsive, and optimized for performance."
+    },
+    {
+      "title": "Mobile App Developer",
+      "description": "Specializes in developing applications for mobile devices, focusing on platforms like iOS and Android."
+    },
+    {
+      "title": "Game Developer",
+      "description": "Designs and develops video games, working on game mechanics, graphics, and overall gameplay experience."
+    },
+    {
+      "title": "Embedded Systems Engineer",
+      "description": "Works on designing and implementing software for embedded systems, such as microcontrollers and IoT devices."
+    },
+    {
+      "title": "QA Engineer / Tester",
+      "description": "Ensures software quality by testing applications for bugs, errors, and usability issues before release."
+    },
+    {
+      "title": "DevOps Engineer",
+      "description": "Manages the integration of development and operations, automating processes to improve software delivery and infrastructure management."
+    },
+    {
+      "title": "Database Administrator",
+      "description": "Manages and maintains databases, ensuring data integrity, security, and efficient access."
+    },
+    {
+      "title": "Cloud Engineer",
+      "description": "Designs, deploys, and manages cloud-based systems and services, ensuring scalability and reliability."
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "description": "Ensures the reliability and performance of software systems through automation and monitoring."
+    },
+    {
+      "title": "Systems Engineer",
+      "description": "Designs and manages complex IT systems, integrating hardware and software solutions."
+    },
+    {
+      "title": "UI/UX Designer",
+      "description": "Focuses on creating intuitive and visually appealing user interfaces and experiences for digital products."
+    },
+    {
+      "title": "Product Manager",
+      "description": "Oversees the development and success of a product, coordinating between teams to meet business goals."
+    },
+    {
+      "title": "Technical Support Engineer",
+      "description": "Provides technical assistance and troubleshooting to resolve customer issues with software or hardware."
+    },
+    {
+      "title": "Network Administrator",
+      "description": "Manages and maintains computer networks, ensuring connectivity and security."
+    },
+    {
+      "title": "IT Consultant",
+      "description": "Advises businesses on how to use IT to meet their goals, optimizing systems and processes."
+    },
+    {
+      "title": "Data Analyst",
+      "description": "Analyzes data to extract insights, helping organizations make informed decisions."
+    },
+    {
+      "title": "Business Analyst",
+      "description": "Evaluates business processes and systems, recommending improvements to enhance efficiency."
+    },
+    {
+      "title": "IT Project Manager",
+      "description": "Leads IT projects, ensuring they are completed on time, within budget, and meet objectives."
+    },
+    {
+      "title": "Database Architect",
+      "description": "Designs and structures databases, ensuring they are scalable, secure, and efficient."
+    },
+    {
+      "title": "Application Support Engineer",
+      "description": "Provides technical support for software applications, resolving issues and improving functionality."
+    },
+    {
+      "title": "Computer Systems Analyst",
+      "description": "Studies computer systems and processes, recommending improvements to increase efficiency."
+    },
+    {
+      "title": "Desktop Application Developer",
+      "description": "Develops software applications that run on desktop operating systems like Windows or macOS."
+    },
+    {
+      "title": "Software Architect",
+      "description": "Designs the overall structure of software systems, ensuring they are scalable and maintainable."
+    },
+    {
+      "title": "Release Manager",
+      "description": "Manages the process of releasing software updates, ensuring smooth deployment and minimal disruption."
+    },
+    {
+      "title": "Automation Engineer",
+      "description": "Develops automated systems and processes to improve efficiency and reduce manual labor."
+    },
+    {
+      "title": "Technical Writer",
+      "description": "Creates documentation, manuals, and guides to help users understand and use technical products."
+    },
+    {
+      "title": "VLSI Design Engineer",
+      "description": "Designs and develops integrated circuits and semiconductor devices for electronics."
+    },
+    {
+      "title": "SAP Consultant",
+      "description": "Implements and optimizes SAP software solutions for businesses, ensuring alignment with organizational needs."
+    },
+    {
+      "title": "PLM Engineer",
+      "description": "Manages product lifecycle management systems, ensuring efficient design, production, and maintenance of products."
+    },
+    {
+      "title": "Mainframe Developer",
+      "description": "Develops and maintains applications that run on mainframe systems, often used in banking and government sectors."
+    },
+    {
+      "title": "Solutions Architect",
+      "description": "Designs comprehensive solutions that address specific business needs, integrating various technologies."
+    },
+    {
+      "title": "Tech Evangelist",
+      "description": "Promotes technology solutions, educating others about their benefits and encouraging adoption."
+    },
+    {
+      "title": "Data Center Engineer",
+      "description": "Manages and maintains data center infrastructure, ensuring uptime and performance."
+    },
+    {
+      "title": "Technical Recruiter",
+      "description": "Recruits and evaluates candidates for technical roles, understanding the skills required for each position."
+    },
+    {
+      "title": "AR/VR Developer",
+      "description": "Develops augmented reality (AR) and virtual reality (VR) applications, creating immersive experiences."
+    },
+    {
+      "title": "Integration Engineer",
+      "description": "Ensures different software systems and components work together seamlessly."
+    },
+    {
+      "title": "Platform Engineer",
+      "description": "Designs and manages platforms that enable the development and deployment of software applications."
+    },
+    {
+      "title": "SCM Engineer",
+      "description": "Manages source code and version control systems, ensuring efficient collaboration among developers."
+    },
+    {
+      "title": "Build and Release Engineer",
+      "description": "Automates the build and release processes for software applications, ensuring timely delivery."
+    },
+    {
+      "title": "System Administrator",
+      "description": "Manages and maintains computer systems, ensuring they are secure and operational."
+    },
+    {
+      "title": "Game Tester",
+      "description": "Tests video games for bugs, glitches, and other issues, ensuring a smooth gaming experience."
+    },
+    {
+      "title": "Firmware Engineer",
+      "description": "Develops and maintains firmware for hardware devices, enabling them to function correctly."
+    },
+    {
+      "title": "Compiler Engineer",
+      "description": "Develops compilers and interpreters, translating high-level code into machine-readable instructions."
+    },
+    {
+      "title": "Version Control Specialist",
+      "description": "Manages version control systems, ensuring efficient tracking and collaboration on code changes."
+    },
+    {
+      "title": "Middleware Developer",
+      "description": "Develops middleware that connects different software systems, enabling communication and data exchange."
+    },
+    {
+      "title": "IT Auditor",
+      "description": "Evaluates IT systems and processes to ensure compliance with policies, regulations, and best practices."
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "description": "Designs and implements machine learning models, solving complex problems with data-driven approaches."
+    },
+    {
+      "title": "AI Research Scientist",
+      "description": "Conducts research to advance artificial intelligence technologies and develop new algorithms."
+    },
+    {
+      "title": "Data Scientist",
+      "description": "Extracts insights from large datasets using statistical methods and machine learning techniques."
+    },
+    {
+      "title": "NLP Engineer",
+      "description": "Develops natural language processing systems, enabling machines to understand and generate human language."
+    },
+    {
+      "title": "Deep Learning Engineer",
+      "description": "Designs and trains deep neural networks to solve complex AI problems, such as image recognition."
+    },
+    {
+      "title": "Computer Vision Engineer",
+      "description": "Develops systems that enable machines to interpret and analyze visual data from the world."
+    },
+    {
+      "title": "AI Product Manager",
+      "description": "Manages the development and success of AI-powered products, aligning them with business goals."
+    },
+    {
+      "title": "Robotics Engineer",
+      "description": "Designs and builds robots, integrating hardware and software to perform specific tasks."
+    },
+    {
+      "title": "Research Scientist - AI",
+      "description": "Conducts advanced research in artificial intelligence, exploring new theories and applications."
+    },
+    {
+      "title": "AI Ethics Researcher",
+      "description": "Studies the ethical implications of AI technologies, ensuring responsible development and use."
+    },
+    {
+      "title": "Data Science Consultant",
+      "description": "Advises organizations on how to leverage data science to solve business problems and drive growth."
+    },
+    {
+      "title": "AI Software Developer",
+      "description": "Develops software applications powered by artificial intelligence, integrating AI models into real-world solutions."
+    },
+    {
+      "title": "AI Trainer (for LLMs, CV, etc.)",
+      "description": "Trains AI models using labeled datasets, ensuring they perform accurately and effectively."
+    },
+    {
+      "title": "MLOps Engineer",
+      "description": "Manages the deployment, monitoring, and scaling of machine learning models in production environments."
+    },
+    {
+      "title": "Cognitive Computing Developer",
+      "description": "Develops cognitive computing systems that mimic human thought processes in decision-making."
+    },
+    {
+      "title": "Autonomous Vehicle Engineer",
+      "description": "Designs and develops self-driving vehicles, integrating AI, sensors, and robotics."
+    },
+    {
+      "title": "Reinforcement Learning Researcher",
+      "description": "Conducts research on reinforcement learning algorithms, enabling machines to learn through trial and error."
+    },
+    {
+      "title": "Generative AI Engineer",
+      "description": "Develops generative AI models, such as GANs, to create realistic images, text, or other content."
+    },
+    {
+      "title": "Human-Centered AI Specialist",
+      "description": "Designs AI systems that prioritize human interaction and usability, ensuring ethical and inclusive outcomes."
+    },
+    {
+      "title": "Biomedical Data Scientist",
+      "description": "Applies data science techniques to biomedical data, advancing healthcare and medical research."
+    },
+    {
+      "title": "Speech Recognition Engineer",
+      "description": "Develops systems that enable machines to recognize and process human speech."
+    },
+    {
+      "title": "AI Developer in Gaming",
+      "description": "Integrates AI technologies into video games, enhancing gameplay and realism."
+    },
+    {
+      "title": "AI in Finance Analyst",
+      "description": "Uses AI to analyze financial data, detect fraud, and optimize investment strategies."
+    },
+    {
+      "title": "AI for Healthcare Specialist",
+      "description": "Develops AI solutions for healthcare applications, such as diagnostics and personalized medicine."
+    },
+    {
+      "title": "Recommendation System Engineer",
+      "description": "Designs recommendation algorithms, such as those used in e-commerce and streaming platforms."
+    },
+    {
+      "title": "AI Solutions Architect",
+      "description": "Designs end-to-end AI solutions, integrating models and technologies to meet business needs."
+    },
+    {
+      "title": "Language Model Engineer",
+      "description": "Develops and fine-tunes language models, such as those used in chatbots and translation tools."
+    },
+    {
+      "title": "AI Hardware Engineer",
+      "description": "Designs hardware optimized for AI workloads, such as GPUs and specialized chips."
+    },
+    {
+      "title": "Edge AI Developer",
+      "description": "Develops AI models that run on edge devices, enabling real-time processing without cloud dependency."
+    },
+    {
+      "title": "Computer Vision Analyst",
+      "description": "Analyzes visual data to extract meaningful insights, such as object detection and facial recognition."
+    },
+    {
+      "title": "AI-based Personal Assistant Dev",
+      "description": "Develops AI-powered personal assistants, such as voice-activated smart speakers."
+    },
+    {
+      "title": "Data Labeling & Annotation Expert",
+      "description": "Labels and annotates datasets for training machine learning models, ensuring accuracy and relevance."
+    },
+    {
+      "title": "Federated Learning Engineer",
+      "description": "Develops federated learning systems, enabling collaborative model training without sharing raw data."
+    },
+    {
+      "title": "AI Compliance Officer",
+      "description": "Ensures AI systems comply with legal, ethical, and regulatory standards."
+    },
+    {
+      "title": "AI Educator / Instructor",
+      "description": "Teaches AI concepts and technologies, preparing students and professionals for careers in AI."
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "description": "Monitors and protects computer systems from cyber threats, identifying vulnerabilities and mitigating risks."
+    },
+    {
+      "title": "Penetration Tester (Ethical Hacker)",
+      "description": "Simulates cyberattacks to identify weaknesses in systems, helping organizations improve their defenses."
+    },
+    {
+      "title": "Security Engineer",
+      "description": "Designs and implements security measures to protect computer systems and networks from attacks."
+    },
+    {
+      "title": "SOC Analyst (Security Operations Center)",
+      "description": "Monitors and responds to security incidents, ensuring timely detection and resolution of threats."
+    },
+    {
+      "title": "Malware Analyst",
+      "description": "Analyzes malicious software to understand its behavior and develop countermeasures."
+    },
+    {
+      "title": "Network Security Engineer",
+      "description": "Protects network infrastructure from cyber threats, ensuring secure communication and data transfer."
+    },
+    {
+      "title": "Cybersecurity Consultant",
+      "description": "Advises organizations on cybersecurity strategies, helping them mitigate risks and protect assets."
+    },
+    {
+      "title": "Forensic Analyst",
+      "description": "Investigates cybercrimes by analyzing digital evidence, reconstructing events, and identifying perpetrators."
+    },
+    {
+      "title": "Application Security Engineer",
+      "description": "Ensures the security of software applications, identifying and fixing vulnerabilities."
+    },
+    {
+      "title": "Information Security Manager",
+      "description": "Oversees an organization's information security program, ensuring compliance with policies and regulations."
+    },
+    {
+      "title": "Threat Intelligence Analyst",
+      "description": "Collects and analyzes data on cyber threats, providing actionable insights to prevent attacks."
+    },
+    {
+      "title": "Incident Response Specialist",
+      "description": "Responds to and manages cybersecurity incidents, minimizing damage and restoring normal operations."
+    },
+    {
+      "title": "Risk & Compliance Analyst",
+      "description": "Assesses risks and ensures compliance with cybersecurity regulations and standards."
+    },
+    {
+      "title": "Cloud Security Engineer",
+      "description": "Secures cloud-based systems and services, protecting data and applications hosted in the cloud."
+    },
+    {
+      "title": "Identity & Access Management Engineer",
+      "description": "Manages user identities and access permissions, ensuring secure authentication and authorization."
+    },
+    {
+      "title": "Red Team Member",
+      "description": "Simulates real-world attacks to test an organization's defenses, identifying gaps and weaknesses."
+    },
+    {
+      "title": "Blue Team Analyst",
+      "description": "Defends against simulated attacks, analyzing and responding to threats in real-time."
+    },
+    {
+      "title": "Security Auditor",
+      "description": "Evaluates an organization's security posture, identifying vulnerabilities and recommending improvements."
+    },
+    {
+      "title": "GRC Analyst (Governance, Risk & Compliance)",
+      "description": "Ensures governance, risk management, and compliance with cybersecurity policies and regulations."
+    },
+    {
+      "title": "Cryptographer",
+      "description": "Develops cryptographic algorithms and protocols to secure data and communications."
+    },
+    {
+      "title": "Secure Software Developer",
+      "description": "Develops software with a focus on security, preventing vulnerabilities and ensuring robust protection."
+    },
+    {
+      "title": "Security Architect",
+      "description": "Designs and implements secure system architectures, ensuring comprehensive protection against threats."
+    },
+    {
+      "title": "Cybersecurity Educator / Trainer",
+      "description": "Teaches cybersecurity principles and practices, preparing individuals for careers in the field."
+    },
+    {
+      "title": "CISO (Chief Information Security Officer)",
+      "description": "Leads an organization's cybersecurity strategy, ensuring the protection of sensitive data and systems."
+    },
+    {
+      "title": "Cybersecurity Policy Analyst",
+      "description": "Develops and evaluates cybersecurity policies, ensuring alignment with organizational goals."
+    },
+    {
+      "title": "Cybersecurity Researcher",
+      "description": "Conducts research on emerging cybersecurity threats and technologies, advancing the field."
+    },
+    {
+      "title": "IoT Security Specialist",
+      "description": "Secures Internet of Things (IoT) devices and networks, protecting against vulnerabilities and attacks."
+    },
+    {
+      "title": "Blockchain Security Expert",
+      "description": "Ensures the security of blockchain systems, protecting against fraud and unauthorized access."
+    },
+    {
+      "title": "Security DevOps (DevSecOps) Engineer",
+      "description": "Integrates security practices into DevOps workflows, ensuring secure and efficient software delivery."
+    },
+    {
+      "title": "Email Security Analyst",
+      "description": "Protects email systems from phishing, malware, and other threats, ensuring secure communication."
+    },
+    {
+      "title": "Privacy Engineer",
+      "description": "Designs systems and processes to protect user privacy, ensuring compliance with privacy regulations."
+    },
+    {
+      "title": "Mobile Security Expert",
+      "description": "Secures mobile devices and applications, protecting against vulnerabilities and attacks."
+    },
+    {
+      "title": "Zero Trust Architect",
+      "description": "Designs and implements zero trust security models, ensuring strict access controls and continuous verification."
+    },
+    {
+      "title": "Vulnerability Analyst",
+      "description": "Identifies and assesses vulnerabilities in systems, recommending remediation strategies."
+    },
+    {
+      "title": "Bug Bounty Hunter",
+      "description": "Identifies and reports security vulnerabilities in exchange for rewards, helping organizations improve their defenses."
+    },
+    {
+      "title": "IoT Developer",
+      "description": "Develops applications and systems for Internet of Things (IoT) devices, enabling connectivity and automation."
+    },
+    {
+      "title": "IoT Systems Engineer",
+      "description": "Designs and manages IoT systems, ensuring seamless integration and communication between devices."
+    },
+    {
+      "title": "Embedded Firmware Developer",
+      "description": "Develops firmware for embedded systems, enabling them to perform specific functions efficiently."
+    },
+    {
+      "title": "IoT Architect",
+      "description": "Designs the overall architecture of IoT systems, ensuring scalability, security, and reliability."
+    },
+    {
+      "title": "IoT Hardware Engineer",
+      "description": "Designs and develops hardware components for IoT devices, ensuring compatibility and performance."
+    },
+    {
+      "title": "Smart Devices Application Developer",
+      "description": "Develops applications for smart devices, such as wearables and home automation systems."
+    },
+    {
+      "title": "Wireless Communication Engineer",
+      "description": "Designs and manages wireless communication systems, enabling data transfer between IoT devices."
+    },
+    {
+      "title": "Embedded Linux Developer",
+      "description": "Develops and maintains Linux-based systems for embedded devices, ensuring efficient operation."
+    },
+    {
+      "title": "Industrial IoT (IIoT) Engineer",
+      "description": "Develops IoT solutions for industrial applications, such as manufacturing and logistics."
+    },
+    {
+      "title": "IoT Security Analyst",
+      "description": "Ensures the security of IoT systems, protecting against vulnerabilities and cyber threats."
+    },
+    {
+      "title": "Sensor Network Engineer",
+      "description": "Designs and manages sensor networks, enabling data collection and analysis in IoT systems."
+    },
+    {
+      "title": "IoT Cloud Integration Engineer",
+      "description": "Integrates IoT systems with cloud platforms, enabling data storage, processing, and analytics."
+    },
+    {
+      "title": "Smart Home Automation Specialist",
+      "description": "Develops and implements smart home automation systems, enhancing convenience and energy efficiency."
+    },
+    {
+      "title": "IoT Test Engineer",
+      "description": "Tests IoT devices and systems, ensuring functionality, reliability, and security."
+    },
+    {
+      "title": "Connected Vehicle Engineer",
+      "description": "Develops IoT solutions for connected vehicles, enabling features like navigation and remote diagnostics."
+    },
+    {
+      "title": "Wearable Tech Developer",
+      "description": "Designs and develops wearable technology, such as fitness trackers and smartwatches."
+    },
+    {
+      "title": "IoT Data Analyst",
+      "description": "Analyzes data generated by IoT devices, extracting insights to improve decision-making."
+    },
+    {
+      "title": "Real-time Systems Developer",
+      "description": "Develops systems that process data and respond in real-time, critical for applications like IoT."
+    },
+    {
+      "title": "Edge Computing Specialist",
+      "description": "Designs and implements edge computing solutions, enabling data processing closer to the source."
+    },
+    {
+      "title": "IoT AI/ML Engineer",
+      "description": "Integrates AI and machine learning into IoT systems, enabling predictive analytics and automation."
+    },
+    {
+      "title": "Digital Twin Specialist",
+      "description": "Creates digital twins of physical systems, enabling simulation, analysis, and optimization."
+    },
+    {
+      "title": "Smart Grid Engineer",
+      "description": "Develops IoT solutions for smart grids, enabling efficient energy distribution and consumption."
+    },
+    {
+      "title": "LPWAN/LoRaWAN Engineer",
+      "description": "Designs and manages low-power wide-area networks (LPWAN) for IoT applications, ensuring long-range communication."
+    },
+    {
+      "title": "IoT Platform Engineer",
+      "description": "Develops and maintains IoT platforms, enabling device management and data analytics."
+    },
+    {
+      "title": "IoT Business Analyst",
+      "description": "Analyzes business needs and recommends IoT solutions to improve efficiency and innovation."
+    },
+    {
+      "title": "IoT Solutions Consultant",
+      "description": "Advises organizations on IoT strategies, helping them implement and optimize IoT solutions."
+    },
+    {
+      "title": "Robotics and IoT Integrator",
+      "description": "Integrates robotics with IoT systems, enabling advanced automation and control."
+    },
+    {
+      "title": "Healthcare IoT Specialist",
+      "description": "Develops IoT solutions for healthcare applications, such as remote patient monitoring and telemedicine."
+    },
+    {
+      "title": "IoT UI/UX Designer",
+      "description": "Designs user interfaces and experiences for IoT devices and applications, ensuring usability and accessibility."
+    },
+    {
+      "title": "IoT Product Manager",
+      "description": "Manages the development and success of IoT products, aligning them with market needs and business goals."
+    }
+  ]
+}
