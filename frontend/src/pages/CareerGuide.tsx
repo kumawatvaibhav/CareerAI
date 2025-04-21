@@ -1,15 +1,24 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./CareerGuide.module.css";
-
+import NavBar from "@/components/NavBar";
 interface Career {
   id: number;
   name: string;
   category: string;
+  description: string | null;
+  salary_range: {
+    entry_level: string;
+    mid_level: string;
+    senior_level: string;
+  } | null;
+  roles_offered: string[] | null;
+  required_skills: string[] | null;
 }
 
 interface Message {
   role: "user" | "assistant";
   content: string;
+  careers?: Career[];
 }
 
 interface CategorySelections {
@@ -27,6 +36,7 @@ const CareerGuide: React.FC = () => {
   const [showChat, setShowChat] = useState(false);
   const [inputMessage, setInputMessage] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [careers, setCareers] = useState<Career[]>([]);
 
   const categories = {
     "Technical Skills": [
@@ -172,16 +182,46 @@ const CareerGuide: React.FC = () => {
         throw new Error(data.error);
       }
 
+      // Store the careers data
+      setCareers(data.careers);
+
       // Format the careers into a readable message
-      const careersMessage = data.careers
-        .map((career: Career) => `${career.id}. ${career.name}`)
-        .join("\n");
+      const careersMessage = `Based on your selections, here are some career suggestions that might be a good fit for you:\n\n${data.careers
+        .map((career: Career) => {
+          let message = `💼 ${career.name}\n`;
+          if (career.description) {
+            message += `📝 ${career.description}\n`;
+          }
+          if (career.salary_range) {
+            message += `💰 Salary Range:\n`;
+            message += `   • Entry Level: ${career.salary_range.entry_level}\n`;
+            message += `   • Mid Level: ${career.salary_range.mid_level}\n`;
+            message += `   • Senior Level: ${career.salary_range.senior_level}\n`;
+          }
+          if (career.roles_offered && career.roles_offered.length > 0) {
+            message += `🎯 Roles Offered: ${career.roles_offered.join(", ")}\n`;
+          }
+          if (career.required_skills && career.required_skills.length > 0) {
+            message += `🛠️ Required Skills: ${career.required_skills.join(
+              ", "
+            )}\n`;
+          }
+          return message;
+        })
+        .join("\n\n")}`;
 
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
           content: careersMessage,
+          careers: data.careers,
+        },
+        {
+          role: "assistant",
+          content:
+            "Would you like to know more about any of these careers? Just type the name of the career you're interested in, and I'll provide more details!",
+          careers: null,
         },
       ]);
 
@@ -208,6 +248,12 @@ const CareerGuide: React.FC = () => {
     setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
 
     try {
+      // Check if the message is asking about a specific career
+      const careerNames = careers.map((career) => career.name.toLowerCase());
+      const isCareerQuery = careerNames.some((name) =>
+        userMessage.toLowerCase().includes(name)
+      );
+
       const response = await fetch("http://localhost:8000/api/chat", {
         method: "POST",
         headers: {
@@ -216,6 +262,7 @@ const CareerGuide: React.FC = () => {
         body: JSON.stringify({
           message: userMessage,
           messages: messages,
+          isCareerQuery: isCareerQuery,
         }),
       });
 
@@ -224,10 +271,34 @@ const CareerGuide: React.FC = () => {
       }
 
       const data = await response.json();
-      setMessages((prev) => [
-        ...prev,
-        { role: "assistant", content: data.response },
-      ]);
+
+      // If it's a career query, show the response directly
+      if (isCareerQuery) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content: data.response,
+            careers: null,
+          },
+        ]);
+      } else {
+        // For general queries, show the response and ask if they want to know more
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content: data.response,
+            careers: null,
+          },
+          {
+            role: "assistant",
+            content:
+              "Would you like to know more about any of these careers? Just type the name of the career you're interested in!",
+            careers: null,
+          },
+        ]);
+      }
     } catch (error) {
       setMessages((prev) => [
         ...prev,
@@ -240,74 +311,162 @@ const CareerGuide: React.FC = () => {
     }
   };
 
-  return (
-    <div className={styles.careerGuideContainer}>
-      <div className={styles.chatContainer}>
-        <div className={styles.messagesContainer}>
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`${styles.message} ${
-                message.role === "user"
-                  ? styles.userMessage
-                  : styles.assistantMessage
-              }`}
-            >
-              <div className={styles.messageContent}>{message.content}</div>
-            </div>
-          ))}
-          <div ref={messagesEndRef} />
-        </div>
-
-        {!showChat ? (
-          <div className={styles.selectionContainer}>
-            <div className={styles.categorySelectors}>
-              {Object.entries(categories).map(([category, items]) => (
-                <div key={category} className={styles.categoryBox}>
-                  <h3>{category}</h3>
-                  <div className={styles.dropdown}>
-                    {items.map((item) => (
-                      <label key={item} className={styles.dropdownItem}>
-                        <input
-                          type="checkbox"
-                          checked={selections[category].includes(item)}
-                          onChange={() => handleSelect(category, item)}
-                        />
-                        {item}
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <button
-              onClick={getSuggestions}
-              disabled={loading}
-              className={styles.submitButton}
-            >
-              {loading ? "Generating Suggestions..." : "Get Career Suggestions"}
-            </button>
-          </div>
-        ) : (
-          <div className={styles.chatInputContainer}>
-            <input
-              type="text"
-              value={inputMessage}
-              onChange={(e) => setInputMessage(e.target.value)}
-              placeholder="Ask me anything about the suggested careers..."
-              className={styles.chatInput}
-              onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
-            />
-            <button
-              onClick={handleSendMessage}
-              disabled={!inputMessage.trim()}
-              className={styles.sendButton}
-            >
-              Send
-            </button>
+  const renderCareerDetails = (career: Career) => {
+    return (
+      <div className={styles.careerCard}>
+        <h3 className={styles.careerTitle}>{career.name}</h3>
+        {career.description && (
+          <div className={styles.careerSection}>
+            <h4>Description</h4>
+            <p>{career.description}</p>
           </div>
         )}
+        {career.salary_range && (
+          <div className={styles.careerSection}>
+            <h4>Salary Range</h4>
+            <div className={styles.salaryGrid}>
+              <div className={styles.salaryItem}>
+                <span className={styles.salaryLabel}>Entry Level:</span>
+                <span className={styles.salaryValue}>
+                  {career.salary_range.entry_level}
+                </span>
+              </div>
+              <div className={styles.salaryItem}>
+                <span className={styles.salaryLabel}>Mid Level:</span>
+                <span className={styles.salaryValue}>
+                  {career.salary_range.mid_level}
+                </span>
+              </div>
+              <div className={styles.salaryItem}>
+                <span className={styles.salaryLabel}>Senior Level:</span>
+                <span className={styles.salaryValue}>
+                  {career.salary_range.senior_level}
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
+        {career.roles_offered && career.roles_offered.length > 0 && (
+          <div className={styles.careerSection}>
+            <h4>Roles Offered</h4>
+            <div className={styles.tags}>
+              {career.roles_offered.map((role, index) => (
+                <span key={index} className={styles.tag}>
+                  {role}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+        {career.required_skills && career.required_skills.length > 0 && (
+          <div className={styles.careerSection}>
+            <h4>Required Skills</h4>
+            <div className={styles.tags}>
+              {career.required_skills.map((skill, index) => (
+                <span key={index} className={styles.tag}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  return (
+    <div
+      style={{
+        background: "linear-gradient(135deg, #004d40 0%, #00332c 100%)",
+        height: "91vh",
+        marginTop: "64px",
+        padding: "10px",
+      }}
+    >
+      <div
+        className={styles.navbarContainer}
+        style={{
+          background: "white",
+        }}
+      >
+        <NavBar />
+      </div>
+      <div className={styles.container}>
+        <div className={styles.chatContainer}>
+          <div className={styles.messagesContainer}>
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={`${styles.message} ${
+                  message.role === "user"
+                    ? styles.userMessage
+                    : styles.assistantMessage
+                }`}
+              >
+                {message.role === "assistant" && message.careers ? (
+                  <div className={styles.careerDetails}>
+                    {message.careers.map(renderCareerDetails)}
+                  </div>
+                ) : (
+                  <div className={styles.messageContent}>{message.content}</div>
+                )}
+              </div>
+            ))}
+            <div ref={messagesEndRef} />
+          </div>
+
+          {!showChat ? (
+            <div className={styles.selectionContainer}>
+              <div className={styles.categorySelectors}>
+                {Object.entries(categories).map(([category, items]) => (
+                  <div key={category} className={styles.categoryBox}>
+                    <h3>{category}</h3>
+                    <div className={styles.dropdown}>
+                      {items.map((item) => (
+                        <label key={item} className={styles.dropdownItem}>
+                          <input
+                            type="checkbox"
+                            checked={selections[category].includes(item)}
+                            onChange={() => handleSelect(category, item)}
+                          />
+                          {item}
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button
+                onClick={getSuggestions}
+                disabled={loading}
+                className={styles.submitButton}
+              >
+                {loading
+                  ? "Generating Suggestions..."
+                  : "Get Career Suggestions"}
+              </button>
+            </div>
+          ) : (
+            <div className={styles.chatInputContainer}>
+              <input
+                type="text"
+                value={inputMessage}
+                onChange={(e) => setInputMessage(e.target.value)}
+                placeholder="Ask me anything about the suggested careers..."
+                className={styles.chatInput}
+                onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+              />
+              <button
+                onClick={handleSendMessage}
+                disabled={!inputMessage.trim()}
+                className={styles.sendButton}
+              >
+                Send
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
