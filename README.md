@@ -1,92 +1,189 @@
-# CareerAI - Career Guidance and Resume Builder
+# CareerAI - Intelligent Career Guidance System
 
-A modern web application that helps users build professional resumes and receive career guidance using AI-powered insights.
+CareerAI is an intelligent career guidance system that helps users explore and understand various career options based on their skills and interests. The system provides personalized career suggestions and detailed information about different professions in a conversational manner.
 
 ## Features
 
-- Resume Builder with professional templates
-- Career Guidance based on user profiles
-- Modern, responsive UI with dark/light mode support
-- PDF export functionality
-- Interactive form components
-- Real-time validation and feedback
+### 1. Interactive Career Selection
 
-## Tech Stack
+- Select from multiple categories of skills and interests
+- Real-time filtering and search capabilities
+- User-friendly interface with checkboxes and dropdowns
+- Horizontal layout for easy navigation
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**:
-  - Tailwind CSS
-  - shadcn/ui components
-  - Material-UI components
-- **Form Handling**: React Hook Form with Zod validation
-- **State Management**: React Query
-- **Routing**: React Router DOM
-- **PDF Generation**: html2pdf.js
-- **UI Components**:
-  - Radix UI primitives
-  - Material-UI components
-  - Custom components
+### 2. Smart Career Suggestions
 
-## Prerequisites
+- AI-powered career recommendations based on selected skills
+- Detailed career information including:
+  - Job descriptions
+  - Required skills
+  - Salary ranges
+  - Career growth opportunities
+  - Industry demand
 
-- Node.js (Latest LTS version recommended)
-- npm or bun package manager
+### 3. Conversational Interface
 
-## Getting Started
+- WhatsApp-like chat interface
+- Natural language processing for queries
+- Bullet-point formatted responses
+- Context-aware conversations
+- Support for both career-specific and general questions
 
-1. Clone the repository:
+### 4. Modern UI/UX
 
-```sh
-git clone <YOUR_GIT_URL>
-```
+- Clean, modern design with gradient backgrounds
+- Responsive layout
+- Smooth animations and transitions
+- Intuitive navigation
+- Mobile-friendly interface
 
-2. Navigate to the project directory:
+## Technical Stack
 
-```sh
-cd CareerAI
-```
+### Frontend
 
-3. Install dependencies:
+- React.js
+- TypeScript
+- CSS Modules
+- Modern UI components
+- Responsive design
 
-```sh
-npm install
-# or
-bun install
-```
+### Backend
 
-4. Start the development server:
-
-```sh
-npm run dev
-# or
-bun run dev
-```
-
-The application will be available at `http://localhost:5173`
-
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:dev` - Build for development
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
+- Python
+- Flask
+- GROQ API for AI processing
+- JSON data management
+- RESTful API endpoints
 
 ## Project Structure
 
 ```
 CareerAI/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/         # Page components
-│   ├── utils/         # Utility functions
-│   ├── hooks/         # Custom React hooks
-│   ├── lib/           # Library configurations
-│   └── App.tsx        # Main application component
-├── public/            # Static assets
-└── package.json       # Project dependencies and scripts
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   └── CareerGuide.tsx
+│   │   ├── components/
+│   │   └── styles/
+│   └── package.json
+├── python_backend/
+│   ├── main.py
+│   ├── data/
+│   │   ├── carrerFinal150.json
+│   │   └── salaryJobRole150.json
+│   └── requirements.txt
+└── README.md
 ```
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- Python (v3.8 or higher)
+- GROQ API key
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+
+   ```bash
+   cd CareerAI/frontend
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+
+   ```bash
+   cd CareerAI/python_backend
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Create a .env file with your GROQ API key:
+
+   ```
+   GROQ_API_KEY=your_api_key_here
+   ```
+
+5. Start the backend server:
+   ```bash
+   python main.py
+   ```
+
+## Usage Flow
+
+1. **Initial Setup**
+
+   - Launch the application
+   - The system presents categories of skills and interests
+
+2. **Skill Selection**
+
+   - User selects relevant skills and interests
+   - System processes selections in real-time
+   - Submit selections to get career suggestions
+
+3. **Career Exploration**
+
+   - System displays suggested careers
+   - Each career card shows key information
+   - User can ask specific questions about careers
+
+4. **Interactive Chat**
+
+   - User can ask questions about any career
+   - System responds with detailed, bullet-point information
+   - Supports both career-specific and general questions
+   - Maintains conversation context
+
+5. **Follow-up Questions**
+   - Users can ask follow-up questions
+   - System provides relevant, detailed responses
+   - Maintains bullet-point format for clarity
+   - Handles both career-related and general queries
+
+## Response Format
+
+The system provides responses in a clear, bullet-point format:
+
+```
+• [First key point]
+• [Second key point]
+• [Third key point]
+...
+```
+
+For career-specific questions, responses include:
+
+- Career overview
+- Required skills
+- Growth opportunities
+- Day-to-day responsibilities
+- Industry demand
 
 ## Contributing
 
@@ -99,3 +196,9 @@ CareerAI/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- GROQ API for AI capabilities
+- React and Flask communities
+- All contributors to this project
