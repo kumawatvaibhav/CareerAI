@@ -23,6 +23,77 @@ const handleResponse = async (response: Response) => {
   return data;
 };
 
+// API service for users
+export const userService = {
+  // Get user profile
+  getUserProfilebyId: async (id: string) => {
+    try {
+      const token = getToken();
+      if (!token) throw new Error('Authentication required');
+
+      const response = await fetch(`${API_URL}/users/${id}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      return await handleResponse(response);
+    }
+    catch (error) {
+      console.error('Error fetching user profile:', error);
+      return null;
+    }
+  },
+
+  // Update user profile
+  updateUserProfile: async (profileData: { name?: string; email?: string; password?: string }) => {
+    try {
+      const token = getToken();
+      if (!token) throw new Error('Authentication required');
+
+      const response = await fetch(`${API_URL}/users/updateProfile`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(profileData),
+      });
+
+      const data = await handleResponse(response);
+      toast.success('Profile updated successfully');
+      return data;
+    } catch (error) {
+      console.error('Error updating user profile:', error);
+      throw error;
+    }
+  },
+
+  // Delete user account
+  deleteUserAccount: async () => {
+    try {
+      const token = getToken();
+      if (!token) throw new Error('Authentication required');
+
+      const response = await fetch(`${API_URL}/users/deleteAccount`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      await handleResponse(response);
+      toast.success('Account deleted successfully');
+      return true;
+    } catch (error) {
+      console.error('Error deleting user account:', error);
+      throw error;
+    }
+  },
+};
+
 // API service for resumes
 export const resumeService = {
   // Get all resumes
@@ -68,12 +139,39 @@ export const resumeService = {
   },
   
   // Create resume
-  createResume: async (resumeData: { title: string, content: any }) => {
+  createResume: async (resumeData: { 
+    name: string;
+    template: string;
+    personalInfo: {
+      firstName: string;
+      lastName: string;
+      email: string;
+      phone?: string;
+      location?: string;
+      summary?: string;
+    };
+    experience: Array<{
+      company: string;
+      position: string;
+      startDate: string;
+      endDate: string;
+      description: string;
+    }>;
+    education: Array<{
+      institution: string;
+      degree: string;
+      field: string;
+      startDate: string;
+      endDate: string;
+      gpa?: string;
+    }>;
+    skills: string[];
+  }) => {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
       
-      const response = await fetch(`${API_URL}/resumes/createResume`, {
+      const response = await fetch(`${API_URL}/resumes`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -83,7 +181,7 @@ export const resumeService = {
       });
       
       const data = await handleResponse(response);
-      toast.success('Resume created successfully');
+      toast.success('Resume saved successfully');
       return data;
     } catch (error) {
       console.error('Error creating resume:', error);

@@ -1,8 +1,9 @@
 import { Box, Paper, Typography, Button, TextField } from "@mui/material";
 import { ResumeData, TemplateType } from "../utils/resume";
 import html2pdf from "html2pdf.js";
-import { Download as DownloadIcon } from "@mui/icons-material";
+import { Download as DownloadIcon, Save as SaveIcon } from "@mui/icons-material";
 import { useEffect } from "react";
+import { resumeService } from "../services/api";
 
 interface ResumePreviewProps {
   data: ResumeData;
@@ -66,6 +67,23 @@ const ResumePreview = ({
         element.classList.remove("pdf-generation");
         document.body.classList.remove("pdf-generation");
       });
+  };
+
+  const handleSave = async () => {
+    try {
+      const resumeData = {
+        name: resumeName || `${data.personalInfo.firstName}_${data.personalInfo.lastName}_Resume`,
+        template: selectedTemplate,
+        personalInfo: data.personalInfo,
+        experience: data.experience,
+        education: data.education,
+        skills: data.skills
+      };
+
+      await resumeService.createResume(resumeData);
+    } catch (error) {
+      console.error('Error saving resume:', error);
+    }
   };
 
   // Add this at the top level of your component, before the template renders
@@ -696,6 +714,27 @@ const ResumePreview = ({
               }}
               helperText="Leave empty for default name"
             />
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleSave}
+              startIcon={<SaveIcon />}
+              sx={{
+                borderRadius: 2,
+                px: 2,
+                py: 0.75,
+                textTransform: "none",
+                fontWeight: 600,
+                boxShadow: 2,
+                "&:hover": {
+                  boxShadow: 4,
+                  transform: "translateY(-1px)",
+                  transition: "all 0.2s ease-in-out",
+                },
+              }}
+            >
+              Save Resume
+            </Button>
             <Button
               variant="contained"
               color="primary"
