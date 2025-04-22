@@ -88,10 +88,12 @@ def clean_response(text):
     return '\n'.join(lines)
 
 def match_career_data(career_names, career_data, salary_data):
-    """Match career names with data from JSON files"""
+    """Match career names with data from JSON files and handle unmatched careers"""
     matched_careers = []
+    unmatched_careers = []
     logger.info(f"Starting to match {len(career_names)} careers with JSON data")
     
+    # First pass: Try to match with JSON data
     for career in career_names:
         logger.info(f"Matching career: {career['name']}")
         matched_career = {
@@ -119,19 +121,125 @@ def match_career_data(career_names, career_data, salary_data):
                 matched_career["roles_offered"] = salary_item["roles_offered"]
                 matched_career["required_skills"] = salary_item["required_skills"]
                 break
-                
-        matched_careers.append(matched_career)
-        logger.info(f"Completed matching for: {career['name']}")
+
+        # Check if all fields are filled
+        if all([matched_career["description"], matched_career["salary_range"], 
+                matched_career["roles_offered"], matched_career["required_skills"]]):
+            matched_careers.append(matched_career)
+        else:
+            unmatched_careers.append(career)
+
+    # Second pass: Get data for unmatched careers from API
+    if unmatched_careers:
+        logger.info(f"Getting data for {len(unmatched_careers)} unmatched careers from API")
+        unmatched_names = [career["name"] for career in unmatched_careers]
         
+        # Create a more structured prompt for the API
+        prompt = f"""
+        You are a career information expert. Please provide detailed information about these careers: {', '.join(unmatched_names)}
+        
+        For each career, provide the following information in a valid JSON array format:
+        [
+            {{
+                "name": "Career Name",
+                "description": "A detailed description of what this career involves",
+                "salary_range": {{
+                    "entry_level": "$X - $Y",
+                    "mid_level": "$X - $Y",
+                    "senior_level": "$X - $Y"
+                }},
+                "roles_offered": ["Role 1", "Role 2", "Role 3", "Role 4"],
+                "required_skills": ["Skill 1", "Skill 2", "Skill 3", "Skill 4"]
+            }}
+        ]
+        
+        Important rules:
+        1. Return ONLY the JSON array, nothing else
+        2. Ensure the JSON is valid and properly formatted
+        3. Use realistic salary ranges based on current market rates
+        4. Include 4 relevant roles and 4 key skills for each career
+        5. Make descriptions detailed but concise
+        6. Keep all career names exactly as provided
+        7. Do not include any additional text or explanations
+        """
+        
+        try:
+            response = client.chat.completions.create(
+                model="deepseek-r1-distill-llama-70b",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7,
+                max_tokens=4096
+            )
+            
+            # Clean the response to ensure it's valid JSON
+            content = response.choices[0].message.content.strip()
+            
+            # Remove any markdown code block markers
+            if content.startswith("```json"):
+                content = content[7:]
+            if content.endswith("```"):
+                content = content[:-3]
+            content = content.strip()
+            
+            # Remove any <think> tags and their content
+            content = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL)
+            content = content.strip()
+            
+            try:
+                api_data = json.loads(content)
+                logger.info(f"Successfully parsed API response for {len(api_data)} careers")
+                
+                # Add API-provided careers to matched_careers
+                for career_data in api_data:
+                    # Find the original career to get its ID and category
+                    original_career = next((c for c in unmatched_careers if c["name"].lower() == career_data["name"].lower()), None)
+                    
+                    if original_career:
+                        matched_careers.append({
+                            "id": original_career["id"],
+                            "name": career_data["name"],
+                            "category": original_career["category"],
+                            "description": career_data["description"],
+                            "salary_range": career_data["salary_range"],
+                            "roles_offered": career_data["roles_offered"],
+                            "required_skills": career_data["required_skills"]
+                        })
+                    else:
+                        # If for some reason we can't find the original career, create a new entry
+                        matched_careers.append({
+                            "id": len(matched_careers) + 1,
+                            "name": career_data["name"],
+                            "category": "Technology",
+                            "description": career_data["description"],
+                            "salary_range": career_data["salary_range"],
+                            "roles_offered": career_data["roles_offered"],
+                            "required_skills": career_data["required_skills"]
+                        })
+                        
+            except json.JSONDecodeError as e:
+                logger.error(f"Failed to parse API response as JSON: {str(e)}")
+                logger.error(f"Raw API response: {content}")
+                
+        except Exception as e:
+            logger.error(f"Error getting API data for unmatched careers: {str(e)}")
+    
+    # Sort the careers by their original IDs to maintain order
+    matched_careers.sort(key=lambda x: x["id"])
+    
+    # Ensure we have exactly 10 careers
+    if len(matched_careers) > 10:
+        matched_careers = matched_careers[:10]
+    elif len(matched_careers) < 10:
+        logger.warning(f"Only found {len(matched_careers)} careers, expected 10")
+    
     logger.info(f"Completed matching all careers. Found matches for {len(matched_careers)} careers")
     return matched_careers
 
 @app.route('/api/suggestions', methods=['POST'])
 def get_suggestions():
     try:
-        logger.info("Received request at /api/suggestions")
         data = request.get_json()
-        logger.info(f"Request data: {data}")
+        logger.info(f"Input selections: {data}")
         
         if not data:
             logger.error("No data provided in request")
@@ -142,11 +250,8 @@ def get_suggestions():
         for category, items in data.items():
             all_selections.extend(items)
             
-        logger.info(f"Processed selections: {all_selections}")
-        
         # Load JSON data
         career_data, salary_data = load_json_data()
-        logger.info("JSON data loaded successfully")
         
         # Create prompt for GROQ
         prompt = f"""
@@ -165,9 +270,6 @@ def get_suggestions():
         Do not number the career names.
         """
         
-        logger.info("Sending request to GROQ API")
-        logger.debug(f"Prompt: {prompt}")
-        
         try:
             # Get response from GROQ
             response = client.chat.completions.create(
@@ -177,19 +279,11 @@ def get_suggestions():
                 max_tokens=4096
             )
             
-            logger.info("Successfully received response from GROQ")
-            
             # Process the response
             content = response.choices[0].message.content
-            logger.info(f"Raw GROQ response: {content}")
-            
-            # Clean the response
             content = clean_response(content)
-            logger.info(f"Cleaned response: {content}")
-            
-            # Split the response into lines and take only the first 10
             career_names = [line.strip() for line in content.split('\n') if line.strip()][:10]
-            logger.info(f"Extracted career names: {career_names}")
+            logger.info(f"AI suggested careers: {career_names}")
             
             if not career_names:
                 logger.error("No career names extracted from response")
@@ -204,11 +298,11 @@ def get_suggestions():
                 }
                 for i, career in enumerate(career_names)
             ]
-            logger.info(f"Created initial career structure: {initial_careers}")
             
             # Match careers with JSON data
             matched_careers = match_career_data(initial_careers, career_data, salary_data)
-            logger.info(f"Matched careers with JSON data: {matched_careers}")
+            logger.info(f"Careers found in JSON data: {[c['name'] for c in matched_careers if c['description']]}")
+            logger.info(f"Careers generated by AI: {[c['name'] for c in matched_careers if not c['description']]}")
             
             # Create final response
             response_data = {
@@ -217,19 +311,16 @@ def get_suggestions():
             
             # Store the suggested careers for this session
             suggested_careers[request.remote_addr] = response_data["careers"]
-            logger.info(f"Stored careers for session: {request.remote_addr}")
             
-            logger.info("Returning structured suggestions to client")
+            logger.info("Returning careers to frontend for mapping")
             return jsonify(response_data)
             
         except Exception as groq_error:
             logger.error(f"Error calling GROQ API: {str(groq_error)}")
-            logger.error(traceback.format_exc())
             return jsonify({"error": f"GROQ API error: {str(groq_error)}"}), 500
         
     except Exception as e:
         logger.error(f"Error in get_suggestions: {str(e)}")
-        logger.error(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/chat', methods=['POST'])
@@ -240,8 +331,7 @@ def chat():
         messages = data.get('messages', [])
         isCareerQuery = data.get('isCareerQuery', False)
         
-        logger.info(f"Received chat request. Message: {message}")
-        logger.info(f"Messages history: {messages}")
+        logger.info(f"Follow-up question: {message}")
         
         if not message:
             logger.error("No message provided in chat request")
@@ -255,72 +345,139 @@ def chat():
             prompt = f"""
             You are having a friendly conversation with someone interested in a career. They've asked about {message}.
             
-            Please provide a clear response covering the main aspects of this career. Use bullet points (•) to list key information.
-            Make sure to cover these main aspects:
-            • What the career involves
-            • Key skills and qualifications needed
-            • Career growth opportunities
-            • Day-to-day responsibilities
-            • Industry demand and future prospects
+            Please provide a detailed, engaging response that feels natural and conversational while maintaining clear organization.
+            Use a visually appealing format with clear section separation and bullet points.
             
-            Format your response like this:
-            • [First point]
-            • [Second point]
-            • [Third point]
-            ...
+            Format your response EXACTLY like this:
             
-            Keep each point clear and concise. Don't use markdown formatting.
-            Don't include any thinking process or internal reasoning.
-            Don't use any <think> tags or explanations.
-            Just provide the key points in a clear, bullet-point format.
-            The number of points can vary based on what's important to cover.
+            OVERVIEW
+            • [Engaging description of what the career involves]
+            • [Interesting aspects or unique features]
+            
+            ──────────────────────────────
+            
+            KEY SKILLS AND QUALIFICATIONS
+            • [Core skills with context]
+            • [Technical abilities with real-world applications]
+            
+            ──────────────────────────────
+            
+            CAREER GROWTH OPPORTUNITIES
+            • [Exciting career paths]
+            • [Potential specializations and advancements]
+            
+            ──────────────────────────────
+            
+            DAY-TO-DAY RESPONSIBILITIES
+            • [Typical tasks with context]
+            • [Interesting challenges and rewards]
+            
+            ──────────────────────────────
+            
+            INDUSTRY DEMAND AND FUTURE PROSPECTS
+            • [Current trends and opportunities]
+            • [Future developments and possibilities]
+            
+            Important rules:
+            1. Use • for bullet points instead of -
+            2. Add a separator line (──────────────────────────────) between sections
+            3. Use CAPITAL LETTERS for section headings
+            4. Add extra spacing between sections
+            5. Make each point engaging and natural
+            6. Avoid repetitive language
+            7. Include interesting details and context
+            8. Keep the tone conversational but professional
+            9. Do NOT use any markdown, asterisks, or bold text
+            10. Do NOT use any special characters or formatting
+            11. Do NOT include any thinking process or internal reasoning
+            12. Do NOT use any <think> tags or explanations
             """
         else:
             # Check if the question is career-related
             career_keywords = ['career', 'job', 'work', 'profession', 'occupation', 'salary', 'skills', 'role', 'position', 'industry']
             is_about_careers = any(keyword in message.lower() for keyword in career_keywords)
             
+            # Check if it's a greeting or unrelated question
+            greetings = ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening']
+            is_greeting = any(greeting in message.lower() for greeting in greetings)
+            
             if is_about_careers:
                 prompt = f"""
                 You are having a friendly conversation with someone about careers. They've asked: {message}
                 
-                Please provide a clear response using bullet points (•) to list key information.
-                Make sure to cover the main aspects of their question.
+                Please provide a detailed, engaging response that feels natural and conversational while maintaining clear organization.
+                Use a visually appealing format with clear section separation and bullet points.
                 
-                Format your response like this:
-                • [First point]
-                • [Second point]
-                • [Third point]
-                ...
+                Format your response EXACTLY like this:
                 
-                Keep each point clear and concise. Don't use markdown formatting.
-                Don't include any thinking process or internal reasoning.
-                Don't use any <think> tags or explanations.
-                Just provide the key points in a clear, bullet-point format.
-                The number of points can vary based on what's important to cover.
+                MAIN POINTS
+                • [Key insights with context]
+                • [Important considerations]
+                
+                ──────────────────────────────
+                
+                DETAILED EXPLANATION
+                • [In-depth information with examples]
+                • [Practical applications]
+                
+                ──────────────────────────────
+                
+                PRACTICAL IMPLICATIONS
+                • [Real-world impact]
+                • [Actionable advice]
+                
+                Important rules:
+                1. Use • for bullet points instead of -
+                2. Add a separator line (──────────────────────────────) between sections
+                3. Use CAPITAL LETTERS for section headings
+                4. Add extra spacing between sections
+                5. Make each point engaging and natural
+                6. Avoid repetitive language
+                7. Include interesting details and context
+                8. Keep the tone conversational but professional
+                9. Do NOT use any markdown, asterisks, or bold text
+                10. Do NOT use any special characters or formatting
+                11. Do NOT include any thinking process or internal reasoning
+                12. Do NOT use any <think> tags or explanations
+                """
+            elif is_greeting:
+                prompt = f"""
+                You are having a friendly conversation with someone. They've greeted you with: {message}
+                
+                Please provide a warm, natural response to their greeting.
+                Keep it friendly and conversational.
+                
+                Format your response EXACTLY like this:
+                [A friendly, natural response to their greeting]
+                
+                Important rules:
+                1. Keep the response short and friendly
+                2. Use a natural, conversational tone
+                3. Do NOT use any formatting or bullet points
+                4. Do NOT include any section headings
+                5. Do NOT use any markdown or special characters
+                6. Do NOT include any thinking process or internal reasoning
+                7. Do NOT use any <think> tags or explanations
                 """
             else:
                 prompt = f"""
                 You are having a friendly conversation with someone. They've asked: {message}
                 
-                Please provide a helpful response using bullet points (•) to organize the information.
-                Make sure to cover the main aspects of their question.
+                Please provide a helpful, natural response to their question.
+                Keep it conversational and easy to understand.
                 
-                Format your response like this:
-                • [First point]
-                • [Second point]
-                • [Third point]
-                ...
+                Format your response EXACTLY like this:
+                [A natural, conversational response to their question]
                 
-                Keep each point clear and concise. Don't use markdown formatting.
-                Don't include any thinking process or internal reasoning.
-                Don't use any <think> tags or explanations.
-                Just provide the key points in a clear, bullet-point format.
-                The number of points can vary based on what's important to cover.
+                Important rules:
+                1. Keep the response clear and concise
+                2. Use a natural, conversational tone
+                3. Do NOT use any formatting or bullet points
+                4. Do NOT include any section headings
+                5. Do NOT use any markdown or special characters
+                6. Do NOT include any thinking process or internal reasoning
+                7. Do NOT use any <think> tags or explanations
                 """
-        
-        logger.info("Sending chat request to GROQ API")
-        logger.debug(f"Prompt: {prompt}")
         
         try:
             # Get response from GROQ
@@ -331,15 +488,18 @@ def chat():
                 max_tokens=4096
             )
             
-            logger.info("Successfully received response from GROQ")
-            
             # Process the response
             content = response.choices[0].message.content
-            logger.info(f"Raw GROQ response: {content}")
             
-            # Clean the response
-            content = clean_response(content)
-            logger.info(f"Cleaned response: {content}")
+            # Clean the response to remove any markdown formatting
+            content = re.sub(r'\*\*.*?\*\*', '', content)  # Remove bold text
+            content = re.sub(r'__.*?__', '', content)  # Remove underlined text
+            content = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL)  # Remove think tags
+            content = re.sub(r'^\s*[-*]\s*', '• ', content, flags=re.MULTILINE)  # Standardize bullet points
+            content = re.sub(r'\n\s*\n', '\n', content)  # Remove extra blank lines
+            content = content.strip()
+            
+            logger.info(f"AI response: {content}")
             
             # Create response data
             response_data = {
@@ -347,17 +507,14 @@ def chat():
                 "careers": session_careers
             }
             
-            logger.info("Returning chat response to client")
             return jsonify(response_data)
             
         except Exception as groq_error:
             logger.error(f"Error calling GROQ API: {str(groq_error)}")
-            logger.error(traceback.format_exc())
             return jsonify({"error": f"GROQ API error: {str(groq_error)}"}), 500
         
     except Exception as e:
         logger.error(f"Error in chat: {str(e)}")
-        logger.error(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
