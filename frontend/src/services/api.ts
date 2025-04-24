@@ -101,19 +101,19 @@ export const resumeService = {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
-      
-      const response = await fetch(`${API_URL}/resumes/getResumes`, {
+
+      const response = await fetch(`${API_URL}/resumes`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
       });
-      
+
       return await handleResponse(response);
     } catch (error) {
       console.error('Error fetching resumes:', error);
-      return [];
+      throw error;
     }
   },
   
@@ -122,55 +122,28 @@ export const resumeService = {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
-      
-      const response = await fetch(`${API_URL}/resumes/getResumeById/${id}`, {
+
+      const response = await fetch(`${API_URL}/resumes/${id}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
       });
-      
+
       return await handleResponse(response);
     } catch (error) {
       console.error('Error fetching resume:', error);
-      return null;
+      throw error;
     }
   },
   
   // Create resume
-  createResume: async (resumeData: { 
-    name: string;
-    template: string;
-    personalInfo: {
-      firstName: string;
-      lastName: string;
-      email: string;
-      phone?: string;
-      location?: string;
-      summary?: string;
-    };
-    experience: Array<{
-      company: string;
-      position: string;
-      startDate: string;
-      endDate: string;
-      description: string;
-    }>;
-    education: Array<{
-      institution: string;
-      degree: string;
-      field: string;
-      startDate: string;
-      endDate: string;
-      gpa?: string;
-    }>;
-    skills: string[];
-  }) => {
+  createResume: async (resumeData: any) => {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
-      
+
       const response = await fetch(`${API_URL}/resumes`, {
         method: 'POST',
         headers: {
@@ -179,10 +152,8 @@ export const resumeService = {
         },
         body: JSON.stringify(resumeData),
       });
-      
-      const data = await handleResponse(response);
-      toast.success('Resume saved successfully');
-      return data;
+
+      return await handleResponse(response);
     } catch (error) {
       console.error('Error creating resume:', error);
       throw error;
@@ -190,12 +161,12 @@ export const resumeService = {
   },
   
   // Update resume
-  updateResume: async (id: string, resumeData: { title?: string, content?: any }) => {
+  updateResume: async (id: string, resumeData: any) => {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
-      
-      const response = await fetch(`${API_URL}/resumes/updateResume/${id}`, {
+
+      const response = await fetch(`${API_URL}/resumes/${id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -203,10 +174,8 @@ export const resumeService = {
         },
         body: JSON.stringify(resumeData),
       });
-      
-      const data = await handleResponse(response);
-      toast.success('Resume updated successfully');
-      return data;
+
+      return await handleResponse(response);
     } catch (error) {
       console.error('Error updating resume:', error);
       throw error;
@@ -218,17 +187,15 @@ export const resumeService = {
     try {
       const token = getToken();
       if (!token) throw new Error('Authentication required');
-      
-      const response = await fetch(`${API_URL}/resumes/deleteResume/${id}`, {
+
+      const response = await fetch(`${API_URL}/resumes/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
         },
       });
-      
-      await handleResponse(response);
-      toast.success('Resume deleted successfully');
-      return true;
+
+      return await handleResponse(response);
     } catch (error) {
       console.error('Error deleting resume:', error);
       throw error;

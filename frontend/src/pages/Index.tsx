@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
@@ -12,7 +11,10 @@ import { Link } from 'react-router-dom';
 import CTA from '@/components/CTA';
 
 const Index = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-stone-50 min-h-screen flex flex-col">
       <NavBar />

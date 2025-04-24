@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- White background circle -->
+  <circle cx="32" cy="32" r="32" fill="#FFFFFF"/>
+  
+  <!-- Main bot body -->
+  <circle cx="32" cy="32" r="26" fill="#1E88E5"/>
+  
+  <!-- Bot face -->
+  <circle cx="32" cy="28" r="18" fill="#FFFFFF"/>
+  
+  <!-- Bot eyes -->
+  <circle cx="24" cy="24" r="3.5" fill="#1E88E5"/>
+  <circle cx="40" cy="24" r="3.5" fill="#1E88E5"/>
+  
+  <!-- Bot mouth -->
+  <path d="M24 36 Q32 43 40 36" stroke="#1E88E5" stroke-width="2.5" fill="none"/>
+  
+  <!-- Antenna -->
+  <line x1="32" y1="10" x2="32" y2="4" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="32" cy="4" r="1.5" fill="#FFFFFF"/>
+  
+  <!-- Speech bubble indicator -->
+  <path d="M46 40 L52 45 L46 50" fill="#FFFFFF"/>
+</svg> 

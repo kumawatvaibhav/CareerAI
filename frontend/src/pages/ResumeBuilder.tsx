@@ -1,7 +1,6 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Navigate, useParams } from "react-router-dom";
 import FadeIn from "@/components/animations/FadeIn";
-import { useState } from "react";
 import {
   Box,
   Container,
@@ -20,6 +19,7 @@ import {
   ListItemIcon,
   ListItemText,
   Divider,
+  CircularProgress,
 } from "@mui/material";
 import {
   Description as DescriptionIcon,
@@ -34,17 +34,15 @@ import {
 import ResumeForm from "../components/ResumeForm";
 import ResumePreview from "../components/ResumePreview";
 import { ResumeData, TemplateType } from "../utils/resume";
-
-// Mock authentication check - will be replaced with actual auth later
-const useAuth = () => {
-  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-  return { isLoggedIn };
-};
+import { useAuth } from "../contexts/authContext";
+import { resumeService } from '../services/api';
+import { toast } from 'react-hot-toast';
 
 const ResumeBuilder = () => {
-  const { isLoggedIn } = useAuth();
+  const { id } = useParams();
+  const { user } = useAuth();
 
-  if (!isLoggedIn) {
+  if (!user) {
     return <Navigate to="/sign-in" />;
   }
 
@@ -68,7 +66,34 @@ const ResumeBuilder = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [resumeName, setResumeName] = useState("");
+  const [loading, setLoading] = useState(!!id);
   const isMobile = useMediaQuery("(max-width:900px)");
+
+  useEffect(() => {
+    if (id) {
+      fetchResume();
+    }
+  }, [id]);
+
+  const fetchResume = async () => {
+    try {
+      const data = await resumeService.getResumeById(id!);
+      setResumeData({
+        personalInfo: data.personalInfo,
+        experience: data.experience,
+        education: data.education,
+        skills: data.skills,
+        projects: data.projects || [],
+      });
+      setSelectedTemplate(data.template);
+      setResumeName(data.name);
+    } catch (error) {
+      console.error('Error fetching resume:', error);
+      toast.error('Failed to load resume');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const theme = createTheme({
     palette: {
@@ -234,6 +259,21 @@ const ResumeBuilder = () => {
       </Box>
     </>
   );
+
+  if (loading) {
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '80vh',
+        }}
+      >
+        <CircularProgress />
+      </Box>
+    );
+  }
 
   return (
     <ThemeProvider theme={theme}>

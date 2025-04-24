@@ -1,0 +1,69 @@
+Skill,Hobby/Interests,Suggested Career,Relevance Score,Salary Range,Career Roadmap
+Programming,Gaming,Game Developer,95,$60k-$150k,1. Learn game programming 2. Master Unity/Unreal 3. Build game portfolio 4. Join indie studio/AAA company 5. Senior game developer
+Programming,Sports,Sports Analytics Developer,92,$70k-$140k,1. Learn data analysis 2. Sports statistics 3. Build analytics tools 4. Join sports tech company 5. Lead sports tech developer
+Programming,Fitness,Fitness App Developer,90,$65k-$130k,1. Mobile development 2. Health APIs 3. UX/UI for fitness 4. Launch fitness app 5. Scale health tech platform
+Programming,Music,Audio Software Developer,91,$70k-$160k,1. Audio programming 2. DSP knowledge 3. Build audio tools 4. Join music tech company 5. Senior audio developer
+Programming,Writing,Technical Writer,88,$60k-$120k,1. Documentation skills 2. API knowledge 3. Technical blogs 4. Developer advocacy 5. Lead technical content
+Programming,Cooking,Food Tech Developer,87,$65k-$135k,1. App development 2. Recipe APIs 3. Food tech platforms 4. Join food tech startup 5. Lead food tech developer
+Programming,Art,Digital Art Tool Developer,89,$70k-$145k,1. Graphics programming 2. Digital art tools 3. Portfolio 4. Join creative tech company 5. Lead creative developer
+Web Development,Design,Frontend Developer,94,$65k-$140k,1. HTML/CSS/JS 2. UI frameworks 3. Build portfolio 4. Join tech company 5. Senior frontend developer
+Web Development,Blogging,CMS Developer,89,$60k-$130k,1. CMS platforms 2. Web architecture 3. Content systems 4. Join media company 5. Lead CMS architect
+Web Development,E-commerce,E-commerce Developer,93,$70k-$145k,1. E-commerce platforms 2. Payment systems 3. User experience 4. Join retail tech company 5. Lead e-commerce architect
+Web Development,Education,EdTech Developer,92,$65k-$135k,1. Learning platforms 2. Interactive tools 3. Education tech 4. Join edtech company 5. Senior edtech developer
+Data Science,Research,Research Scientist,96,$90k-$200k,1. Statistics/ML 2. Research methods 3. Publications 4. Research lab 5. Lead scientist
+Data Science,Sports,Sports Data Scientist,93,$85k-$180k,1. Sports analytics 2. ML models 3. Team projects 4. Sports organization 5. Head of sports analytics
+Data Science,Finance,Quantitative Analyst,95,$100k-$250k,1. Financial models 2. Algorithm trading 3. Risk analysis 4. Investment firm 5. Senior quant
+Data Science,Healthcare,Healthcare Data Scientist,94,$85k-$190k,1. Medical data analysis 2. Health outcomes 3. Patient insights 4. Healthcare organization 5. Lead health data scientist
+Data Science,Gaming,Game Analytics Specialist,91,$80k-$170k,1. Player behavior analysis 2. Game balancing 3. Monetization models 4. Game studio 5. Head of game analytics
+Mobile Development,Travel,Travel App Developer,88,$70k-$140k,1. Mobile platforms 2. Location services 3. Travel APIs 4. Travel tech company 5. Lead mobile architect
+Mobile Development,Photography,Camera App Developer,87,$65k-$135k,1. Image processing 2. Mobile cameras 3. Photo apps 4. Join photo tech company 5. Senior imaging developer
+Mobile Development,Social,Social Media App Developer,90,$75k-$155k,1. Social platforms 2. Real-time features 3. User engagement 4. Social media company 5. Lead mobile social developer
+Mobile Development,Health,Health & Fitness App Developer,89,$70k-$145k,1. Health tracking 2. Fitness algorithms 3. User experience 4. Health tech company 5. Lead mHealth developer
+UI/UX Design,Gaming,Game UI Designer,94,$70k-$150k,1. Game interfaces 2. User testing 3. Portfolio 4. Game studio 5. Lead UI/UX designer
+UI/UX Design,Fashion,Fashion E-commerce Designer,92,$65k-$140k,1. E-commerce design 2. Fashion UX 3. Portfolio 4. Fashion tech 5. Head of design
+UI/UX Design,Healthcare,Medical App Designer,91,$70k-$150k,1. Medical interfaces 2. Patient experience 3. Healthcare UX 4. Medical tech company 5. Lead healthcare UX designer
+UI/UX Design,Education,Educational App Designer,90,$65k-$140k,1. Learning experience 2. Educational interfaces 3. Portfolio 4. EdTech company 5. Head of educational design
+Digital Marketing,Social Media,Social Media Manager,90,$55k-$120k,1. Platform expertise 2. Content strategy 3. Analytics 4. Brand management 5. Marketing director
+Digital Marketing,Gaming,Gaming Community Manager,89,$50k-$110k,1. Community building 2. Game marketing 3. Player engagement 4. Game company 5. Head of community
+Digital Marketing,Travel,Travel Marketing Specialist,88,$55k-$115k,1. Destination marketing 2. Travel content 3. User acquisition 4. Travel company 5. Marketing director
+Digital Marketing,Food,Food & Beverage Marketer,87,$50k-$110k,1. Food marketing 2. Culinary content 3. Brand strategy 4. Food company 5. Brand director
+Video Production,Gaming,Game Video Producer,91,$55k-$130k,1. Video editing 2. Game streaming 3. Content creation 4. Gaming channel 5. Content director
+Video Production,Sports,Sports Video Producer,90,$60k-$140k,1. Sports coverage 2. Live production 3. Highlight reels 4. Sports network 5. Production director
+Video Production,Music,Music Video Director,92,$60k-$150k,1. Music visuals 2. Artist collaboration 3. Video portfolio 4. Production company 5. Creative director
+Video Production,Travel,Travel Videographer,89,$50k-$120k,1. Travel storytelling 2. Destination videos 3. Content creation 4. Travel channel 5. Production director
+Cybersecurity,Gaming,Game Security Engineer,93,$80k-$170k,1. Security basics 2. Game security 3. Anti-cheat systems 4. Gaming company 5. Security director
+Cybersecurity,Finance,Financial Security Expert,95,$90k-$200k,1. Financial security 2. Fraud prevention 3. Risk management 4. Financial firm 5. Security director
+Cybersecurity,Healthcare,Healthcare Security Specialist,94,$85k-$180k,1. Medical data security 2. HIPAA compliance 3. Patient privacy 4. Healthcare organization 5. Security director
+Cybersecurity,Government,Government Cyber Expert,96,$90k-$190k,1. National security 2. Critical infrastructure 3. Threat analysis 4. Government agency 5. Security director
+3D Design,Gaming,Game Environment Artist,92,$65k-$140k,1. 3D modeling 2. Game environments 3. Portfolio 4. Game studio 5. Art director
+3D Design,Architecture,Architectural Visualizer,91,$60k-$130k,1. Architectural modeling 2. Rendering 3. Portfolio 4. Architecture firm 5. Visualization director
+3D Design,Film,3D Animation Artist,93,$70k-$150k,1. Character animation 2. Visual effects 3. Demo reel 4. Animation studio 5. Animation director
+3D Design,Product Design,Product Visualizer,90,$65k-$135k,1. Product modeling 2. Visualization 3. Portfolio 4. Design firm 5. Visualization lead
+Project Management,Gaming,Game Producer,93,$75k-$160k,1. Game development 2. Team management 3. Shipping games 4. Game studio 5. Executive producer
+Project Management,Sports,Sports Event Manager,90,$65k-$140k,1. Event planning 2. Team coordination 3. Sports operations 4. Sports organization 5. Operations director
+Project Management,Construction,Construction Project Manager,92,$70k-$150k,1. Construction basics 2. Project coordination 3. Budget management 4. Construction firm 5. Senior project manager
+Project Management,Healthcare,Healthcare Project Manager,91,$75k-$155k,1. Healthcare systems 2. Medical teams 3. Compliance 4. Healthcare organization 5. Operations director
+Content Writing,Gaming,Game Story Writer,88,$55k-$120k,1. Narrative design 2. Game writing 3. Story portfolio 4. Game studio 5. Narrative director
+Content Writing,Travel,Travel Content Creator,87,$50k-$110k,1. Travel writing 2. Content strategy 3. Portfolio 4. Travel platform 5. Content director
+Content Writing,Technology,Tech Journalist,89,$55k-$125k,1. Tech reporting 2. Product reviews 3. Portfolio 4. Tech publication 5. Senior editor
+Content Writing,Finance,Financial Writer,90,$60k-$130k,1. Financial literacy 2. Market analysis 3. Portfolio 4. Financial publication 5. Senior financial editor
+AI/ML Engineering,Research,AI Research Engineer,96,$100k-$220k,1. Deep learning 2. Research papers 3. AI models 4. Tech company 5. Research director
+AI/ML Engineering,Gaming,Game AI Engineer,94,$90k-$200k,1. Game AI 2. NPC behavior 3. AI systems 4. Game studio 5. AI director
+AI/ML Engineering,Healthcare,Medical AI Specialist,95,$95k-$210k,1. Medical ML 2. Diagnostic systems 3. Patient outcomes 4. Healthcare tech 5. AI research director
+AI/ML Engineering,Finance,Financial AI Engineer,94,$100k-$220k,1. Trading algorithms 2. Risk models 3. Fraud detection 4. Financial firm 5. AI director
+Programming,Others,Software Engineer,90,$75k-$170k,1. Programming fundamentals 2. Software design 3. Build portfolio 4. Join tech company 5. Senior software engineer
+Web Development,Others,Web Developer,88,$65k-$140k,1. Frontend & backend skills 2. Web frameworks 3. Build portfolio 4. Join web agency 5. Senior web developer
+Data Science,Others,Data Scientist,92,$80k-$180k,1. Statistics & ML 2. Data analysis 3. Projects portfolio 4. Join analytics firm 5. Senior data scientist
+Mobile Development,Others,Mobile App Developer,87,$70k-$150k,1. Mobile platforms 2. App design 3. Portfolio 4. Join mobile agency 5. Lead mobile developer
+UI/UX Design,Others,Product Designer,89,$65k-$145k,1. Design principles 2. User testing 3. Portfolio 4. Join design firm 5. Senior designer
+Digital Marketing,Others,Digital Marketer,85,$50k-$115k,1. Marketing strategies 2. Digital channels 3. Campaign results 4. Join marketing agency 5. Marketing manager
+Video Production,Others,Video Producer,86,$55k-$125k,1. Video editing 2. Storytelling 3. Portfolio 4. Join production company 5. Senior producer
+Cybersecurity,Others,Security Analyst,91,$75k-$160k,1. Security principles 2. Threat analysis 3. Certifications 4. Join security firm 5. Security manager
+3D Design,Others,3D Artist,88,$60k-$130k,1. 3D modeling 2. Texturing 3. Portfolio 4. Join design studio 5. Senior 3D artist
+Project Management,Others,Project Manager,89,$70k-$150k,1. Project basics 2. Team coordination 3. Certifications 4. Join company 5. Senior project manager
+Content Writing,Others,Content Strategist,84,$50k-$115k,1. Writing skills 2. Content planning 3. Portfolio 4. Join content agency 5. Senior content strategist
+AI/ML Engineering,Others,Machine Learning Engineer,93,$90k-$200k,1. ML algorithms 2. Data processing 3. Model portfolio 4. Join AI company 5. Senior ML engineer
+DevOps,Others,DevOps Engineer,90,$80k-$175k,1. Cloud platforms 2. CI/CD pipelines 3. Infrastructure 4. Join tech company 5. DevOps manager
+Quality Assurance,Others,QA Engineer,86,$55k-$125k,1. Testing principles 2. Automation 3. Bug tracking 4. Join software company 5. QA manager
+Data Engineering,Others,Data Engineer,89,$75k-$165k,1. Data pipelines 2. ETL processes 3. Big data tools 4. Join data company 5. Senior data engineer
+Cloud Architecture,Others,Cloud Architect,92,$90k-$195k,1. Cloud platforms 2. Architecture design 3. Certifications 4. Join tech company 5. Solutions architect 

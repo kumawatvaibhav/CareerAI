@@ -1,0 +1,39 @@
+Skill,Hobby/Interests,Suggested Career,Relevance Score,Salary Range,Career Roadmap
+Programming,Gaming,Game Developer,95,$60k-$150k,1. Learn game programming 2. Master Unity/Unreal 3. Build game portfolio 4. Join indie studio/AAA company 5. Senior game developer
+Programming,Sports,Sports Analytics Developer,92,$70k-$140k,1. Learn data analysis 2. Sports statistics 3. Build analytics tools 4. Join sports tech company 5. Lead sports tech developer
+Programming,Fitness,Fitness App Developer,90,$65k-$130k,1. Mobile development 2. Health APIs 3. UX/UI for fitness 4. Launch fitness app 5. Scale health tech platform
+Programming,Music,Audio Software Developer,91,$70k-$160k,1. Audio programming 2. DSP knowledge 3. Build audio tools 4. Join music tech company 5. Senior audio developer
+Programming,Writing,Technical Writer,88,$60k-$120k,1. Documentation skills 2. API knowledge 3. Technical blogs 4. Developer advocacy 5. Lead technical content
+Web Development,Design,Frontend Developer,94,$65k-$140k,1. HTML/CSS/JS 2. UI frameworks 3. Build portfolio 4. Join tech company 5. Senior frontend developer
+Web Development,Blogging,CMS Developer,89,$60k-$130k,1. CMS platforms 2. Web architecture 3. Content systems 4. Join media company 5. Lead CMS architect
+Data Science,Research,Research Scientist,96,$90k-$200k,1. Statistics/ML 2. Research methods 3. Publications 4. Research lab 5. Lead scientist
+Data Science,Sports,Sports Data Scientist,93,$85k-$180k,1. Sports analytics 2. ML models 3. Team projects 4. Sports organization 5. Head of sports analytics
+Data Science,Finance,Quantitative Analyst,95,$100k-$250k,1. Financial models 2. Algorithm trading 3. Risk analysis 4. Investment firm 5. Senior quant
+Mobile Development,Travel,Travel App Developer,88,$70k-$140k,1. Mobile platforms 2. Location services 3. Travel APIs 4. Travel tech company 5. Lead mobile architect
+Mobile Development,Photography,Camera App Developer,87,$65k-$135k,1. Image processing 2. Mobile cameras 3. Photo apps 4. Join photo tech company 5. Senior imaging developer
+UI/UX Design,Gaming,Game UI Designer,94,$70k-$150k,1. Game interfaces 2. User testing 3. Portfolio 4. Game studio 5. Lead UI/UX designer
+UI/UX Design,Fashion,Fashion E-commerce Designer,92,$65k-$140k,1. E-commerce design 2. Fashion UX 3. Portfolio 4. Fashion tech 5. Head of design
+Digital Marketing,Social Media,Social Media Manager,90,$55k-$120k,1. Platform expertise 2. Content strategy 3. Analytics 4. Brand management 5. Marketing director
+Digital Marketing,Gaming,Gaming Community Manager,89,$50k-$110k,1. Community building 2. Game marketing 3. Player engagement 4. Game company 5. Head of community
+Video Production,Gaming,Game Video Producer,91,$55k-$130k,1. Video editing 2. Game streaming 3. Content creation 4. Gaming channel 5. Content director
+Video Production,Sports,Sports Video Producer,90,$60k-$140k,1. Sports coverage 2. Live production 3. Highlight reels 4. Sports network 5. Production director
+Cybersecurity,Gaming,Game Security Engineer,93,$80k-$170k,1. Security basics 2. Game security 3. Anti-cheat systems 4. Gaming company 5. Security director
+Cybersecurity,Finance,Financial Security Expert,95,$90k-$200k,1. Financial security 2. Fraud prevention 3. Risk management 4. Financial firm 5. Security director
+3D Design,Gaming,Game Environment Artist,92,$65k-$140k,1. 3D modeling 2. Game environments 3. Portfolio 4. Game studio 5. Art director
+3D Design,Architecture,Architectural Visualizer,91,$60k-$130k,1. Architectural modeling 2. Rendering 3. Portfolio 4. Architecture firm 5. Visualization director
+Project Management,Gaming,Game Producer,93,$75k-$160k,1. Game development 2. Team management 3. Shipping games 4. Game studio 5. Executive producer
+Project Management,Sports,Sports Event Manager,90,$65k-$140k,1. Event planning 2. Team coordination 3. Sports operations 4. Sports organization 5. Operations director
+Content Writing,Gaming,Game Story Writer,88,$55k-$120k,1. Narrative design 2. Game writing 3. Story portfolio 4. Game studio 5. Narrative director
+Content Writing,Travel,Travel Content Creator,87,$50k-$110k,1. Travel writing 2. Content strategy 3. Portfolio 4. Travel platform 5. Content director
+Business Analysis,Esports,Esports Business Analyst,91,$70k-$150k,1. Market analysis 2. Esports industry 3. Business strategy 4. Esports org 5. Strategy director
+Business Analysis,Fitness,Health Tech Analyst,90,$65k-$140k,1. Health industry 2. Market research 3. Product strategy 4. Health tech 5. Product director
+AI/ML Engineering,Research,AI Research Engineer,96,$100k-$220k,1. Deep learning 2. Research papers 3. AI models 4. Tech company 5. Research director
+AI/ML Engineering,Gaming,Game AI Engineer,94,$90k-$200k,1. Game AI 2. NPC behavior 3. AI systems 4. Game studio 5. AI director
+DevOps,Gaming,Game Infrastructure Engineer,92,$85k-$180k,1. Cloud platforms 2. Game servers 3. Scalability 4. Gaming company 5. Infrastructure director
+DevOps,Finance,FinTech DevOps Engineer,93,$90k-$190k,1. Financial systems 2. Cloud security 3. Automation 4. FinTech company 5. DevOps director
+Quality Assurance,Gaming,Game QA Engineer,88,$55k-$120k,1. Game testing 2. Bug tracking 3. Test automation 4. Game studio 5. QA director
+Quality Assurance,Finance,FinTech QA Engineer,89,$60k-$130k,1. Financial testing 2. Security testing 3. Automation 4. FinTech company 5. QA director
+Data Engineering,Sports,Sports Data Engineer,92,$80k-$170k,1. Data pipelines 2. Sports analytics 3. Big data 4. Sports org 5. Data director
+Data Engineering,Music,Music Streaming Engineer,91,$75k-$160k,1. Streaming systems 2. Audio data 3. Scalability 4. Music platform 5. Engineering director
+Cloud Architecture,Gaming,Game Cloud Architect,94,$95k-$200k,1. Cloud platforms 2. Game servers 3. Scalability 4. Gaming company 5. Cloud director
+Cloud Architecture,Finance,FinTech Cloud Architect,95,$100k-$210k,1. Financial cloud 2. Security 3. Architecture 4. FinTech company 5. Architecture director

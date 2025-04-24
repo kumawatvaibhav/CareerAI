@@ -1,0 +1,399 @@
+{
+  "Full Stack Developer": {
+    "phases": [
+      {
+        "title": "Phase 1: Laying the Foundation (0–1.5 Years)",
+        "objectives": [
+          "Master core programming concepts",
+          "Understand web development fundamentals",
+          "Build basic web applications"
+        ],
+        "keyPrinciples": [
+          "Clean code practices",
+          "Version control with Git",
+          "Basic debugging skills"
+        ],
+        "coreConcepts": [
+          "HTML5 & CSS3",
+          "JavaScript fundamentals",
+          "DOM manipulation",
+          "Basic algorithms & data structures",
+          "HTTP/HTTPS protocols",
+          "RESTful APIs"
+        ],
+        "techStack": [
+          "Frontend: HTML, CSS, JavaScript, React/Vue basics",
+          "Backend: Node.js, Express, Python Flask",
+          "Database: SQL basics, MongoDB",
+          "Tools: Git, VS Code, Chrome DevTools"
+        ],
+        "projects": [
+          "Personal portfolio website",
+          "Todo list application",
+          "Weather app with API integration",
+          "Basic CRUD application"
+        ]
+      },
+      {
+        "title": "Phase 2: Building Full Stack Thinking (1.5–3 Years)",
+        "objectives": [
+          "Connect frontend to backend",
+          "Implement authentication",
+          "Work with databases"
+        ],
+        "keyPrinciples": [
+          "API design",
+          "Database optimization",
+          "Code maintainability"
+        ],
+        "coreConcepts": [
+          "State management",
+          "Authentication & authorization",
+          "Database design",
+          "API design patterns",
+          "Testing fundamentals"
+        ],
+        "techStack": [
+          "Frontend: React/Vue advanced, Redux/Vuex",
+          "Backend: Node.js, Express, Django",
+          "Database: PostgreSQL, MongoDB",
+          "Tools: Postman, Jest, Docker basics"
+        ],
+        "projects": [
+          "E-commerce platform",
+          "Social media dashboard",
+          "Real-time chat application",
+          "Blog platform with CMS"
+        ]
+      },
+      {
+        "title": "Phase 3: Mastering Systems (3–5 Years)",
+        "objectives": [
+          "Optimize performance",
+          "Handle scale",
+          "Implement CI/CD"
+        ],
+        "keyPrinciples": [
+          "System architecture",
+          "Performance optimization",
+          "Security best practices"
+        ],
+        "coreConcepts": [
+          "Microservices",
+          "Caching strategies",
+          "Load balancing",
+          "Security protocols",
+          "CI/CD pipelines"
+        ],
+        "techStack": [
+          "Frontend: Next.js, TypeScript",
+          "Backend: Spring Boot, Go",
+          "Database: Redis, Elasticsearch",
+          "Tools: Kubernetes, AWS/GCP, Jenkins"
+        ],
+        "projects": [
+          "Scalable web application",
+          "Microservices architecture",
+          "Real-time analytics dashboard",
+          "API gateway implementation"
+        ]
+      },
+      {
+        "title": "Phase 4: Leadership & Depth (5+ Years)",
+        "objectives": [
+          "Lead technical decisions",
+          "Mentor junior developers",
+          "Influence product direction"
+        ],
+        "keyPrinciples": [
+          "Technical leadership",
+          "System design",
+          "Team collaboration"
+        ],
+        "coreConcepts": [
+          "System architecture patterns",
+          "Performance optimization at scale",
+          "Security architecture",
+          "Team management",
+          "Technical strategy"
+        ],
+        "techStack": [
+          "Full stack: Advanced TypeScript, GraphQL",
+          "Infrastructure: Terraform, Ansible",
+          "Monitoring: Prometheus, Grafana",
+          "Tools: Advanced CI/CD, Cloud architecture"
+        ],
+        "projects": [
+          "Enterprise-scale applications",
+          "Technical documentation",
+          "Team training programs",
+          "Architecture reviews"
+        ]
+      }
+    ]
+  },
+  "Data Scientist": {
+    "phases": [
+      {
+        "title": "Phase 1: Statistical Foundation (0–1.5 Years)",
+        "objectives": [
+          "Master statistics fundamentals",
+          "Learn data manipulation",
+          "Understand basic ML concepts"
+        ],
+        "keyPrinciples": [
+          "Statistical thinking",
+          "Data cleaning",
+          "Exploratory analysis"
+        ],
+        "coreConcepts": [
+          "Probability theory",
+          "Statistical inference",
+          "Data visualization",
+          "Basic machine learning",
+          "SQL fundamentals"
+        ],
+        "techStack": [
+          "Python: NumPy, Pandas, Matplotlib",
+          "R: dplyr, ggplot2",
+          "SQL: PostgreSQL, MySQL",
+          "Tools: Jupyter Notebook, Tableau"
+        ],
+        "projects": [
+          "Exploratory data analysis",
+          "Statistical hypothesis testing",
+          "Data visualization dashboard",
+          "Basic predictive modeling"
+        ]
+      },
+      {
+        "title": "Phase 2: Machine Learning (1.5–3 Years)",
+        "objectives": [
+          "Implement ML algorithms",
+          "Feature engineering",
+          "Model evaluation"
+        ],
+        "keyPrinciples": [
+          "Model selection",
+          "Feature importance",
+          "Bias-variance tradeoff"
+        ],
+        "coreConcepts": [
+          "Supervised learning",
+          "Unsupervised learning",
+          "Feature engineering",
+          "Model evaluation",
+          "Hyperparameter tuning"
+        ],
+        "techStack": [
+          "Python: scikit-learn, TensorFlow",
+          "R: caret, randomForest",
+          "Big Data: Spark, Hadoop",
+          "Tools: MLflow, Weights & Biases"
+        ],
+        "projects": [
+          "Classification models",
+          "Regression analysis",
+          "Clustering applications",
+          "Time series forecasting"
+        ]
+      },
+      {
+        "title": "Phase 3: Advanced ML & Production (3–5 Years)",
+        "objectives": [
+          "Deploy ML models",
+          "Work with big data",
+          "Implement deep learning"
+        ],
+        "keyPrinciples": [
+          "Model deployment",
+          "Data pipelines",
+          "Deep learning architectures"
+        ],
+        "coreConcepts": [
+          "Deep learning",
+          "Natural language processing",
+          "Computer vision",
+          "Model deployment",
+          "Data pipelines"
+        ],
+        "techStack": [
+          "Python: PyTorch, Keras",
+          "Big Data: Spark, Kafka",
+          "Cloud: AWS SageMaker, GCP AI Platform",
+          "Tools: Docker, Kubernetes, Airflow"
+        ],
+        "projects": [
+          "Deep learning models",
+          "NLP applications",
+          "Computer vision systems",
+          "Production ML pipelines"
+        ]
+      },
+      {
+        "title": "Phase 4: Leadership & Research (5+ Years)",
+        "objectives": [
+          "Lead data science teams",
+          "Drive research initiatives",
+          "Influence business strategy"
+        ],
+        "keyPrinciples": [
+          "Technical leadership",
+          "Research methodology",
+          "Business impact"
+        ],
+        "coreConcepts": [
+          "Advanced ML research",
+          "Team management",
+          "Business analytics",
+          "Research methodology",
+          "Technical strategy"
+        ],
+        "techStack": [
+          "Advanced ML frameworks",
+          "Research tools",
+          "Cloud architecture",
+          "Team collaboration tools"
+        ],
+        "projects": [
+          "Research papers",
+          "Team training programs",
+          "Business impact analysis",
+          "Technical strategy development"
+        ]
+      }
+    ]
+  },
+  "Cybersecurity Engineer": {
+    "phases": [
+      {
+        "title": "Phase 1: Security Fundamentals (0–1.5 Years)",
+        "objectives": [
+          "Understand security basics",
+          "Learn networking fundamentals",
+          "Master basic security tools"
+        ],
+        "keyPrinciples": [
+          "Security mindset",
+          "Risk assessment",
+          "Basic cryptography"
+        ],
+        "coreConcepts": [
+          "Network security",
+          "Operating system security",
+          "Basic cryptography",
+          "Security protocols",
+          "Vulnerability assessment"
+        ],
+        "techStack": [
+          "Networking: Wireshark, Nmap",
+          "Security: Metasploit, Burp Suite",
+          "OS: Linux, Windows security",
+          "Tools: Kali Linux, VirtualBox"
+        ],
+        "projects": [
+          "Network security analysis",
+          "Basic penetration testing",
+          "Security policy development",
+          "Vulnerability assessment"
+        ]
+      },
+      {
+        "title": "Phase 2: Penetration Testing (1.5–3 Years)",
+        "objectives": [
+          "Master penetration testing",
+          "Understand web security",
+          "Implement security controls"
+        ],
+        "keyPrinciples": [
+          "Ethical hacking",
+          "Security testing",
+          "Risk management"
+        ],
+        "coreConcepts": [
+          "Web application security",
+          "Network penetration testing",
+          "Social engineering",
+          "Security controls",
+          "Incident response"
+        ],
+        "techStack": [
+          "Testing: OWASP ZAP, Metasploit",
+          "Web: Burp Suite, SQLmap",
+          "Network: Nmap, Wireshark",
+          "Tools: Security frameworks, SIEM"
+        ],
+        "projects": [
+          "Web app penetration testing",
+          "Network security assessment",
+          "Security control implementation",
+          "Incident response planning"
+        ]
+      },
+      {
+        "title": "Phase 3: Advanced Security (3–5 Years)",
+        "objectives": [
+          "Implement security architecture",
+          "Handle advanced threats",
+          "Manage security operations"
+        ],
+        "keyPrinciples": [
+          "Security architecture",
+          "Threat intelligence",
+          "Security operations"
+        ],
+        "coreConcepts": [
+          "Security architecture",
+          "Threat intelligence",
+          "Security operations",
+          "Compliance frameworks",
+          "Advanced cryptography"
+        ],
+        "techStack": [
+          "Security: SIEM, IDS/IPS",
+          "Cloud: AWS/GCP security",
+          "Compliance: GRC tools",
+          "Tools: Advanced security frameworks"
+        ],
+        "projects": [
+          "Security architecture design",
+          "Threat intelligence system",
+          "Security operations center",
+          "Compliance implementation"
+        ]
+      },
+      {
+        "title": "Phase 4: Leadership & Strategy (5+ Years)",
+        "objectives": [
+          "Lead security teams",
+          "Develop security strategy",
+          "Influence security policy"
+        ],
+        "keyPrinciples": [
+          "Security leadership",
+          "Risk management",
+          "Business alignment"
+        ],
+        "coreConcepts": [
+          "Security strategy",
+          "Team management",
+          "Risk management",
+          "Policy development",
+          "Business impact"
+        ],
+        "techStack": [
+          "Security leadership tools",
+          "Risk management platforms",
+          "Policy management systems",
+          "Team collaboration tools"
+        ],
+        "projects": [
+          "Security strategy development",
+          "Team training programs",
+          "Risk management framework",
+          "Policy development"
+        ]
+      }
+    ]
+  }
+}

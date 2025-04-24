@@ -6,6 +6,12 @@ type User = {
   name: string;
   email: string;
   token: string;
+  location?: string;
+  phone?: string;
+  linkedin?: string;
+  website?: string;
+  bio?: string;
+  skills?: string[];
 };
 
 type AuthContextType = {

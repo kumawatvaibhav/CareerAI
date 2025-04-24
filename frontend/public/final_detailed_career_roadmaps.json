@@ -1,0 +1,5716 @@
+
+{
+  "3D Animation Artist": {
+    "title": "3D Animation Artist",
+    "phases": [
+      {
+        "title": "Phase 1: Understand 3D Animation (Weeks 1-3)",
+        "topics": [
+          "What is 3D Animation?",
+          "Tools: Maya, Blender, 3ds Max",
+          "Principles of Animation",
+          "Keyframes, Timing, Spacing",
+          "Character Rigging Basics",
+          "Practice Simple Animations",
+          "Walk Cycles, Idle Poses",
+          "Facial Expressions, Lip Syncing"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Animations (Weeks 4-6)",
+        "topics": [
+          "Character Animations",
+          "Environmental Animations",
+          "Combat & Action Sequences",
+          "Camera Movement Techniques"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Animation Workflow",
+        "topics": [
+          "Motion Capture Integration",
+          "Blend Shapes & Morph Targets",
+          "Inverse Kinematics (IK) Setup",
+          "Polish Transitions & Weighting",
+          "Export Animations for Engines"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques & Optimization",
+        "topics": [
+          "Dynamic Simulations",
+          "Cloth, Hair, & Particle Effects",
+          "Optimize for Real-Time Engines",
+          "Game Engine Integration",
+          "Collaborate with Designers",
+          "Iterate Based on Feedback",
+          "Join Animation Challenges",
+          "Build a Demo Reel"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Showreel",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "3D Artist": {
+    "title": "3D Artist",
+    "phases": [
+      {
+        "title": "Phase 1: Understand 3D Art (Weeks 1-3)",
+        "topics": [
+          "What is 3D Art?",
+          "Tools: Blender, ZBrush, Substance Painter",
+          "Modeling Basics: Low Poly vs High Poly",
+          "UV Unwrapping & Texturing",
+          "Lighting & Rendering Principles",
+          "Practice Simple Models",
+          "Create Props & Environments",
+          "Basic Sculpting Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Assets (Weeks 4-6)",
+        "topics": [
+          "Characters, Creatures, Vehicles",
+          "Architectural Models, Landscapes",
+          "Modular Design for Games"
+        ]
+      },
+      {
+        "title": "Phase 3: Texturing & Detailing",
+        "topics": [
+          "PBR Workflow",
+          "Procedural Textures",
+          "Baking Normals & AO Maps",
+          "Material Creation in Engines",
+          "Add Wear & Tear Details"
+        ]
+      },
+      {
+        "title": "Phase 4: Optimize & Integrate",
+        "topics": [
+          "LOD Creation",
+          "Performance Optimization",
+          "Game Engine Integration",
+          "Collaborate with Animators",
+          "Iterate Based on Feedback",
+          "Present Final Assets",
+          "Participate in Challenges",
+          "Prepare Portfolio"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Artstation",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "AI Engineer": {
+    "title": "AI Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand AI Engineering (Weeks 1-3)",
+        "topics": [
+          "What is AI Engineering?",
+          "Frameworks: TensorFlow, PyTorch",
+          "Languages: Python, C++",
+          "Data Handling & Preprocessing",
+          "Learn Linear Algebra, Calculus",
+          "Practice Small ML Models",
+          "Neural Networks Basics",
+          "Supervised & Unsupervised Learning"
+        ]
+      },
+      {
+        "title": "Phase 2: Build AI Systems (Weeks 4-6)",
+        "topics": [
+          "Image Classification, NLP",
+          "Reinforcement Learning",
+          "Recommendation Systems"
+        ]
+      },
+      {
+        "title": "Phase 3: Deploy & Scale AI",
+        "topics": [
+          "Cloud Platforms: AWS, GCP",
+          "Containerization: Docker, Kubernetes",
+          "API Development & Integration",
+          "Monitor & Maintain Models",
+          "Improve Model Performance"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics & Ethics",
+        "topics": [
+          "Generative Models, GANs",
+          "Explainable AI (XAI)",
+          "Bias Mitigation Strategies",
+          "Edge AI Deployment",
+          "Collaborate with Data Scientists",
+          "Publish Research Papers",
+          "Open Source Contributions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "AI Research Engineer": {
+    "title": "AI Research Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Fundamentals of AI Research (Weeks 1-3)",
+        "topics": [
+          "What is AI Research?",
+          "Math: Stats, Probability, Optimization",
+          "Read Papers from ArXiv, ICML",
+          "Experiment Tracking Tools",
+          "Version Control: Git",
+          "Basic Neural Network Architectures",
+          "Loss Functions & Optimizers"
+        ]
+      },
+      {
+        "title": "Phase 2: Conduct Experiments (Weeks 4-6)",
+        "topics": [
+          "Benchmark Datasets",
+          "Custom Dataset Creation",
+          "Hyperparameter Tuning",
+          "Compare Results with Baselines"
+        ]
+      },
+      {
+        "title": "Phase 3: Publish Findings",
+        "topics": [
+          "Write Technical Reports",
+          "Use LaTeX for Paper Writing",
+          "Submit to Conferences/Journals",
+          "Peer Review Process",
+          "Present at Workshops"
+        ]
+      },
+      {
+        "title": "Phase 4: Innovate & Collaborate",
+        "topics": [
+          "Explore Cutting-Edge Techniques",
+          "Cross-Disciplinary Applications",
+          "Work with Industry Partners",
+          "Mentor Junior Researchers",
+          "Stay Updated with Trends",
+          "Contribute to Open Source",
+          "Network at Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Advance Your Career",
+        "topics": [
+          "Academic Positions, R&D Roles",
+          "Apply for Grants, Funding",
+          "Build Research Lab"
+        ]
+      }
+    ]
+  },
+  "AI/ML Engineer": {
+    "title": "AI/ML Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to AI/ML (Weeks 1-3)",
+        "topics": [
+          "What is AI/ML?",
+          "Libraries: Scikit-Learn, Keras",
+          "Programming: Python, SQL",
+          "Data Cleaning & Visualization",
+          "Understand Algorithms: Regression, Clustering",
+          "Practice Mini Projects",
+          "Train Simple Models",
+          "Evaluate Model Metrics"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Solutions (Weeks 4-6)",
+        "topics": [
+          "Predictive Analytics",
+          "Anomaly Detection",
+          "Time Series Forecasting"
+        ]
+      },
+      {
+        "title": "Phase 3: Productionize AI/ML",
+        "topics": [
+          "CI/CD Pipelines for ML",
+          "Automated Retraining Systems",
+          "A/B Testing for Models",
+          "Ensure Scalability",
+          "Debugging & Logging"
+        ]
+      },
+      {
+        "title": "Phase 4: Specialized Skills",
+        "topics": [
+          "Deep Learning Architectures",
+          "Transfer Learning Techniques",
+          "Real-Time Inference Systems",
+          "Collaborate with DevOps",
+          "Share Insights via Dashboards",
+          "Contribute to Forums",
+          "Attend Hackathons"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "Architectural Visualizer": {
+    "title": "Architectural Visualizer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Architectural Visualization (Weeks 1-3)",
+        "topics": [
+          "What is Architectural Visualization?",
+          "Tools: 3ds Max, SketchUp, Blender",
+          "Rendering Engines: V-Ray, Lumion",
+          "Basics of Lighting & Texturing",
+          "Learn Blueprint Reading",
+          "Practice Simple Models",
+          "Create Basic Interiors & Exteriors",
+          "Explore Camera Angles & Composition"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Architectural Scenes (Weeks 4-6)",
+        "topics": [
+          "Residential & Commercial Spaces",
+          "Urban Planning & Landscapes",
+          "Furniture & Decor Details"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Realism",
+        "topics": [
+          "PBR Materials & Shaders",
+          "Advanced Lighting Techniques",
+          "Post-Processing Effects",
+          "Add Vegetation & People",
+          "Optimize for Real-Time Rendering"
+        ]
+      },
+      {
+        "title": "Phase 4: Presentation & Client Delivery",
+        "topics": [
+          "Render High-Quality Images & Animations",
+          "Create Walkthrough Videos",
+          "Interactive VR/AR Experiences",
+          "Collaborate with Architects",
+          "Iterate Based on Feedback",
+          "Export for Various Platforms",
+          "Build an Online Portfolio"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Freelance, Agency, or In-House Work"
+        ]
+      }
+    ]
+  },
+  "Audio Software Developer": {
+    "title": "Audio Software Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Audio Development (Weeks 1-3)",
+        "topics": [
+          "What is Audio Software Development?",
+          "Tools: JUCE, Max/MSP, Pure Data",
+          "Languages: C++, Python",
+          "Digital Signal Processing Basics",
+          "Learn Synthesis & Effects",
+          "Practice with Small Plugins",
+          "MIDI & Audio File Handling",
+          "Real-Time Audio Processing"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Audio Tools (Weeks 4-6)",
+        "topics": [
+          "Synthesizers, Drum Machines",
+          "Effects Plugins: Reverb, Delay",
+          "DAW Integration"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Test",
+        "topics": [
+          "Latency Optimization",
+          "Cross-Platform Compatibility",
+          "Unit Testing for Stability",
+          "Debugging Audio Artifacts",
+          "User Interface Design"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Features",
+        "topics": [
+          "AI-Based Audio Processing",
+          "Spatial Audio & Ambisonics",
+          "Collaborate with Musicians",
+          "Publish on Plugin Marketplaces",
+          "Open Source Contributions",
+          "Attend Music Tech Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Automation Engineer": {
+    "title": "Automation Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Automation (Weeks 1-3)",
+        "topics": [
+          "What is Automation Engineering?",
+          "Tools: PLCs, SCADA Systems",
+          "Programming: Ladder Logic, Python",
+          "Sensors & Actuators Basics",
+          "Understand Control Systems",
+          "Practice with Simulators",
+          "Basic Robotics Integration",
+          "Troubleshooting Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Automation Solutions (Weeks 4-6)",
+        "topics": [
+          "Industrial Automation Projects",
+          "Home Automation Systems",
+          "Process Optimization"
+        ]
+      },
+      {
+        "title": "Phase 3: Implementation & Testing",
+        "topics": [
+          "HMI Design",
+          "Data Logging & Monitoring",
+          "Safety Protocols",
+          "System Calibration",
+          "Debugging & Maintenance"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "IoT Integration",
+          "Machine Vision Systems",
+          "Predictive Maintenance",
+          "Collaborate with Teams",
+          "Publish Case Studies",
+          "Participate in Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "Automation Test Engineer": {
+    "title": "Automation Test Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Fundamentals of Automation Testing (Weeks 1-3)",
+        "topics": [
+          "What is Automation Testing?",
+          "Frameworks: Selenium, Cypress",
+          "Languages: Java, Python",
+          "Test Case Design",
+          "Version Control: Git",
+          "Basic Scripting Skills",
+          "Web & Mobile App Testing",
+          "CI/CD Pipeline Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Automate Tests (Weeks 4-6)",
+        "topics": [
+          "Regression Testing",
+          "Performance Testing",
+          "API Testing"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Maintain",
+        "topics": [
+          "Parallel Test Execution",
+          "Test Reporting Tools",
+          "Debugging Failures",
+          "Cross-Browser Compatibility",
+          "Update Test Scripts"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "AI-Driven Test Automation",
+          "Containerized Environments",
+          "Shift-Left Testing Strategies",
+          "Collaborate with DevOps",
+          "Contribute to Open Source",
+          "Share Insights via Blogs"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "Big Data Engineer": {
+    "title": "Big Data Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Foundations of Big Data (Weeks 1-3)",
+        "topics": [
+          "What is Big Data?",
+          "Tools: Hadoop, Spark, Kafka",
+          "Languages: Scala, Python",
+          "Data Storage: NoSQL, HDFS",
+          "ETL Processes",
+          "Practice Small Data Pipelines",
+          "Cluster Management",
+          "Data Partitioning Strategies"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Data Pipelines (Weeks 4-6)",
+        "topics": [
+          "Batch Processing",
+          "Stream Processing",
+          "Data Warehousing"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Scale",
+        "topics": [
+          "Data Compression Techniques",
+          "Query Optimization",
+          "Fault Tolerance Mechanisms",
+          "Monitor System Performance",
+          "Ensure Data Security"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Analytics",
+        "topics": [
+          "Machine Learning Integration",
+          "Graph Databases",
+          "Real-Time Dashboards",
+          "Collaborate with Analysts",
+          "Publish Findings",
+          "Participate in Hackathons"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "Blockchain Developer": {
+    "title": "Blockchain Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Blockchain (Weeks 1-3)",
+        "topics": [
+          "What is Blockchain?",
+          "Platforms: Ethereum, Solana, Binance",
+          "Languages: Solidity, Rust",
+          "Smart Contract Basics",
+          "Cryptographic Principles",
+          "Practice Writing Contracts",
+          "Deploy on Testnets",
+          "Interact with Wallets"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Decentralized Apps (Weeks 4-6)",
+        "topics": [
+          "Token Creation",
+          "NFT Marketplaces",
+          "DeFi Protocols"
+        ]
+      },
+      {
+        "title": "Phase 3: Security & Auditing",
+        "topics": [
+          "Gas Optimization",
+          "Vulnerability Analysis",
+          "Third-Party Audits",
+          "Upgradeable Contracts",
+          "Compliance Standards"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Layer 2 Scaling Solutions",
+          "Cross-Chain Bridges",
+          "DAO Development",
+          "Collaborate with Communities",
+          "Publish Research Papers",
+          "Attend Blockchain Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "CI/CD Engineer": {
+    "title": "CI/CD Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Fundamentals of CI/CD (Weeks 1-3)",
+        "topics": [
+          "What is CI/CD?",
+          "Tools: Jenkins, GitLab CI, CircleCI",
+          "Scripting: Bash, YAML",
+          "Version Control: Git",
+          "Continuous Integration Basics",
+          "Automated Build Processes",
+          "Unit & Integration Testing",
+          "Artifact Repository Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Implement Pipelines (Weeks 4-6)",
+        "topics": [
+          "Deployment Strategies",
+          "Infrastructure as Code",
+          "Monitoring & Alerts"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Secure",
+        "topics": [
+          "Pipeline Parallelization",
+          "Secrets Management",
+          "Rollback Mechanisms",
+          "Security Scanning",
+          "Audit Logs"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Practices",
+        "topics": [
+          "Blue-Green Deployments",
+          "Canary Releases",
+          "Feature Flags",
+          "Collaborate with Teams",
+          "Share Best Practices",
+          "Contribute to Open Source"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "CMS Developer": {
+    "title": "CMS Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to CMS (Weeks 1-3)",
+        "topics": [
+          "What is a CMS?",
+          "Platforms: WordPress, Drupal, Joomla",
+          "Languages: PHP, JavaScript",
+          "Themes & Plugins Development",
+          "Database Integration",
+          "Practice Custom Templates",
+          "SEO Best Practices",
+          "Content Migration"
+        ]
+      },
+      {
+        "title": "Phase 2: Customize CMS Sites (Weeks 4-6)",
+        "topics": [
+          "E-commerce Solutions",
+          "Membership Portals",
+          "Multilingual Support"
+        ]
+      },
+      {
+        "title": "Phase 3: Performance Optimization",
+        "topics": [
+          "Caching Strategies",
+          "Image Optimization",
+          "Lazy Loading",
+          "Responsive Design",
+          "Accessibility Standards"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Features",
+        "topics": [
+          "Headless CMS Architecture",
+          "GraphQL Integration",
+          "Custom API Endpoints",
+          "Collaborate with Designers",
+          "Publish Themes/Plugins",
+          "Participate in Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Agency, or In-House Work"
+        ]
+      }
+    ]
+  },
+  "Camera App Developer": {
+    "title": "Camera App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Basics of Camera App Development (Weeks 1-3)",
+        "topics": [
+          "What is Camera App Development?",
+          "Platforms: iOS, Android",
+          "Languages: Swift, Kotlin",
+          "Camera APIs & Permissions",
+          "Basic UI Design",
+          "Practice Image Capture",
+          "Filters & Effects",
+          "Photo Editing Libraries"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Camera Features (Weeks 4-6)",
+        "topics": [
+          "AR Filters",
+          "Object Recognition",
+          "Video Recording & Editing"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance User Experience",
+        "topics": [
+          "Gesture Controls",
+          "Low-Light Optimization",
+          "Cloud Storage Integration",
+          "Push Notifications",
+          "Analytics Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "AI-Powered Enhancements",
+          "Multi-Camera Support",
+          "Cross-Platform Development",
+          "Collaborate with UX Designers",
+          "Publish Updates",
+          "Gather User Feedback"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Architect": {
+    "title": "Cloud Architect",
+    "phases": [
+      {
+        "title": "Phase 1: Fundamentals of Cloud Computing (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Architecture?",
+          "Providers: AWS, Azure, GCP",
+          "Compute: EC2, VMs, Kubernetes",
+          "Storage: S3, Blob Storage",
+          "Networking Basics",
+          "Practice Cloud Deployments",
+          "Cost Optimization Strategies",
+          "Security Best Practices"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Cloud Solutions (Weeks 4-6)",
+        "topics": [
+          "Serverless Architectures",
+          "Microservices Design",
+          "Hybrid Cloud Models"
+        ]
+      },
+      {
+        "title": "Phase 3: Implementation & Monitoring",
+        "topics": [
+          "DevOps Integration",
+          "Monitoring Tools: CloudWatch, Prometheus",
+          "Disaster Recovery Plans",
+          "Auto-Scaling Configurations",
+          "Backup Strategies"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Edge Computing",
+          "AI/ML on Cloud",
+          "Compliance & Regulations",
+          "Collaborate with Teams",
+          "Publish Case Studies",
+          "Attend Cloud Summits"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Consultant, Freelancer, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Compliance Analyst": {
+    "title": "Cloud Compliance Analyst",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Cloud Compliance (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Compliance?",
+          "Regulations: GDPR, HIPAA, SOC2",
+          "Tools: AWS Config, Azure Policy",
+          "Understand Audit Processes",
+          "Basics of Risk Management",
+          "Practice Compliance Checks",
+          "Documentation & Reporting",
+          "Compliance Frameworks"
+        ]
+      },
+      {
+        "title": "Phase 2: Assess Compliance Needs (Weeks 4-6)",
+        "topics": [
+          "Industry-Specific Standards",
+          "Data Privacy Laws",
+          "Third-Party Vendor Audits"
+        ]
+      },
+      {
+        "title": "Phase 3: Implement Controls",
+        "topics": [
+          "Encryption Protocols",
+          "Access Management Policies",
+          "Incident Response Plans",
+          "Monitor Compliance Gaps",
+          "Automate Compliance Tasks"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Continuous Monitoring Tools",
+          "AI for Compliance Analysis",
+          "Cross-Border Data Regulations",
+          "Collaborate with Legal Teams",
+          "Publish Whitepapers",
+          "Attend Compliance Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Data Engineer": {
+    "title": "Cloud Data Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Fundamentals of Cloud Data Engineering (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Data Engineering?",
+          "Platforms: AWS Redshift, BigQuery, Snowflake",
+          "Languages: SQL, Python",
+          "ETL/ELT Pipelines",
+          "Data Warehousing Basics",
+          "Practice Data Migration",
+          "Cloud Storage Solutions",
+          "Data Modeling Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Data Pipelines (Weeks 4-6)",
+        "topics": [
+          "Batch Processing",
+          "Stream Processing",
+          "Data Lakes vs Data Warehouses"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Secure",
+        "topics": [
+          "Data Compression",
+          "Partitioning Strategies",
+          "Encryption & Access Control",
+          "Monitor Performance Metrics",
+          "Ensure Scalability"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Analytics",
+        "topics": [
+          "Machine Learning Integration",
+          "Real-Time Dashboards",
+          "Anomaly Detection",
+          "Collaborate with Data Scientists",
+          "Contribute to Open Source",
+          "Share Insights via Blogs"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Risk Assessor": {
+    "title": "Cloud Risk Assessor",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Cloud Risk Assessment (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Risk Assessment?",
+          "Frameworks: NIST, ISO 27001",
+          "Tools: Qualys, Tenable",
+          "Threat Modeling Basics",
+          "Vulnerability Scanning",
+          "Practice Risk Evaluations",
+          "Risk Mitigation Strategies",
+          "Compliance Mapping"
+        ]
+      },
+      {
+        "title": "Phase 2: Identify Risks (Weeks 4-6)",
+        "topics": [
+          "Infrastructure Risks",
+          "Application-Level Risks",
+          "Third-Party Risks"
+        ]
+      },
+      {
+        "title": "Phase 3: Develop Mitigation Plans",
+        "topics": [
+          "Incident Response Planning",
+          "Disaster Recovery Strategies",
+          "Security Patch Management",
+          "Regular Risk Reviews",
+          "Automate Risk Monitoring"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Risk Prediction",
+          "Zero Trust Architecture",
+          "Supply Chain Security",
+          "Collaborate with Stakeholders",
+          "Publish Findings",
+          "Participate in Workshops"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Consultant, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Security Architect": {
+    "title": "Cloud Security Architect",
+    "phases": [
+      {
+        "title": "Phase 1: Foundations of Cloud Security (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Security Architecture?",
+          "Platforms: AWS, Azure, GCP",
+          "Frameworks: CIS Benchmarks, CSA",
+          "Network Security Basics",
+          "Identity & Access Management",
+          "Practice Security Designs",
+          "Encryption & Key Management",
+          "Penetration Testing"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Secure Systems (Weeks 4-6)",
+        "topics": [
+          "Secure Application Development",
+          "Microservices Security",
+          "Serverless Security"
+        ]
+      },
+      {
+        "title": "Phase 3: Implementation & Monitoring",
+        "topics": [
+          "SIEM Tools: Splunk, QRadar",
+          "Intrusion Detection Systems",
+          "Threat Intelligence Feeds",
+          "Incident Response Automation",
+          "Continuous Monitoring"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI-Driven Threat Detection",
+          "DevSecOps Practices",
+          "Compliance Automation",
+          "Collaborate with Teams",
+          "Publish Research Papers",
+          "Attend Security Summits"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Consultant, Freelancer, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Security Engineer": {
+    "title": "Cloud Security Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Cloud Security (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Security?",
+          "Tools: AWS Shield, Azure Sentinel",
+          "Languages: Bash, PowerShell",
+          "Firewall Configuration",
+          "Access Control Lists",
+          "Practice Vulnerability Scans",
+          "Log Analysis",
+          "Patch Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Secure Cloud Environments (Weeks 4-6)",
+        "topics": [
+          "IAM Policies",
+          "Encryption at Rest & Transit",
+          "Container Security"
+        ]
+      },
+      {
+        "title": "Phase 3: Monitor & Respond",
+        "topics": [
+          "Security Information & Event Management",
+          "Alerting & Notifications",
+          "Incident Response Plans",
+          "Forensic Analysis",
+          "Automate Remediation"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Zero Trust Models",
+          "Behavioral Analytics",
+          "Cloud-Native Security Tools",
+          "Collaborate with DevOps",
+          "Contribute to Open Source",
+          "Attend Security Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Cloud Solutions Architect": {
+    "title": "Cloud Solutions Architect",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Cloud Solutions Architecture (Weeks 1-3)",
+        "topics": [
+          "What is Cloud Solutions Architecture?",
+          "Platforms: AWS, Azure, GCP",
+          "Compute & Storage Services",
+          "Networking Basics",
+          "Cost Optimization Strategies",
+          "Practice Solution Designs",
+          "High Availability Patterns",
+          "Disaster Recovery Planning"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Cloud Solutions (Weeks 4-6)",
+        "topics": [
+          "Hybrid Cloud Models",
+          "Multi-Cloud Strategies",
+          "Serverless Architectures"
+        ]
+      },
+      {
+        "title": "Phase 3: Implementation & Optimization",
+        "topics": [
+          "Infrastructure as Code",
+          "CI/CD Pipelines",
+          "Performance Tuning",
+          "Scalability Testing",
+          "Automate Deployments"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Edge Computing",
+          "AI/ML on Cloud",
+          "IoT Integration",
+          "Collaborate with Stakeholders",
+          "Publish Case Studies",
+          "Attend Cloud Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Consultant, Freelancer, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Computer Vision Engineer": {
+    "title": "Computer Vision Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Computer Vision (Weeks 1-3)",
+        "topics": [
+          "What is Computer Vision?",
+          "Libraries: OpenCV, TensorFlow",
+          "Languages: Python, C++",
+          "Image Processing Basics",
+          "Convolutional Neural Networks",
+          "Practice Object Detection",
+          "Image Classification",
+          "Video Analysis Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Vision Applications (Weeks 4-6)",
+        "topics": [
+          "Facial Recognition",
+          "Gesture Detection",
+          "Augmented Reality"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Scale",
+        "topics": [
+          "Model Training & Fine-Tuning",
+          "Real-Time Processing",
+          "Edge Deployment",
+          "Optimize for Latency",
+          "Handle Large Datasets"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Generative Adversarial Networks",
+          "Semantic Segmentation",
+          "3D Vision Techniques",
+          "Collaborate with Teams",
+          "Publish Research Papers",
+          "Attend Vision Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Construction Project Manager": {
+    "title": "Construction Project Manager",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Construction Management (Weeks 1-3)",
+        "topics": [
+          "What is Construction Project Management?",
+          "Tools: Primavera, MS Project",
+          "Budgeting & Cost Estimation",
+          "Scheduling Techniques",
+          "Contract Management",
+          "Practice Resource Allocation",
+          "Risk Assessment",
+          "Stakeholder Communication"
+        ]
+      },
+      {
+        "title": "Phase 2: Plan Projects (Weeks 4-6)",
+        "topics": [
+          "Site Surveys & Layouts",
+          "Material Procurement",
+          "Subcontractor Coordination"
+        ]
+      },
+      {
+        "title": "Phase 3: Execute & Monitor",
+        "topics": [
+          "Quality Assurance",
+          "Safety Protocols",
+          "Progress Tracking",
+          "Issue Resolution",
+          "Change Order Management"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "BIM Integration",
+          "Sustainable Construction",
+          "Lean Construction Methods",
+          "Collaborate with Teams",
+          "Document Lessons Learned",
+          "Attend Industry Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Consultant, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Content Strategist": {
+    "title": "Content Strategist",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Content Strategy (Weeks 1-3)",
+        "topics": [
+          "What is Content Strategy?",
+          "Tools: WordPress, HubSpot",
+          "Audience Analysis",
+          "SEO Fundamentals",
+          "Content Types: Blog, Video, Social",
+          "Practice Writing Content Plans",
+          "Editorial Calendars",
+          "Metrics & KPIs"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Content Plans (Weeks 4-6)",
+        "topics": [
+          "Brand Voice & Tone",
+          "Content Pillars & Themes",
+          "User Journey Mapping"
+        ]
+      },
+      {
+        "title": "Phase 3: Execution & Optimization",
+        "topics": [
+          "Content Creation Workflow",
+          "A/B Testing",
+          "Analytics & Reporting",
+          "Iterate Based on Feedback",
+          "Cross-Platform Distribution"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Content Generation",
+          "Personalization Strategies",
+          "Multilingual Content",
+          "Collaborate with Designers",
+          "Publish Case Studies",
+          "Attend Marketing Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Cybersecurity Analyst": {
+    "title": "Cybersecurity Analyst",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Cybersecurity (Weeks 1-3)",
+        "topics": [
+          "What is Cybersecurity?",
+          "Tools: Wireshark, Metasploit",
+          "Network Security Basics",
+          "Malware Analysis",
+          "Incident Response Process",
+          "Practice Penetration Testing",
+          "Vulnerability Scanning",
+          "Log Analysis"
+        ]
+      },
+      {
+        "title": "Phase 2: Analyze Threats (Weeks 4-6)",
+        "topics": [
+          "Phishing Attacks",
+          "DDoS Mitigation",
+          "Endpoint Security"
+        ]
+      },
+      {
+        "title": "Phase 3: Protect & Respond",
+        "topics": [
+          "Firewall Configuration",
+          "Intrusion Detection Systems",
+          "Patch Management",
+          "Incident Documentation",
+          "Security Awareness Training"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Threat Intelligence Platforms",
+          "Zero Trust Models",
+          "Behavioral Analytics",
+          "Collaborate with Teams",
+          "Publish Reports",
+          "Attend Cybersecurity Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Consultant, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Data Engineer": {
+    "title": "Data Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Data Engineering (Weeks 1-3)",
+        "topics": [
+          "What is Data Engineering?",
+          "Tools: Apache Spark, Kafka, Airflow",
+          "Languages: Python, SQL",
+          "ETL/ELT Basics",
+          "Data Warehousing Concepts",
+          "Practice Data Pipelines",
+          "Cloud Storage Solutions",
+          "Database Design Principles"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Data Pipelines (Weeks 4-6)",
+        "topics": [
+          "Batch Processing",
+          "Stream Processing",
+          "Data Lakes vs Data Warehouses"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Secure",
+        "topics": [
+          "Data Compression Techniques",
+          "Partitioning Strategies",
+          "Encryption & Access Control",
+          "Monitor Performance Metrics",
+          "Ensure Scalability"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Machine Learning Integration",
+          "Real-Time Dashboards",
+          "Anomaly Detection",
+          "Collaborate with Data Scientists",
+          "Contribute to Open Source",
+          "Share Insights via Blogs"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Data Scientist": {
+    "title": "Data Scientist",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Data Science (Weeks 1-3)",
+        "topics": [
+          "What is Data Science?",
+          "Tools: Jupyter Notebook, RStudio",
+          "Libraries: Pandas, NumPy, Scikit-Learn",
+          "Statistics & Probability Basics",
+          "Exploratory Data Analysis",
+          "Practice Small Projects",
+          "Linear Regression, Classification",
+          "Visualization Tools: Matplotlib, Seaborn"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Models (Weeks 4-6)",
+        "topics": [
+          "Supervised & Unsupervised Learning",
+          "Clustering Algorithms",
+          "Time Series Forecasting"
+        ]
+      },
+      {
+        "title": "Phase 3: Deploy & Monitor",
+        "topics": [
+          "Model Deployment: Flask, FastAPI",
+          "A/B Testing",
+          "Performance Monitoring",
+          "Debugging Model Drift",
+          "Iterate Based on Feedback"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Deep Learning Architectures",
+          "Natural Language Processing",
+          "Reinforcement Learning",
+          "Collaborate with Teams",
+          "Publish Research Papers",
+          "Attend Data Science Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "DevOps Engineer": {
+    "title": "DevOps Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to DevOps (Weeks 1-3)",
+        "topics": [
+          "What is DevOps?",
+          "Tools: Jenkins, Docker, Kubernetes",
+          "Scripting: Bash, YAML",
+          "CI/CD Pipeline Basics",
+          "Infrastructure as Code",
+          "Practice Automation Scripts",
+          "Version Control: Git",
+          "Monitoring Tools: Prometheus, Grafana"
+        ]
+      },
+      {
+        "title": "Phase 2: Implement CI/CD Pipelines (Weeks 4-6)",
+        "topics": [
+          "Build Automation",
+          "Test Automation",
+          "Deployment Strategies"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Secure",
+        "topics": [
+          "Pipeline Parallelization",
+          "Secrets Management",
+          "Rollback Mechanisms",
+          "Security Scanning",
+          "Audit Logs"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Practices",
+        "topics": [
+          "Blue-Green Deployments",
+          "Canary Releases",
+          "Feature Flags",
+          "Collaborate with Teams",
+          "Share Best Practices",
+          "Contribute to Open Source"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Advancement",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Startups"
+        ]
+      }
+    ]
+  },
+  "Digital Art Tool Developer": {
+    "title": "Digital Art Tool Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Digital Art Tools (Weeks 1-3)",
+        "topics": [
+          "What are Digital Art Tools?",
+          "Tools: Photoshop Scripting, Blender API",
+          "Languages: Python, JavaScript",
+          "Graphics Programming Basics",
+          "Brush Engine Development",
+          "Practice Small Plugins",
+          "Layer & Mask Manipulation",
+          "UI Design for Artists"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Features (Weeks 4-6)",
+        "topics": [
+          "Custom Brushes & Effects",
+          "Vector & Raster Tools",
+          "Animation Support"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Usability",
+        "topics": [
+          "Performance Optimization",
+          "User Feedback Loops",
+          "Cross-Platform Compatibility",
+          "Accessibility Features",
+          "Export Options"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI-Powered Tools",
+          "Procedural Generation",
+          "Integration with AR/VR",
+          "Collaborate with Artists",
+          "Publish Updates",
+          "Gather User Feedback"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Digital Marketer": {
+    "title": "Digital Marketer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Digital Marketing (Weeks 1-3)",
+        "topics": [
+          "What is Digital Marketing?",
+          "Tools: Google Analytics, SEMrush",
+          "SEO & SEM Basics",
+          "Social Media Advertising",
+          "Content Marketing Strategies",
+          "Practice Campaigns",
+          "Metrics & KPIs",
+          "Audience Segmentation"
+        ]
+      },
+      {
+        "title": "Phase 2: Run Campaigns (Weeks 4-6)",
+        "topics": [
+          "Email Marketing",
+          "Paid Ads: Google Ads, Facebook Ads",
+          "Influencer Collaborations"
+        ]
+      },
+      {
+        "title": "Phase 3: Analyze & Optimize",
+        "topics": [
+          "A/B Testing",
+          "Conversion Rate Optimization",
+          "Customer Journey Mapping",
+          "Iterate Based on Feedback",
+          "Cross-Channel Attribution"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Marketing Automation",
+          "Personalization Strategies",
+          "Multilingual Campaigns",
+          "Collaborate with Designers",
+          "Publish Case Studies",
+          "Attend Marketing Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "E-commerce Developer": {
+    "title": "E-commerce Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to E-commerce Development (Weeks 1-3)",
+        "topics": [
+          "What is E-commerce Development?",
+          "Platforms: Shopify, WooCommerce, Magento",
+          "Languages: PHP, JavaScript",
+          "Payment Gateway Integration",
+          "Shopping Cart Functionality",
+          "Practice Custom Themes",
+          "SEO Best Practices",
+          "Content Migration"
+        ]
+      },
+      {
+        "title": "Phase 2: Customize E-commerce Sites (Weeks 4-6)",
+        "topics": [
+          "Product Catalog Management",
+          "Membership Portals",
+          "Multilingual Support"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance User Experience",
+        "topics": [
+          "Caching Strategies",
+          "Image Optimization",
+          "Lazy Loading",
+          "Responsive Design",
+          "Accessibility Standards"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Features",
+        "topics": [
+          "Headless E-commerce Architecture",
+          "GraphQL Integration",
+          "Custom API Endpoints",
+          "Collaborate with UX Designers",
+          "Publish Themes/Plugins",
+          "Participate in Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Agency, or In-House Work"
+        ]
+      }
+    ]
+  },
+  "ETL Developer": {
+    "title": "ETL Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to ETL Development (Weeks 1-3)",
+        "topics": [
+          "What is ETL?",
+          "Tools: Informatica, Talend, SSIS",
+          "Languages: SQL, Python",
+          "Data Extraction Techniques",
+          "Transformation Logic",
+          "Practice Data Pipelines",
+          "Error Handling",
+          "Data Validation"
+        ]
+      },
+      {
+        "title": "Phase 2: Build ETL Pipelines (Weeks 4-6)",
+        "topics": [
+          "Incremental Loads",
+          "Data Cleansing",
+          "Data Merging"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Monitor",
+        "topics": [
+          "Performance Tuning",
+          "Logging & Auditing",
+          "Automated Scheduling",
+          "Monitor Data Quality",
+          "Handle Large Datasets"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Real-Time ETL",
+          "Big Data Integration",
+          "Cloud-Based ETL",
+          "Collaborate with Teams",
+          "Publish Documentation",
+          "Attend Data Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "EdTech Developer": {
+    "title": "EdTech Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to EdTech Development (Weeks 1-3)",
+        "topics": [
+          "What is EdTech?",
+          "Platforms: Moodle, Canvas",
+          "Languages: JavaScript, Python",
+          "Learning Management Systems",
+          "Gamification Techniques",
+          "Practice Interactive Modules",
+          "Assessment Tools",
+          "Content Delivery"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Educational Tools (Weeks 4-6)",
+        "topics": [
+          "Quizzes & Exams",
+          "Interactive Simulations",
+          "Virtual Classrooms"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Engagement",
+        "topics": [
+          "Personalized Learning Paths",
+          "Progress Tracking",
+          "Feedback Mechanisms",
+          "Accessibility Features",
+          "Cross-Platform Support"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Adaptive Learning",
+          "AR/VR in Education",
+          "Analytics Dashboards",
+          "Collaborate with Educators",
+          "Publish Case Studies",
+          "Attend EdTech Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Educational App Designer": {
+    "title": "Educational App Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Educational App Design (Weeks 1-3)",
+        "topics": [
+          "What is Educational App Design?",
+          "Tools: Figma, Sketch",
+          "UX/UI Design Principles",
+          "Learning Theories",
+          "Wireframing Basics",
+          "Practice Prototypes",
+          "User Testing Techniques",
+          "Accessibility Guidelines"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Apps (Weeks 4-6)",
+        "topics": [
+          "Interactive Lessons",
+          "Gamified Learning",
+          "Collaborative Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Usability",
+        "topics": [
+          "Progressive Disclosure",
+          "Microinteractions",
+          "Cross-Device Compatibility",
+          "Iterate Based on Feedback",
+          "Localization Support"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI-Powered Personalization",
+          "Augmented Reality",
+          "Offline Functionality",
+          "Collaborate with Developers",
+          "Publish Updates",
+          "Gather User Feedback"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Embedded Systems Engineer": {
+    "title": "Embedded Systems Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Embedded Systems (Weeks 1-3)",
+        "topics": [
+          "What are Embedded Systems?",
+          "Tools: Keil, Arduino IDE",
+          "Languages: C, C++",
+          "Microcontroller Basics",
+          "Real-Time Operating Systems",
+          "Practice Simple Programs",
+          "GPIO & Peripherals",
+          "Debugging Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Embedded Projects (Weeks 4-6)",
+        "topics": [
+          "Sensor Integration",
+          "IoT Devices",
+          "Robotics Applications"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Test",
+        "topics": [
+          "Power Consumption Optimization",
+          "Signal Integrity",
+          "Firmware Updates",
+          "Testing Protocols",
+          "Fault Tolerance"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Wireless Communication",
+          "Edge Computing",
+          "Security Protocols",
+          "Collaborate with Teams",
+          "Publish Research",
+          "Attend Embedded Systems Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Fashion E-commerce Designer": {
+    "title": "Fashion E-commerce Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Fashion E-commerce Design (Weeks 1-3)",
+        "topics": [
+          "What is Fashion E-commerce Design?",
+          "Tools: Adobe XD, Figma, Shopify",
+          "UX/UI Principles for Fashion",
+          "Wireframing Basics",
+          "Product Page Design",
+          "Practice Prototypes",
+          "Typography & Color Theory",
+          "Responsive Layouts"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Fashion Websites (Weeks 4-6)",
+        "topics": [
+          "Lookbooks & Collections",
+          "Virtual Try-On Features",
+          "Shopping Cart Optimization"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance User Experience",
+        "topics": [
+          "Personalization Techniques",
+          "Search & Filter Systems",
+          "Checkout Process Streamlining",
+          "Mobile-First Design",
+          "Accessibility Standards"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Recommendations",
+          "Augmented Reality Integration",
+          "Cross-Channel Marketing",
+          "Collaborate with Developers",
+          "Publish Case Studies",
+          "Attend Fashion Tech Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Financial AI Engineer": {
+    "title": "Financial AI Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Financial AI (Weeks 1-3)",
+        "topics": [
+          "What is Financial AI?",
+          "Tools: TensorFlow, PyTorch",
+          "Languages: Python, R",
+          "Machine Learning Basics",
+          "Data Preprocessing for Finance",
+          "Practice Small Models",
+          "Fraud Detection Algorithms",
+          "Time Series Analysis"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Financial Models (Weeks 4-6)",
+        "topics": [
+          "Credit Scoring",
+          "Algorithmic Trading",
+          "Risk Assessment"
+        ]
+      },
+      {
+        "title": "Phase 3: Deploy & Monitor",
+        "topics": [
+          "Model Deployment: Flask, FastAPI",
+          "Performance Monitoring",
+          "Debugging Model Drift",
+          "Iterate Based on Feedback",
+          "Ensure Compliance"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Deep Learning for Finance",
+          "Natural Language Processing",
+          "Explainable AI (XAI)",
+          "Collaborate with Teams",
+          "Publish Research Papers",
+          "Attend FinTech Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Financial Security Expert": {
+    "title": "Financial Security Expert",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Financial Security (Weeks 1-3)",
+        "topics": [
+          "What is Financial Security?",
+          "Tools: Splunk, SIEM Systems",
+          "Frameworks: PCI DSS, ISO 27001",
+          "Threat Modeling Basics",
+          "Vulnerability Scanning",
+          "Practice Risk Assessments",
+          "Encryption Protocols",
+          "Incident Response Plans"
+        ]
+      },
+      {
+        "title": "Phase 2: Identify Risks (Weeks 4-6)",
+        "topics": [
+          "Payment Fraud",
+          "Phishing Attacks",
+          "Insider Threats"
+        ]
+      },
+      {
+        "title": "Phase 3: Mitigation Strategies",
+        "topics": [
+          "Multi-Factor Authentication",
+          "Transaction Monitoring",
+          "Security Patch Management",
+          "Regular Audits",
+          "Automate Security Tasks"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Blockchain for Security",
+          "Behavioral Analytics",
+          "Zero Trust Architecture",
+          "Collaborate with Stakeholders",
+          "Publish Findings",
+          "Attend Cybersecurity Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Consultant, Freelancer, or Enterprise Role"
+        ]
+      }
+    ]
+  },
+  "Financial Writer": {
+    "title": "Financial Writer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Financial Writing (Weeks 1-3)",
+        "topics": [
+          "What is Financial Writing?",
+          "Tools: Grammarly, Hemingway",
+          "Research Techniques",
+          "SEO for Finance Content",
+          "Writing Styles: News, Analysis, Reports",
+          "Practice Articles",
+          "Editorial Calendars",
+          "Metrics & KPIs"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Content Plans (Weeks 4-6)",
+        "topics": [
+          "Market Trends",
+          "Investment Guides",
+          "Personal Finance Tips"
+        ]
+      },
+      {
+        "title": "Phase 3: Execution & Optimization",
+        "topics": [
+          "Content Creation Workflow",
+          "A/B Testing",
+          "Analytics & Reporting",
+          "Iterate Based on Feedback",
+          "Cross-Platform Distribution"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Content Generation",
+          "Multilingual Content",
+          "Thought Leadership",
+          "Collaborate with Editors",
+          "Publish Case Studies",
+          "Attend Finance Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Fitness App Developer": {
+    "title": "Fitness App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Fitness App Development (Weeks 1-3)",
+        "topics": [
+          "What is Fitness App Development?",
+          "Platforms: iOS, Android",
+          "Languages: Swift, Kotlin",
+          "HealthKit & Google Fit APIs",
+          "UI/UX Design Principles",
+          "Practice Basic Features",
+          "Workout Tracking",
+          "Nutrition Logs"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Fitness Features (Weeks 4-6)",
+        "topics": [
+          "Step Counters",
+          "Calorie Trackers",
+          "Live Workouts"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance User Engagement",
+        "topics": [
+          "Gamification Techniques",
+          "Push Notifications",
+          "Social Sharing",
+          "Personalized Plans",
+          "Offline Functionality"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Personalized Coaching",
+          "Wearable Integration",
+          "AR/VR Workouts",
+          "Collaborate with Fitness Experts",
+          "Publish Updates",
+          "Gather User Feedback"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Food & Beverage Marketer": {
+    "title": "Food & Beverage Marketer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Food & Beverage Marketing (Weeks 1-3)",
+        "topics": [
+          "What is Food & Beverage Marketing?",
+          "Tools: HubSpot, Hootsuite",
+          "SEO & SEM Basics",
+          "Social Media Advertising",
+          "Content Marketing Strategies",
+          "Practice Campaigns",
+          "Metrics & KPIs",
+          "Audience Segmentation"
+        ]
+      },
+      {
+        "title": "Phase 2: Run Campaigns (Weeks 4-6)",
+        "topics": [
+          "Influencer Collaborations",
+          "Recipe Videos",
+          "Event Promotions"
+        ]
+      },
+      {
+        "title": "Phase 3: Analyze & Optimize",
+        "topics": [
+          "A/B Testing",
+          "Conversion Rate Optimization",
+          "Customer Journey Mapping",
+          "Iterate Based on Feedback",
+          "Cross-Channel Attribution"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Marketing Automation",
+          "Personalization Strategies",
+          "Sustainability Messaging",
+          "Collaborate with Designers",
+          "Publish Case Studies",
+          "Attend Marketing Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Food Tech Developer": {
+    "title": "Food Tech Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Food Tech Development (Weeks 1-3)",
+        "topics": [
+          "What is Food Tech?",
+          "Platforms: Web, Mobile",
+          "Languages: Python, JavaScript",
+          "API Integration: Delivery Services",
+          "Inventory Management Systems",
+          "Practice Prototypes",
+          "Order Tracking Features",
+          "Payment Gateway Integration"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Features (Weeks 4-6)",
+        "topics": [
+          "Meal Planning Tools",
+          "Recipe Recommendation Engines",
+          "Supply Chain Optimization"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Usability",
+        "topics": [
+          "Real-Time Updates",
+          "User Feedback Loops",
+          "Localization Support",
+          "Cross-Platform Compatibility",
+          "Accessibility Features"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "AI for Demand Forecasting",
+          "IoT in Food Tech",
+          "Sustainability Analytics",
+          "Collaborate with Teams",
+          "Publish Documentation",
+          "Attend Food Tech Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Frontend Developer": {
+    "title": "Frontend Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Frontend Development (Weeks 1-3)",
+        "topics": [
+          "What is Frontend Development?",
+          "Tools: VS Code, Chrome DevTools",
+          "Languages: HTML, CSS, JavaScript",
+          "Frameworks: React, Angular, Vue",
+          "Responsive Design Principles",
+          "Practice Small Projects",
+          "Version Control: Git",
+          "Browser Compatibility"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Web Interfaces (Weeks 4-6)",
+        "topics": [
+          "Single Page Applications",
+          "E-commerce Sites",
+          "Dynamic Dashboards"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Performance",
+        "topics": [
+          "Optimization Techniques",
+          "Lazy Loading",
+          "Accessibility Standards",
+          "Cross-Browser Testing",
+          "Debugging Tools"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "State Management",
+          "Web Components",
+          "Progressive Web Apps",
+          "Collaborate with Backend Teams",
+          "Contribute to Open Source",
+          "Attend Web Development Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Full Stack Developer": {
+    "title": "Full Stack Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Full Stack Development (Weeks 1-3)",
+        "topics": [
+          "What is Full Stack Development?",
+          "Tools: Node.js, Express, MongoDB",
+          "Languages: JavaScript, Python",
+          "Frontend & Backend Basics",
+          "RESTful API Design",
+          "Practice CRUD Operations",
+          "Database Management",
+          "Authentication Systems"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Applications (Weeks 4-6)",
+        "topics": [
+          "E-commerce Platforms",
+          "Social Media Apps",
+          "Task Management Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Secure",
+        "topics": [
+          "Performance Tuning",
+          "Security Best Practices",
+          "Scalability Testing",
+          "Error Handling",
+          "Automate Deployments"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "GraphQL Integration",
+          "Microservices Architecture",
+          "Serverless Functions",
+          "Collaborate with Teams",
+          "Contribute to Open Source",
+          "Attend Developer Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Game AI Engineer": {
+    "title": "Game AI Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Game AI (Weeks 1-3)",
+        "topics": [
+          "What is Game AI?",
+          "Engines: Unity, Unreal",
+          "Languages: C#, C++",
+          "Finite State Machines",
+          "Pathfinding Algorithms",
+          "Practice Simple AI Scripts",
+          "Behavior Trees",
+          "Decision Making Models"
+        ]
+      },
+      {
+        "title": "Phase 2: Build AI Systems (Weeks 4-6)",
+        "topics": [
+          "NPC Behavior",
+          "Adaptive Difficulty",
+          "Procedural Content Generation"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Realism",
+        "topics": [
+          "Machine Learning for Games",
+          "AI Debugging Techniques",
+          "Optimize Performance",
+          "Iterate Based on Feedback",
+          "Player Interaction Models"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Reinforcement Learning",
+          "Neural Networks in Games",
+          "Multiplayer AI Synchronization",
+          "Collaborate with Designers",
+          "Publish Research",
+          "Attend Game AI Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Game Analytics Specialist": {
+    "title": "Game Analytics Specialist",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Game Analytics (Weeks 1-3)",
+        "topics": [
+          "What is Game Analytics?",
+          "Tools: Unity Analytics, Firebase",
+          "Data Collection Methods",
+          "Metrics: Retention, Churn, ARPU",
+          "SQL Basics for Data Queries",
+          "Practice Data Dashboards",
+          "Player Behavior Analysis",
+          "A/B Testing Principles"
+        ]
+      },
+      {
+        "title": "Phase 2: Analyze Game Data (Weeks 4-6)",
+        "topics": [
+          "User Segmentation",
+          "Monetization Strategies",
+          "Engagement Metrics"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize & Report",
+        "topics": [
+          "Data Visualization Tools",
+          "Iterate Based on Insights",
+          "Cross-Platform Analytics",
+          "Debugging Data Issues",
+          "Automate Reporting"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Predictive Analytics",
+          "AI for Player Insights",
+          "Funnel Analysis",
+          "Collaborate with Teams",
+          "Publish Case Studies",
+          "Attend Analytics Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Freelance, Startup, or Company Role"
+        ]
+      }
+    ]
+  },
+  "Game Designer": {
+    "title": "Game Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Game Design (Weeks 1-3)",
+        "topics": [
+          "What is Game Design?",
+          "Tools: Figma, Miro, Game Engines",
+          "Core Design Principles",
+          "Game Mechanics & Systems",
+          "Level Design Basics",
+          "Practice Prototyping",
+          "Player Experience Mapping",
+          "Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Games (Weeks 4-6)",
+        "topics": [
+          "Narrative Design",
+          "Puzzle Mechanics",
+          "Multiplayer Systems"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Gameplay",
+        "topics": [
+          "Balancing Difficulty",
+          "Iterate Based on Playtesting",
+          "UI/UX Integration",
+          "Accessibility Features",
+          "Localization Support"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Procedural Generation",
+          "Emergent Gameplay",
+          "Cross-Platform Design",
+          "Collaborate with Developers",
+          "Publish Design Documents",
+          "Attend Game Design Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Studio, or Indie Role"
+        ]
+      }
+    ]
+  },
+  "Game Developer": {
+    "title": "Game Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Game Dev (Weeks 1-3)",
+        "topics": [
+          "What is Game Dev?",
+          "Engines: Unity, Unreal, Godot",
+          "Platforms: PC, Mobile, Console",
+          "Choose C#, C++, or GDScript",
+          "Learn Variables, Loops, OOP",
+          "Practice with small scripts",
+          "Unity: GameObjects, Physics, UI",
+          "Godot: Nodes, GDScript, Signals",
+          "Unreal: Blueprints, Actors, Levels"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Games (Weeks 4-6)",
+        "topics": [
+          "Pong, Flappy Bird, Shooter",
+          "Platformer, RPG, Puzzle Games"
+        ]
+      },
+      {
+        "title": "Phase 3: Art, Audio & UI",
+        "topics": [
+          "2D/3D Art, Pixel Art, Blender",
+          "Sound Integration",
+          "UI Design, UX, Feedback"
+        ]
+      },
+      {
+        "title": "Phase 4: Game Math & Physics",
+        "topics": [
+          "Vectors, Collisions, Trig",
+          "Pathfinding, AI Basics",
+          "Save Progress, Polish Game Feel",
+          "Particles, Screenshake, Transitions",
+          "Export to PC, Mobile, Web",
+          "Monetize: Ads, IAP, Steam, Patreon",
+          "Share Projects, Devlogs",
+          "Join Game Jams, Discords"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "Game Environment Artist": {
+    "title": "Game Environment Artist",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Environment Art (Weeks 1-3)",
+        "topics": [
+          "What is Environment Art?",
+          "Tools: Blender, Substance Painter",
+          "Modeling Basics",
+          "UV Unwrapping & Texturing",
+          "Lighting & Rendering Principles",
+          "Practice Simple Models",
+          "Create Props & Environments",
+          "Basic Sculpting Techniques"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Game Worlds (Weeks 4-6)",
+        "topics": [
+          "Landscapes & Terrain Design",
+          "Interior Spaces",
+          "Modular Asset Creation"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Realism",
+        "topics": [
+          "PBR Workflow",
+          "Procedural Textures",
+          "Baking Normals & AO Maps",
+          "Material Creation in Engines",
+          "Add Wear & Tear Details"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Dynamic Simulations",
+          "Cloth, Hair, & Particle Effects",
+          "Optimize for Real-Time Engines",
+          "Game Engine Integration",
+          "Collaborate with Designers",
+          "Iterate Based on Feedback",
+          "Prepare Portfolio"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Artstation",
+          "Freelance, Agency, or In-House Role"
+        ]
+      }
+    ]
+  },
+  "Game Producer": {
+    "title": "Game Producer",
+    "phases": [
+      {
+        "title": "Phase 1: Introduction to Game Production (Weeks 1-3)",
+        "topics": [
+          "What is Game Production?",
+          "Tools: Jira, Trello, Asana",
+          "Project Management Basics",
+          "Agile & Scrum Methodologies",
+          "Budgeting & Scheduling",
+          "Practice Task Tracking",
+          "Communication Skills",
+          "Risk Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Manage Game Projects (Weeks 4-6)",
+        "topics": [
+          "Team Coordination",
+          "Milestone Planning",
+          "Stakeholder Communication"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Workflow",
+        "topics": [
+          "Resource Allocation",
+          "Conflict Resolution",
+          "Quality Assurance",
+          "Track Progress",
+          "Automate Reporting"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Topics",
+        "topics": [
+          "Cross-Discipline Collaboration",
+          "Outsourcing Strategies",
+          "Post-Launch Support",
+          "Collaborate with Leadership",
+          "Publish Post-Mortems",
+          "Attend Game Industry Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Career Growth",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Freelance, Studio, or Executive Role"
+        ]
+      }
+    ]
+  },
+  "Game Sound Designer": {
+    "title": "Game Sound Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Sound Design (Weeks 1-3)",
+        "topics": [
+          "What is Game Sound Design?",
+          "Tools: FMOD, Wwise, Audacity",
+          "Sound Types: SFX, Music, Ambience",
+          "Learn Audio Editing Basics",
+          "Practice with Simple Sound Effects",
+          "Unity: Audio Sources, Mixers",
+          "Godot: AudioStreams, Buses",
+          "Unreal: Sound Cues, Attenuation"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Game Sounds (Weeks 4-6)",
+        "topics": [
+          "Design Sounds for Pong, Shooter",
+          "Platformer Jumps, RPG Spells, Puzzle Clicks"
+        ]
+      },
+      {
+        "title": "Phase 3: Integrate & Polish",
+        "topics": [
+          "Sync Audio with Animations",
+          "Dynamic Music Systems",
+          "UI Feedback Sounds",
+          "Optimize File Sizes"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Procedural Audio Generation",
+          "3D Spatial Audio",
+          "Voice Acting Integration",
+          "Export to PC, Mobile, Console",
+          "Monetize: Sound Packs, Freelance",
+          "Share Projects, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, SoundCloud",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "Game Tester": {
+    "title": "Game Tester",
+    "phases": [
+      {
+        "title": "Phase 1: Understand QA (Weeks 1-3)",
+        "topics": [
+          "What is Game Testing?",
+          "Types: Functional, Compatibility, Performance",
+          "Tools: Jira, TestRail, Bug Reporting",
+          "Learn Testing Methodologies",
+          "Practice Writing Bug Reports",
+          "Unity: Play Mode Testing",
+          "Godot: Scene Debugging",
+          "Unreal: PIE (Play In Editor)"
+        ]
+      },
+      {
+        "title": "Phase 2: Test Games (Weeks 4-6)",
+        "topics": [
+          "Test Pong, Flappy Bird, Shooter",
+          "Platformer Levels, RPG Quests, Puzzle Mechanics"
+        ]
+      },
+      {
+        "title": "Phase 3: Improve Testing Skills",
+        "topics": [
+          "Automated Testing Tools",
+          "Regression Testing",
+          "Performance Profiling",
+          "Cross-Platform Testing"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced QA Practices",
+        "topics": [
+          "Localization Testing",
+          "Usability Feedback",
+          "Collaborate with Devs",
+          "Export Test Results",
+          "Monetize: Freelance, Contract Work",
+          "Join QA Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Graphic Designer": {
+    "title": "Graphic Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Graphic Design (Weeks 1-3)",
+        "topics": [
+          "What is Graphic Design?",
+          "Tools: Photoshop, Illustrator, Procreate",
+          "Principles: Color, Typography, Layout",
+          "Learn Vector and Raster Graphics",
+          "Practice with Logos and Icons",
+          "Unity: UI/UX Design",
+          "Godot: CanvasItem Nodes",
+          "Unreal: UMG Widgets"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Assets (Weeks 4-6)",
+        "topics": [
+          "Design Characters, Environments",
+          "Create Posters, Social Media Content"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Skills",
+        "topics": [
+          "Pixel Art, 3D Modeling",
+          "Motion Graphics",
+          "User Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Branding Strategies",
+          "Interactive Prototypes",
+          "Export High-Res Files",
+          "Monetize: Freelance, Stock Assets",
+          "Share Portfolios, Join Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Health App Developer": {
+    "title": "Health App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Health Apps (Weeks 1-3)",
+        "topics": [
+          "What are Health Apps?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, Swift, Kotlin",
+          "Learn Data Privacy Laws (e.g., HIPAA)",
+          "Practice with Simple Health Trackers",
+          "Integrate APIs for Wearables",
+          "Backend: Firebase, AWS"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Step Counters, Calorie Trackers",
+          "Medication Reminders, Symptom Logs"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Personalized Insights",
+          "Push Notifications",
+          "User Interface Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Health Data Analyst": {
+    "title": "Health Data Analyst",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Data Analysis (Weeks 1-3)",
+        "topics": [
+          "What is Health Data Analytics?",
+          "Tools: Python, R, Tableau",
+          "Understand Healthcare Datasets",
+          "Learn Statistical Methods",
+          "Practice with Sample Data",
+          "SQL for Querying Databases",
+          "Visualize Trends"
+        ]
+      },
+      {
+        "title": "Phase 2: Analyze Real Data (Weeks 4-6)",
+        "topics": [
+          "Patient Records, Clinical Trials",
+          "Public Health Statistics"
+        ]
+      },
+      {
+        "title": "Phase 3: Advanced Techniques",
+        "topics": [
+          "Machine Learning Models",
+          "Predictive Analytics",
+          "Data Cleaning Pipelines"
+        ]
+      },
+      {
+        "title": "Phase 4: Present Findings",
+        "topics": [
+          "Create Dashboards",
+          "Generate Actionable Reports",
+          "Collaborate with Stakeholders",
+          "Monetize: Consultancy, Freelance"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Kaggle",
+          "Apply, Freelance, Research Roles"
+        ]
+      }
+    ]
+  },
+  "Health Tech Innovator": {
+    "title": "Health Tech Innovator",
+    "phases": [
+      {
+        "title": "Phase 1: Explore Health Tech (Weeks 1-3)",
+        "topics": [
+          "What is Health Tech Innovation?",
+          "Fields: AI Diagnostics, Telemedicine",
+          "Tools: TensorFlow, MATLAB",
+          "Learn Prototyping",
+          "Practice Idea Validation",
+          "Hardware: IoT Sensors"
+        ]
+      },
+      {
+        "title": "Phase 2: Develop Solutions (Weeks 4-6)",
+        "topics": [
+          "Wearable Devices, Remote Monitoring",
+          "Personalized Medicine Apps"
+        ]
+      },
+      {
+        "title": "Phase 3: Test & Iterate",
+        "topics": [
+          "Conduct Pilot Studies",
+          "Gather User Feedback",
+          "Refine Prototypes"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Market",
+        "topics": [
+          "Secure Funding",
+          "Compliance with Regulations",
+          "Launch MVP",
+          "Monetize: Licensing, Partnerships"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Pitch Decks",
+          "Apply, Found Startup, Collaborate"
+        ]
+      }
+    ]
+  },
+  "HR Tech Developer": {
+    "title": "HR Tech Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand HR Tech (Weeks 1-3)",
+        "topics": [
+          "What is HR Technology?",
+          "Tools: Node.js, Django, Salesforce",
+          "Learn HR Processes",
+          "Practice Backend Development",
+          "Integrate APIs for Payroll",
+          "Database Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Modules (Weeks 4-6)",
+        "topics": [
+          "Recruitment Portals, Onboarding Tools",
+          "Employee Engagement Platforms"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Resume Screening",
+          "Chatbots for Employee Queries",
+          "Improve UX/UI"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Monetize",
+        "topics": [
+          "Host on Cloud Platforms",
+          "Monetize via SaaS Models",
+          "Gather Client Feedback",
+          "Iterate for Scalability"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Product"
+        ]
+      }
+    ]
+  },
+  "Industrial Designer": {
+    "title": "Industrial Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Industrial Design (Weeks 1-3)",
+        "topics": [
+          "What is Industrial Design?",
+          "Tools: SolidWorks, AutoCAD",
+          "Understand Materials & Manufacturing",
+          "Practice Sketching Ideas",
+          "Prototype Small Objects",
+          "3D Printing Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Products (Weeks 4-6)",
+        "topics": [
+          "Consumer Electronics, Furniture",
+          "Gaming Peripherals"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Designs",
+        "topics": [
+          "Ergonomics Testing",
+          "Sustainability Considerations",
+          "User-Centered Iterations"
+        ]
+      },
+      {
+        "title": "Phase 4: Finalize & Market",
+        "topics": [
+          "Prepare for Mass Production",
+          "Create Marketing Collateral",
+          "Monetize: Licensing, Sales",
+          "Join Design Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Industrial IoT Engineer": {
+    "title": "Industrial IoT Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand IIoT (Weeks 1-3)",
+        "topics": [
+          "What is Industrial IoT?",
+          "Tools: Arduino, Raspberry Pi",
+          "Learn Networking Protocols (MQTT)",
+          "Practice Sensor Integration",
+          "Setup Basic Telemetry Systems",
+          "Cloud Platforms: AWS IoT Core"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Systems (Weeks 4-6)",
+        "topics": [
+          "Predictive Maintenance Tools",
+          "Smart Factory Solutions"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Networks",
+        "topics": [
+          "Edge Computing",
+          "Cybersecurity Measures",
+          "Data Visualization Dashboards"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Deploy",
+        "topics": [
+          "Deploy in Industrial Settings",
+          "Monitor System Performance",
+          "Monetize: Consulting, Hardware Sales",
+          "Participate in Industry Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Solutions"
+        ]
+      }
+    ]
+  },
+  "Information Security Manager": {
+    "title": "Information Security Manager",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Cybersecurity (Weeks 1-3)",
+        "topics": [
+          "What is Information Security?",
+          "Tools: SIEM, Firewalls, Encryption",
+          "Learn Risk Assessment",
+          "Practice Incident Response Plans",
+          "Compliance Standards (e.g., GDPR)",
+          "Network Security Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Secure Systems (Weeks 4-6)",
+        "topics": [
+          "Endpoint Protection",
+          "Cloud Security Configurations"
+        ]
+      },
+      {
+        "title": "Phase 3: Implement Policies",
+        "topics": [
+          "Access Controls",
+          "Data Loss Prevention",
+          "Employee Training Programs"
+        ]
+      },
+      {
+        "title": "Phase 4: Monitor & Improve",
+        "topics": [
+          "Conduct Regular Audits",
+          "Threat Intelligence Feeds",
+          "Update Security Protocols",
+          "Monetize: Consulting, Managed Services"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Certifications",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "Interaction Designer": {
+    "title": "Interaction Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Interaction Design (Weeks 1-3)",
+        "topics": [
+          "What is Interaction Design?",
+          "Tools: Figma, Sketch, Adobe XD",
+          "Platforms: Web, Mobile, AR/VR",
+          "Learn User-Centered Design Principles",
+          "Practice Wireframing and Prototyping",
+          "Unity: UI Events, Input Systems",
+          "Godot: Control Nodes, Signals",
+          "Unreal: UMG Widgets, Event Graphs"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Interfaces (Weeks 4-6)",
+        "topics": [
+          "Design for Pong, Flappy Bird, Shooter",
+          "Platformer Menus, RPG HUDs, Puzzle UIs"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Usability",
+        "topics": [
+          "Accessibility Standards",
+          "Microinteractions",
+          "User Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Voice and Gesture Controls",
+          "Dynamic Layouts",
+          "Export to Multiple Platforms",
+          "Monetize: Freelance, Consultancy",
+          "Share Portfolios, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Dribbble",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Interior Designer": {
+    "title": "Interior Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Interior Design (Weeks 1-3)",
+        "topics": [
+          "What is Interior Design?",
+          "Tools: AutoCAD, SketchUp, Revit",
+          "Principles: Space Planning, Lighting",
+          "Learn Material and Color Palettes",
+          "Practice Room Layouts",
+          "Unity: Virtual Walkthroughs",
+          "Godot: 3D Scene Design",
+          "Unreal: Architectural Visualization"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Spaces (Weeks 4-6)",
+        "topics": [
+          "Residential Designs, Commercial Spaces",
+          "Themed Rooms, Exhibition Booths"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Skills",
+        "topics": [
+          "Sustainability in Design",
+          "Furniture Selection",
+          "Client Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "3D Rendering for Presentations",
+          "Lighting Simulations",
+          "Export High-Quality Visuals",
+          "Monetize: Freelance, Projects",
+          "Join Design Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "IoT App Developer": {
+    "title": "IoT App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand IoT Apps (Weeks 1-3)",
+        "topics": [
+          "What are IoT Applications?",
+          "Platforms: Android, iOS, Web",
+          "Tools: Flutter, Node.js, MQTT",
+          "Learn Data Privacy and Security",
+          "Practice with Simple IoT Dashboards",
+          "Backend: Firebase, AWS IoT Core",
+          "Integrate APIs for Sensors"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Smart Home Controls, Wearable Sync",
+          "Environmental Monitoring Systems"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "Real-Time Data Streaming",
+          "Notifications and Alerts",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "IoT Data Analyst": {
+    "title": "IoT Data Analyst",
+    "phases": [
+      {
+        "title": "Phase 1: Learn IoT Data Analysis (Weeks 1-3)",
+        "topics": [
+          "What is IoT Data Analytics?",
+          "Tools: Python, R, Tableau",
+          "Understand Sensor Data Streams",
+          "Learn Statistical Methods",
+          "Practice with Sample IoT Datasets",
+          "SQL for Querying Databases",
+          "Visualize Trends"
+        ]
+      },
+      {
+        "title": "Phase 2: Analyze Real Data (Weeks 4-6)",
+        "topics": [
+          "Smart City Metrics, Industrial Data",
+          "Healthcare IoT Insights"
+        ]
+      },
+      {
+        "title": "Phase 3: Advanced Techniques",
+        "topics": [
+          "Predictive Maintenance Models",
+          "Anomaly Detection",
+          "Data Cleaning Pipelines"
+        ]
+      },
+      {
+        "title": "Phase 4: Present Findings",
+        "topics": [
+          "Create Dashboards",
+          "Generate Actionable Reports",
+          "Collaborate with Stakeholders",
+          "Monetize: Consultancy, Freelance"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Kaggle",
+          "Apply, Freelance, Research Roles"
+        ]
+      }
+    ]
+  },
+  "IoT Hardware Engineer": {
+    "title": "IoT Hardware Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand IoT Hardware (Weeks 1-3)",
+        "topics": [
+          "What is IoT Hardware Engineering?",
+          "Tools: Arduino, Raspberry Pi",
+          "Learn Circuit Design",
+          "Practice Sensor Integration",
+          "Setup Basic Telemetry Systems",
+          "Cloud Connectivity: AWS IoT Core"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Devices (Weeks 4-6)",
+        "topics": [
+          "Smart Home Devices, Wearables",
+          "Industrial Monitoring Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Performance",
+        "topics": [
+          "Power Efficiency",
+          "Signal Processing",
+          "Prototyping Iterations"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Deploy",
+        "topics": [
+          "Deploy in Real Environments",
+          "Monitor System Performance",
+          "Monetize: Consulting, Hardware Sales",
+          "Participate in Industry Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Solutions"
+        ]
+      }
+    ]
+  },
+  "IoT Security Expert": {
+    "title": "IoT Security Expert",
+    "phases": [
+      {
+        "title": "Phase 1: Understand IoT Security (Weeks 1-3)",
+        "topics": [
+          "What is IoT Security?",
+          "Tools: Wireshark, Nmap",
+          "Learn Threat Modeling",
+          "Practice Vulnerability Testing",
+          "Compliance Standards (e.g., ISO 27001)",
+          "Network Security Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Secure Systems (Weeks 4-6)",
+        "topics": [
+          "Endpoint Protection",
+          "Cloud Security Configurations"
+        ]
+      },
+      {
+        "title": "Phase 3: Implement Policies",
+        "topics": [
+          "Access Controls",
+          "Data Encryption",
+          "Employee Training Programs"
+        ]
+      },
+      {
+        "title": "Phase 4: Monitor & Improve",
+        "topics": [
+          "Conduct Regular Audits",
+          "Threat Intelligence Feeds",
+          "Update Security Protocols",
+          "Monetize: Consulting, Managed Services"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Certifications",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "IT Infrastructure Engineer": {
+    "title": "IT Infrastructure Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand IT Infrastructure (Weeks 1-3)",
+        "topics": [
+          "What is IT Infrastructure?",
+          "Tools: VMware, Docker, Kubernetes",
+          "Learn Networking Fundamentals",
+          "Practice Server Configuration",
+          "Cloud Platforms: AWS, Azure",
+          "Database Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Systems (Weeks 4-6)",
+        "topics": [
+          "Virtualized Environments, Cloud Storage",
+          "Load Balancers, Firewalls"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Networks",
+        "topics": [
+          "Edge Computing",
+          "Cybersecurity Measures",
+          "Data Visualization Dashboards"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Deploy",
+        "topics": [
+          "Deploy in Enterprise Settings",
+          "Monitor System Performance",
+          "Monetize: Consulting, Managed Services",
+          "Participate in Industry Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Certifications",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "IT Project Manager": {
+    "title": "IT Project Manager",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Project Management (Weeks 1-3)",
+        "topics": [
+          "What is IT Project Management?",
+          "Tools: Jira, Trello, Asana",
+          "Learn Agile Methodologies",
+          "Practice Risk Assessment",
+          "Budgeting and Resource Allocation",
+          "Stakeholder Communication"
+        ]
+      },
+      {
+        "title": "Phase 2: Manage Projects (Weeks 4-6)",
+        "topics": [
+          "Software Development Cycles",
+          "Infrastructure Rollouts"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Leadership",
+        "topics": [
+          "Team Motivation",
+          "Conflict Resolution",
+          "Performance Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Deliver Results",
+        "topics": [
+          "Conduct Post-Mortem Reviews",
+          "Document Lessons Learned",
+          "Monetize: Consulting, Coaching",
+          "Network with Industry Leaders"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "Learning App Developer": {
+    "title": "Learning App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Learning Apps (Weeks 1-3)",
+        "topics": [
+          "What are Learning Apps?",
+          "Platforms: iOS, Android, Web",
+          "Tools: React Native, Django",
+          "Learn Educational Theories",
+          "Practice Gamification Techniques",
+          "Backend: Firebase, MongoDB",
+          "Integrate LMS APIs"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Quiz Apps, Language Learning Tools",
+          "Skill-Based Training Modules"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Personalized Learning",
+          "Progress Tracking",
+          "Interactive Content"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Legal Tech Specialist": {
+    "title": "Legal Tech Specialist",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Legal Tech (Weeks 1-3)",
+        "topics": [
+          "What is Legal Technology?",
+          "Tools: DocuSign, Clio, ContractPodAI",
+          "Learn Legal Workflows",
+          "Practice Automation Techniques",
+          "Compliance and Data Privacy",
+          "Blockchain for Smart Contracts"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Solutions (Weeks 4-6)",
+        "topics": [
+          "Document Automation, Case Management",
+          "E-Discovery Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Efficiency",
+        "topics": [
+          "AI for Legal Research",
+          "Chatbots for Client Queries",
+          "Improve UX/UI"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Deploy",
+        "topics": [
+          "Deploy in Law Firms",
+          "Monitor System Performance",
+          "Monetize: Licensing, Consultancy",
+          "Participate in Legal Tech Events"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Solutions"
+        ]
+      }
+    ]
+  },
+  "Lifestyle Blogger": {
+    "title": "Lifestyle Blogger",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Blogging (Weeks 1-3)",
+        "topics": [
+          "What is Lifestyle Blogging?",
+          "Platforms: WordPress, Medium, Substack",
+          "Tools: Canva, Photoshop, Grammarly",
+          "Learn Content Creation Basics",
+          "Practice Writing Engaging Posts",
+          "SEO and Keyword Research",
+          "Social Media Integration",
+          "Analytics: Google Analytics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Your Blog (Weeks 4-6)",
+        "topics": [
+          "Create Posts on Travel, Fitness, Food",
+          "Personal Stories, Product Reviews"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Engagement",
+        "topics": [
+          "Visual Storytelling",
+          "Email Newsletters",
+          "Audience Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 4: Monetize & Grow",
+        "topics": [
+          "Affiliate Marketing",
+          "Sponsored Content",
+          "Export to Multiple Platforms",
+          "Monetize: Ads, Memberships",
+          "Join Blogger Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Social Media",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Machine Learning Engineer": {
+    "title": "Machine Learning Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Machine Learning (Weeks 1-3)",
+        "topics": [
+          "What is Machine Learning?",
+          "Tools: TensorFlow, PyTorch, Scikit-learn",
+          "Platforms: Python, Jupyter Notebooks",
+          "Learn Data Preprocessing",
+          "Practice with Small Models",
+          "Supervised vs. Unsupervised Learning",
+          "Neural Networks Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Models (Weeks 4-6)",
+        "topics": [
+          "Image Classification, Recommendation Systems",
+          "Chatbots, Predictive Analytics"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Models",
+        "topics": [
+          "Hyperparameter Tuning",
+          "Model Evaluation Metrics",
+          "Deployment Strategies"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Deep Learning Architectures",
+          "Transfer Learning",
+          "Export Models for Production",
+          "Monetize: Freelance, Consulting",
+          "Share Projects, Join Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Marketing Data Analyst": {
+    "title": "Marketing Data Analyst",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Marketing Analytics (Weeks 1-3)",
+        "topics": [
+          "What is Marketing Data Analysis?",
+          "Tools: Excel, Tableau, Python",
+          "Understand Marketing Metrics",
+          "Learn Statistical Methods",
+          "Practice with Sample Datasets",
+          "SQL for Querying Campaign Data",
+          "Visualize Trends"
+        ]
+      },
+      {
+        "title": "Phase 2: Analyze Campaigns (Weeks 4-6)",
+        "topics": [
+          "Ad Performance, Customer Segmentation",
+          "ROI Calculations, A/B Testing"
+        ]
+      },
+      {
+        "title": "Phase 3: Advanced Techniques",
+        "topics": [
+          "Predictive Modeling",
+          "Customer Lifetime Value",
+          "Data Cleaning Pipelines"
+        ]
+      },
+      {
+        "title": "Phase 4: Present Findings",
+        "topics": [
+          "Create Dashboards",
+          "Generate Actionable Reports",
+          "Collaborate with Stakeholders",
+          "Monetize: Consultancy, Freelance"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Kaggle",
+          "Apply, Freelance, Research Roles"
+        ]
+      }
+    ]
+  },
+  "Mechanical Design Engineer": {
+    "title": "Mechanical Design Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Mechanical Design (Weeks 1-3)",
+        "topics": [
+          "What is Mechanical Design?",
+          "Tools: AutoCAD, SolidWorks, Fusion 360",
+          "Principles: Statics, Dynamics, Thermodynamics",
+          "Learn Material Properties",
+          "Practice Sketching Ideas",
+          "Prototype Small Components",
+          "3D Printing Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Products (Weeks 4-6)",
+        "topics": [
+          "Consumer Electronics, Machinery",
+          "Automotive Parts, Aerospace Components"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Designs",
+        "topics": [
+          "Finite Element Analysis (FEA)",
+          "Sustainability Considerations",
+          "User-Centered Iterations"
+        ]
+      },
+      {
+        "title": "Phase 4: Finalize & Market",
+        "topics": [
+          "Prepare for Manufacturing",
+          "Create Technical Documentation",
+          "Monetize: Licensing, Sales",
+          "Join Engineering Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "MedTech App Developer": {
+    "title": "MedTech App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand MedTech Apps (Weeks 1-3)",
+        "topics": [
+          "What are MedTech Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, Swift, Kotlin",
+          "Learn Healthcare Regulations (e.g., HIPAA)",
+          "Practice with Simple Health Trackers",
+          "Backend: Firebase, AWS",
+          "Integrate APIs for Medical Devices"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Telemedicine Platforms, Symptom Checkers",
+          "Medical Imaging Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Diagnostics",
+          "Push Notifications",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Mobile App Developer": {
+    "title": "Mobile App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Mobile Development (Weeks 1-3)",
+        "topics": [
+          "What is Mobile App Development?",
+          "Platforms: iOS, Android",
+          "Tools: Xcode, Android Studio",
+          "Learn Programming Languages: Swift, Kotlin",
+          "Practice with Simple Apps",
+          "Backend: Firebase, REST APIs",
+          "UI/UX Design Principles"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "To-Do Lists, Fitness Trackers",
+          "E-commerce Apps, Social Media Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "Push Notifications",
+          "Offline Functionality",
+          "Improve UI/UX"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Ads, IAP",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Motion Graphics Designer": {
+    "title": "Motion Graphics Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Motion Graphics (Weeks 1-3)",
+        "topics": [
+          "What is Motion Graphics?",
+          "Tools: After Effects, Blender, Cinema 4D",
+          "Principles: Animation, Timing, Easing",
+          "Learn Keyframe Animation",
+          "Practice with Simple Animations",
+          "Unity: Timeline, Particle Systems",
+          "Unreal: Sequencer, VFX"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Animations (Weeks 4-6)",
+        "topics": [
+          "Logo Animations, Explainer Videos",
+          "Game Cinematics, Social Media Ads"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "3D Animation",
+          "Sound Synchronization",
+          "User Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Procedural Animation",
+          "Dynamic Text Effects",
+          "Export High-Quality Videos",
+          "Monetize: Freelance, Stock Assets",
+          "Share Portfolios, Join Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Music App Developer": {
+    "title": "Music App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Music Apps (Weeks 1-3)",
+        "topics": [
+          "What are Music Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: React Native, Django",
+          "Learn Audio Processing Basics",
+          "Practice with Simple Music Players",
+          "Backend: Firebase, MongoDB",
+          "Integrate APIs for Streaming Services"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Music Players, Playlist Managers",
+          "Audio Editing Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Recommendations",
+          "Real-Time Collaboration",
+          "Interactive Content"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Natural Language Processing Engineer": {
+    "title": "Natural Language Processing Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand NLP (Weeks 1-3)",
+        "topics": [
+          "What is Natural Language Processing?",
+          "Tools: NLTK, SpaCy, Hugging Face",
+          "Platforms: Python, Jupyter Notebooks",
+          "Learn Text Preprocessing",
+          "Practice with Small Models",
+          "Tokenization, Lemmatization",
+          "Neural Networks for NLP"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Models (Weeks 4-6)",
+        "topics": [
+          "Sentiment Analysis, Chatbots",
+          "Language Translation, Summarization"
+        ]
+      },
+      {
+        "title": "Phase 3: Optimize Models",
+        "topics": [
+          "Fine-Tuning Pretrained Models",
+          "Evaluation Metrics",
+          "Deployment Strategies"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Transformer Architectures",
+          "Multilingual Models",
+          "Export Models for Production",
+          "Monetize: Freelance, Consulting",
+          "Share Projects, Join Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Network Security Engineer": {
+    "title": "Network Security Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Network Security (Weeks 1-3)",
+        "topics": [
+          "What is Network Security?",
+          "Tools: Wireshark, Nmap, Metasploit",
+          "Learn Threat Modeling",
+          "Practice Vulnerability Testing",
+          "Compliance Standards (e.g., ISO 27001)",
+          "Firewall and Intrusion Detection"
+        ]
+      },
+      {
+        "title": "Phase 2: Secure Networks (Weeks 4-6)",
+        "topics": [
+          "Endpoint Protection",
+          "Cloud Security Configurations"
+        ]
+      },
+      {
+        "title": "Phase 3: Implement Policies",
+        "topics": [
+          "Access Controls",
+          "Data Encryption",
+          "Employee Training Programs"
+        ]
+      },
+      {
+        "title": "Phase 4: Monitor & Improve",
+        "topics": [
+          "Conduct Regular Audits",
+          "Threat Intelligence Feeds",
+          "Update Security Protocols",
+          "Monetize: Consulting, Managed Services"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Certifications",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "Online Course Creator": {
+    "title": "Online Course Creator",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Online Education (Weeks 1-3)",
+        "topics": [
+          "What is Online Course Creation?",
+          "Platforms: Teachable, Udemy, Thinkific",
+          "Tools: Camtasia, Canva, Zoom",
+          "Learn Instructional Design Principles",
+          "Practice Creating Engaging Content",
+          "SEO and Marketing Basics",
+          "Video Editing Techniques",
+          "Analytics: Course Completion Rates"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Your Course (Weeks 4-6)",
+        "topics": [
+          "Create Modules on Coding, Design, Finance",
+          "Interactive Quizzes, Assignments"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Engagement",
+        "topics": [
+          "Gamification Elements",
+          "Community Building",
+          "Feedback Loops for Improvement"
+        ]
+      },
+      {
+        "title": "Phase 4: Monetize & Grow",
+        "topics": [
+          "Pricing Strategies",
+          "Affiliate Marketing",
+          "Export to Multiple Platforms",
+          "Monetize: Subscriptions, One-Time Sales",
+          "Join Educator Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Open Source Contributor": {
+    "title": "Open Source Contributor",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Open Source (Weeks 1-3)",
+        "topics": [
+          "What is Open Source Software?",
+          "Platforms: GitHub, GitLab, Bitbucket",
+          "Tools: Git, Markdown, CI/CD Pipelines",
+          "Learn Version Control",
+          "Practice with Small Contributions",
+          "Documentation Writing",
+          "Code Review Processes"
+        ]
+      },
+      {
+        "title": "Phase 2: Contribute to Projects (Weeks 4-6)",
+        "topics": [
+          "Bug Fixes, Feature Additions",
+          "Documentation Improvements"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "Collaboration Tools",
+          "Project Management",
+          "User Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Contributions",
+        "topics": [
+          "Lead a Feature Development",
+          "Mentor New Contributors",
+          "Export Contributions to Portfolio",
+          "Monetize: Grants, Sponsorships",
+          "Share Work, Join Hackathons"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Organic Product Marketer": {
+    "title": "Organic Product Marketer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Organic Marketing (Weeks 1-3)",
+        "topics": [
+          "What is Organic Marketing?",
+          "Platforms: Instagram, TikTok, Blogs",
+          "Tools: Hootsuite, Buffer, Canva",
+          "Learn Content Strategy",
+          "Practice Storytelling Techniques",
+          "SEO and Keyword Research",
+          "Analytics: Engagement Metrics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Campaigns (Weeks 4-6)",
+        "topics": [
+          "Social Media Posts, Blog Articles",
+          "Video Content, Influencer Collaborations"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Reach",
+        "topics": [
+          "Community Engagement",
+          "Email Newsletters",
+          "User-Generated Content"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Optimize",
+        "topics": [
+          "A/B Testing",
+          "Content Calendar Planning",
+          "Monetize: Affiliate Links, Sponsorships",
+          "Join Marketing Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Social Media",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Personal Finance Advisor": {
+    "title": "Personal Finance Advisor",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Personal Finance (Weeks 1-3)",
+        "topics": [
+          "What is Personal Finance?",
+          "Tools: Excel, Mint, YNAB",
+          "Learn Budgeting and Investing",
+          "Practice Financial Planning",
+          "Tax Optimization Strategies",
+          "Debt Management Techniques",
+          "Retirement Planning"
+        ]
+      },
+      {
+        "title": "Phase 2: Advise Clients (Weeks 4-6)",
+        "topics": [
+          "Budget Creation, Investment Portfolios",
+          "Debt Repayment Plans"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Expertise",
+        "topics": [
+          "Risk Management",
+          "Estate Planning",
+          "Client Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale Services",
+        "topics": [
+          "Create Online Courses",
+          "Host Webinars",
+          "Monetize: Consultations, Subscriptions",
+          "Join Finance Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Practice"
+        ]
+      }
+    ]
+  },
+  "Personalized Content Creator": {
+    "title": "Personalized Content Creator",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Personalization (Weeks 1-3)",
+        "topics": [
+          "What is Personalized Content?",
+          "Platforms: YouTube, Instagram, TikTok",
+          "Tools: Adobe Premiere, Final Cut Pro, Canva",
+          "Learn Audience Segmentation",
+          "Practice Customizing Content",
+          "Data Analytics for Insights",
+          "Engagement Strategies"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Content (Weeks 4-6)",
+        "topics": [
+          "Tailored Videos, Articles, Podcasts",
+          "Interactive Polls, Q&A Sessions"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Engagement",
+        "topics": [
+          "AI for Recommendations",
+          "Dynamic Content Updates",
+          "Feedback Loops for Iteration"
+        ]
+      },
+      {
+        "title": "Phase 4: Monetize & Grow",
+        "topics": [
+          "Sponsored Content",
+          "Membership Programs",
+          "Export to Multiple Platforms",
+          "Monetize: Ads, Subscriptions",
+          "Join Creator Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Social Media",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Photography App Developer": {
+    "title": "Photography App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Photography Apps (Weeks 1-3)",
+        "topics": [
+          "What are Photography Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, React Native, Swift",
+          "Learn Image Processing Basics",
+          "Practice with Simple Filters",
+          "Backend: Firebase, AWS",
+          "Integrate APIs for Editing Tools"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Photo Editors, Collage Makers",
+          "Camera Filters, AR Effects"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Enhancements",
+          "Real-Time Editing",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Ads, IAP",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Product Designer": {
+    "title": "Product Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Product Design (Weeks 1-3)",
+        "topics": [
+          "What is Product Design?",
+          "Tools: Figma, Sketch, Adobe XD",
+          "Principles: Usability, Accessibility",
+          "Learn Prototyping Techniques",
+          "Practice Wireframing",
+          "Unity: UI Events, Input Systems",
+          "Godot: Control Nodes, Signals",
+          "Unreal: UMG Widgets, Event Graphs"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Products (Weeks 4-6)",
+        "topics": [
+          "Mobile Apps, Web Interfaces",
+          "Physical Product Designs"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Skills",
+        "topics": [
+          "User Testing",
+          "Iterative Design",
+          "Feedback Loops"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Microinteractions",
+          "Voice and Gesture Controls",
+          "Export High-Quality Assets",
+          "Monetize: Freelance, Consultancy",
+          "Share Portfolios, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Dribbble",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Product Manager": {
+    "title": "Product Manager",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Product Management (Weeks 1-3)",
+        "topics": [
+          "What is Product Management?",
+          "Tools: Jira, Trello, Asana",
+          "Learn Agile Methodologies",
+          "Practice Roadmap Creation",
+          "Stakeholder Communication",
+          "Market Research Techniques",
+          "Competitive Analysis"
+        ]
+      },
+      {
+        "title": "Phase 2: Manage Products (Weeks 4-6)",
+        "topics": [
+          "Feature Prioritization, MVP Development",
+          "User Feedback Collection"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Leadership",
+        "topics": [
+          "Team Motivation",
+          "Conflict Resolution",
+          "Performance Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Deliver Results",
+        "topics": [
+          "Conduct Post-Mortem Reviews",
+          "Document Lessons Learned",
+          "Monetize: Consulting, Coaching",
+          "Network with Industry Leaders"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "Productivity App Developer": {
+    "title": "Productivity App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Productivity Apps (Weeks 1-3)",
+        "topics": [
+          "What are Productivity Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, Django, Kotlin",
+          "Learn Task Management Principles",
+          "Practice with Simple To-Do Lists",
+          "Backend: Firebase, MongoDB",
+          "Integrate APIs for Calendars"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "To-Do Lists, Habit Trackers",
+          "Time Management Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Insights",
+          "Push Notifications",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Ads, Subscriptions",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Project Manager": {
+    "title": "Project Manager",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Project Management (Weeks 1-3)",
+        "topics": [
+          "What is Project Management?",
+          "Tools: Microsoft Project, Asana, Monday.com",
+          "Learn Risk Assessment",
+          "Practice Budgeting and Resource Allocation",
+          "Communication Strategies",
+          "Agile vs. Waterfall Methodologies",
+          "Stakeholder Management"
+        ]
+      },
+      {
+        "title": "Phase 2: Manage Projects (Weeks 4-6)",
+        "topics": [
+          "Software Development Cycles",
+          "Infrastructure Rollouts"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Leadership",
+        "topics": [
+          "Team Motivation",
+          "Conflict Resolution",
+          "Performance Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Deliver Results",
+        "topics": [
+          "Conduct Post-Mortem Reviews",
+          "Document Lessons Learned",
+          "Monetize: Consulting, Coaching",
+          "Network with Industry Leaders"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Lead Teams"
+        ]
+      }
+    ]
+  },
+  "Quantum Computing Researcher": {
+    "title": "Quantum Computing Researcher",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Quantum Computing (Weeks 1-3)",
+        "topics": [
+          "What is Quantum Computing?",
+          "Tools: Qiskit, Cirq, IBM Quantum Experience",
+          "Learn Quantum Mechanics Basics",
+          "Practice with Simple Quantum Circuits",
+          "Qubits, Superposition, Entanglement",
+          "Unity: Quantum Simulations",
+          "Godot: Quantum Game Concepts",
+          "Unreal: Quantum Visualizations"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Quantum Models (Weeks 4-6)",
+        "topics": [
+          "Quantum Algorithms, Shor's Algorithm",
+          "Grover’s Search, Quantum Cryptography"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "Error Correction Techniques",
+          "Quantum Machine Learning",
+          "Feedback Loops for Optimization"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Research",
+        "topics": [
+          "Hybrid Quantum-Classical Systems",
+          "Real-World Applications",
+          "Export Research to Papers",
+          "Monetize: Grants, Collaborations",
+          "Share Work, Join Conferences"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, ResearchGate",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Robotics Engineer": {
+    "title": "Robotics Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Robotics (Weeks 1-3)",
+        "topics": [
+          "What is Robotics Engineering?",
+          "Tools: ROS, Arduino, Raspberry Pi",
+          "Learn Mechanics and Electronics",
+          "Practice with Simple Robots",
+          "Sensors, Actuators, Control Systems",
+          "Unity: Robot Simulations",
+          "Godot: AI Behavior Trees",
+          "Unreal: Physics-Based Robots"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Robots (Weeks 4-6)",
+        "topics": [
+          "Line Followers, Obstacle Avoiders",
+          "Robotic Arms, Drones"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "Computer Vision",
+          "Autonomous Navigation",
+          "User Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Optimize",
+        "topics": [
+          "Deploy in Real Environments",
+          "Monitor System Performance",
+          "Monetize: Consulting, Hardware Sales",
+          "Join Robotics Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Solutions"
+        ]
+      }
+    ]
+  },
+  "SaaS Developer": {
+    "title": "SaaS Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand SaaS Development (Weeks 1-3)",
+        "topics": [
+          "What is Software as a Service?",
+          "Platforms: AWS, Azure, Google Cloud",
+          "Tools: Node.js, Django, React",
+          "Learn Scalable Architectures",
+          "Practice with Simple APIs",
+          "Backend: Firebase, MongoDB",
+          "Frontend: UI/UX Design Principles"
+        ]
+      },
+      {
+        "title": "Phase 2: Build SaaS Apps (Weeks 4-6)",
+        "topics": [
+          "Project Management Tools, CRM Systems",
+          "E-Learning Platforms, Collaboration Tools"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "Subscription Models",
+          "Multi-Tenant Architecture",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Host on Cloud Platforms",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "SEO Specialist": {
+    "title": "SEO Specialist",
+    "phases": [
+      {
+        "title": "Phase 1: Learn SEO (Weeks 1-3)",
+        "topics": [
+          "What is Search Engine Optimization?",
+          "Tools: SEMrush, Ahrefs, Google Analytics",
+          "Learn Keyword Research",
+          "Practice On-Page and Off-Page SEO",
+          "Technical SEO Basics",
+          "Content Optimization Strategies",
+          "Analytics: Traffic Metrics"
+        ]
+      },
+      {
+        "title": "Phase 2: Optimize Websites (Weeks 4-6)",
+        "topics": [
+          "Blog Posts, Landing Pages",
+          "E-Commerce Product Pages"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Rankings",
+        "topics": [
+          "Backlink Building",
+          "Local SEO",
+          "Feedback Loops for Iteration"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale & Monetize",
+        "topics": [
+          "A/B Testing",
+          "Content Calendar Planning",
+          "Monetize: Freelance, Consultancy",
+          "Join SEO Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "Simulation Engineer": {
+    "title": "Simulation Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Simulation Engineering (Weeks 1-3)",
+        "topics": [
+          "What is Simulation Engineering?",
+          "Tools: MATLAB, Simulink, ANSYS",
+          "Learn Modeling Techniques",
+          "Practice with Simple Simulations",
+          "Physics-Based Simulations",
+          "Unity: Virtual Prototyping",
+          "Godot: Dynamic Systems",
+          "Unreal: Realistic Physics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Simulations (Weeks 4-6)",
+        "topics": [
+          "Vehicle Dynamics, Structural Analysis",
+          "Thermal Simulations, Fluid Dynamics"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Accuracy",
+        "topics": [
+          "Finite Element Analysis (FEA)",
+          "Computational Fluid Dynamics (CFD)",
+          "User Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Optimize",
+        "topics": [
+          "Deploy in Industrial Settings",
+          "Monitor Simulation Results",
+          "Monetize: Consulting, Research Roles",
+          "Join Engineering Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Smart Home Developer": {
+    "title": "Smart Home Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Smart Home Tech (Weeks 1-3)",
+        "topics": [
+          "What is Smart Home Development?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, Swift, Kotlin",
+          "Learn IoT Protocols (MQTT, Zigbee)",
+          "Practice with Simple Home Automation",
+          "Backend: Firebase, AWS IoT Core",
+          "Integrate APIs for Devices"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Lighting Controls, Thermostat Sync",
+          "Security Systems, Voice Assistants"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Personalization",
+          "Push Notifications",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Social Media Influencer": {
+    "title": "Social Media Influencer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Influencer Marketing (Weeks 1-3)",
+        "topics": [
+          "What is Social Media Influence?",
+          "Platforms: Instagram, TikTok, YouTube",
+          "Tools: Canva, Adobe Premiere, Hootsuite",
+          "Learn Content Strategy",
+          "Practice Storytelling Techniques",
+          "SEO and Hashtag Research",
+          "Analytics: Engagement Metrics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Presence (Weeks 4-6)",
+        "topics": [
+          "Short Videos, Reels, Stories",
+          "Collaborations, Challenges"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Reach",
+        "topics": [
+          "Community Engagement",
+          "Email Newsletters",
+          "User-Generated Content"
+        ]
+      },
+      {
+        "title": "Phase 4: Monetize & Grow",
+        "topics": [
+          "Sponsored Content",
+          "Affiliate Marketing",
+          "Monetize: Brand Deals, Memberships",
+          "Join Influencer Networks"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Social Media",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Software Developer": {
+    "title": "Software Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Software Development (Weeks 1-3)",
+        "topics": [
+          "What is Software Development?",
+          "Languages: Python, Java, JavaScript",
+          "Frameworks: React, Django, Spring",
+          "Tools: Git, Docker, VS Code",
+          "Learn Variables, Loops, OOP",
+          "Practice with Small Projects",
+          "Unity: Scripting Basics",
+          "Godot: GDScript Fundamentals",
+          "Unreal: Blueprints and C++"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Applications (Weeks 4-6)",
+        "topics": [
+          "Web Apps, Mobile Apps",
+          "Desktop Tools, APIs"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "Code Optimization",
+          "Testing Frameworks",
+          "Performance Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Maintain",
+        "topics": [
+          "CI/CD Pipelines",
+          "Cloud Hosting",
+          "Monetize: Freelance, Consulting",
+          "Network with Developers"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Software Engineer": {
+    "title": "Software Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Software Development (Weeks 1-3)",
+        "topics": [
+          "What is Software Engineering?",
+          "Tools: Git, Docker, Kubernetes",
+          "Learn Programming Languages: Python, Java",
+          "Practice with Small Projects",
+          "Version Control Basics",
+          "Backend: REST APIs, GraphQL",
+          "Frontend: HTML, CSS, JavaScript"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Software (Weeks 4-6)",
+        "topics": [
+          "Web Applications, Mobile Apps",
+          "Desktop Tools, APIs"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "Code Optimization",
+          "Testing Frameworks",
+          "Performance Tracking"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Maintain",
+        "topics": [
+          "CI/CD Pipelines",
+          "Cloud Hosting",
+          "Monetize: Freelance, Consulting",
+          "Network with Developers"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Software QA Engineer": {
+    "title": "Software QA Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn QA Testing (Weeks 1-3)",
+        "topics": [
+          "What is Software Quality Assurance?",
+          "Tools: Selenium, Jira, TestRail",
+          "Learn Testing Methodologies",
+          "Practice Writing Bug Reports",
+          "Functional vs. Non-Functional Testing",
+          "Unity: Play Mode Testing",
+          "Godot: Scene Debugging",
+          "Unreal: PIE (Play In Editor)"
+        ]
+      },
+      {
+        "title": "Phase 2: Test Software (Weeks 4-6)",
+        "topics": [
+          "Web Apps, Mobile Apps",
+          "API Testing, Performance Testing"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Testing Skills",
+        "topics": [
+          "Automated Testing Tools",
+          "Regression Testing",
+          "Cross-Platform Testing"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced QA Practices",
+        "topics": [
+          "Localization Testing",
+          "Usability Feedback",
+          "Collaborate with Devs",
+          "Export Test Results",
+          "Monetize: Freelance, Contract Work",
+          "Join QA Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Sound Engineer": {
+    "title": "Sound Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Sound Engineering (Weeks 1-3)",
+        "topics": [
+          "What is Sound Engineering?",
+          "Tools: Pro Tools, Audacity, FL Studio",
+          "Learn Audio Editing Basics",
+          "Practice with Simple Mixes",
+          "Microphones, Mixers, Equalizers",
+          "Unity: Audio Sources, Mixers",
+          "Godot: AudioStreams, Buses",
+          "Unreal: Sound Cues, Attenuation"
+        ]
+      },
+      {
+        "title": "Phase 2: Create Soundscapes (Weeks 4-6)",
+        "topics": [
+          "Music Production, Podcast Editing",
+          "Live Sound Mixing, Foley Art"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Quality",
+        "topics": [
+          "Dynamic Range Compression",
+          "Reverb and Delay Effects",
+          "Feedback Loops for Refinement"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Surround Sound Mixing",
+          "Mastering Tracks",
+          "Export High-Quality Files",
+          "Monetize: Freelance, Royalties",
+          "Share Work, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, SoundCloud",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "Sports App Developer": {
+    "title": "Sports App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Sports Apps (Weeks 1-3)",
+        "topics": [
+          "What are Sports Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, Swift, Kotlin",
+          "Learn Fitness and Health APIs",
+          "Practice with Simple Tracking Apps",
+          "Backend: Firebase, MongoDB",
+          "Integrate Wearable Device Data"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Fitness Trackers, Workout Planners",
+          "Team Management Tools, Scoreboards"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Personalized Workouts",
+          "Real-Time Performance Analytics",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Subscriptions, Ads",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Sustainable Product Designer": {
+    "title": "Sustainable Product Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Sustainable Design (Weeks 1-3)",
+        "topics": [
+          "What is Sustainable Product Design?",
+          "Tools: SolidWorks, AutoCAD, Fusion 360",
+          "Learn Eco-Friendly Materials",
+          "Practice Sketching Ideas",
+          "Prototype Small Components",
+          "Lifecycle Analysis Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Products (Weeks 4-6)",
+        "topics": [
+          "Recyclable Packaging, Energy-Efficient Appliances",
+          "Biodegradable Goods, Modular Furniture"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Designs",
+        "topics": [
+          "Sustainability Certifications",
+          "Carbon Footprint Reduction",
+          "User-Centered Iterations"
+        ]
+      },
+      {
+        "title": "Phase 4: Finalize & Market",
+        "topics": [
+          "Prepare for Manufacturing",
+          "Create Marketing Collateral",
+          "Monetize: Licensing, Sales",
+          "Join Design Competitions"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Brand"
+        ]
+      }
+    ]
+  },
+  "Systems Engineer": {
+    "title": "Systems Engineer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Systems Engineering (Weeks 1-3)",
+        "topics": [
+          "What is Systems Engineering?",
+          "Tools: MATLAB, Simulink, AutoCAD",
+          "Learn System Integration",
+          "Practice Modeling Techniques",
+          "Control Systems Basics",
+          "Unity: Virtual Prototyping",
+          "Godot: Dynamic Systems",
+          "Unreal: Realistic Physics"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Systems (Weeks 4-6)",
+        "topics": [
+          "Embedded Systems, IoT Networks",
+          "Automation Tools, Robotics"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Performance",
+        "topics": [
+          "Fault Tolerance",
+          "Scalability Optimization",
+          "User Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Deploy & Optimize",
+        "topics": [
+          "Deploy in Industrial Settings",
+          "Monitor System Performance",
+          "Monetize: Consulting, Research Roles",
+          "Join Engineering Forums"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Tech Support Specialist": {
+    "title": "Tech Support Specialist",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Tech Support (Weeks 1-3)",
+        "topics": [
+          "What is Technical Support?",
+          "Tools: Remote Desktop, Ticketing Systems",
+          "Learn Troubleshooting Techniques",
+          "Practice Customer Communication",
+          "Hardware and Software Diagnostics",
+          "Network Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Solve Issues (Weeks 4-6)",
+        "topics": [
+          "OS Troubleshooting, Network Configurations",
+          "Software Updates, Hardware Repairs"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Skills",
+        "topics": [
+          "Advanced Diagnostics",
+          "Scripting for Automation",
+          "Feedback Loops for Improvement"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale Support",
+        "topics": [
+          "Create Knowledge Bases",
+          "Train Junior Staff",
+          "Monetize: Freelance, Contract Work",
+          "Join IT Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Techno-legal Consultant": {
+    "title": "Techno-legal Consultant",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Techno-Legal Fields (Weeks 1-3)",
+        "topics": [
+          "What is Techno-Legal Consulting?",
+          "Tools: Legal Research Platforms, DocuSign",
+          "Learn Cybersecurity Laws",
+          "Practice Drafting Contracts",
+          "Intellectual Property Basics",
+          "Data Privacy Regulations"
+        ]
+      },
+      {
+        "title": "Phase 2: Advise Clients (Weeks 4-6)",
+        "topics": [
+          "Compliance Audits, Risk Assessments",
+          "Policy Drafting, Legal Opinions"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Expertise",
+        "topics": [
+          "Blockchain and Smart Contracts",
+          "Litigation Support",
+          "Client Feedback Integration"
+        ]
+      },
+      {
+        "title": "Phase 4: Scale Services",
+        "topics": [
+          "Create Online Courses",
+          "Host Webinars",
+          "Monetize: Consultations, Subscriptions",
+          "Join Legal Tech Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Practice"
+        ]
+      }
+    ]
+  },
+  "UI Designer": {
+    "title": "UI Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn UI Design (Weeks 1-3)",
+        "topics": [
+          "What is User Interface Design?",
+          "Tools: Figma, Sketch, Adobe XD",
+          "Learn Design Principles",
+          "Practice Wireframing",
+          "Typography and Color Theory",
+          "Unity: UI Events, Input Systems",
+          "Godot: Control Nodes, Signals",
+          "Unreal: UMG Widgets, Event Graphs"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Interfaces (Weeks 4-6)",
+        "topics": [
+          "Mobile Apps, Web Dashboards",
+          "E-Commerce Platforms, Gaming UIs"
+        ]
+      },
+      {
+        "title": "Phase 3: Refine Skills",
+        "topics": [
+          "Microinteractions",
+          "Responsive Design",
+          "Feedback Loops for Iteration"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Prototyping Tools",
+          "Design Systems",
+          "Export High-Quality Assets",
+          "Monetize: Freelance, Consultancy",
+          "Share Portfolios, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Dribbble",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "UX Designer": {
+    "title": "UX Designer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn UX Design (Weeks 1-3)",
+        "topics": [
+          "What is User Experience Design?",
+          "Tools: Figma, InVision, Miro",
+          "Learn User-Centered Design",
+          "Practice Persona Creation",
+          "Usability Testing Basics",
+          "Wireframing and Prototyping"
+        ]
+      },
+      {
+        "title": "Phase 2: Design Experiences (Weeks 4-6)",
+        "topics": [
+          "Mobile Apps, Web Platforms",
+          "E-Learning Tools, Enterprise Software"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Usability",
+        "topics": [
+          "Accessibility Standards",
+          "User Journey Mapping",
+          "Feedback Loops for Improvement"
+        ]
+      },
+      {
+        "title": "Phase 4: Advanced Techniques",
+        "topics": [
+          "Voice and Gesture Controls",
+          "Dynamic Layouts",
+          "Export to Multiple Platforms",
+          "Monetize: Freelance, Consultancy",
+          "Share Portfolios, Join Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, Behance",
+          "Apply, Freelance, Build Agency"
+        ]
+      }
+    ]
+  },
+  "UX Researcher": {
+    "title": "UX Researcher",
+    "phases": [
+      {
+        "title": "Phase 1: Learn UX Research (Weeks 1-3)",
+        "topics": [
+          "What is User Experience Research?",
+          "Tools: SurveyMonkey, Hotjar, Google Forms",
+          "Learn Qualitative and Quantitative Methods",
+          "Practice Conducting Interviews",
+          "Usability Testing Techniques",
+          "Data Analysis Basics"
+        ]
+      },
+      {
+        "title": "Phase 2: Conduct Studies (Weeks 4-6)",
+        "topics": [
+          "User Surveys, A/B Testing",
+          "Competitor Analysis, Card Sorting"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Insights",
+        "topics": [
+          "Persona Development",
+          "Journey Mapping",
+          "Feedback Loops for Iteration"
+        ]
+      },
+      {
+        "title": "Phase 4: Deliver Findings",
+        "topics": [
+          "Create Reports and Presentations",
+          "Collaborate with Designers",
+          "Monetize: Freelance, Consultancy",
+          "Join UX Communities"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, LinkedIn",
+          "Apply, Freelance, Build Expertise"
+        ]
+      }
+    ]
+  },
+  "Video App Developer": {
+    "title": "Video App Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Understand Video Apps (Weeks 1-3)",
+        "topics": [
+          "What are Video Applications?",
+          "Platforms: iOS, Android, Web",
+          "Tools: Flutter, React Native, Swift",
+          "Learn Video Processing Basics",
+          "Practice with Simple Players",
+          "Backend: Firebase, AWS",
+          "Integrate APIs for Streaming"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Apps (Weeks 4-6)",
+        "topics": [
+          "Video Players, Live Streaming Tools",
+          "Editing Apps, AR Effects"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "AI for Recommendations",
+          "Real-Time Editing",
+          "UI Improvements"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Publish on App Stores",
+          "Monetize via Ads, IAP",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  },
+  "Virtual Reality Developer": {
+    "title": "Virtual Reality Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn VR Development (Weeks 1-3)",
+        "topics": [
+          "What is Virtual Reality?",
+          "Engines: Unity, Unreal Engine",
+          "Platforms: Oculus, HTC Vive",
+          "Choose C#, Blueprints, or Python",
+          "Learn Variables, Loops, OOP",
+          "Practice with Small VR Projects",
+          "Unity: XR Interaction Toolkit",
+          "Godot: ARVR Nodes",
+          "Unreal: VR Templates"
+        ]
+      },
+      {
+        "title": "Phase 2: Build VR Experiences (Weeks 4-6)",
+        "topics": [
+          "Immersive Games, Training Simulations",
+          "Virtual Tours, Social VR Spaces"
+        ]
+      },
+      {
+        "title": "Phase 3: Art, Audio & UI",
+        "topics": [
+          "3D Modeling, Spatial Audio",
+          "Intuitive VR Interfaces"
+        ]
+      },
+      {
+        "title": "Phase 4: Optimize & Publish",
+        "topics": [
+          "Performance Optimization",
+          "Physics and Interactions",
+          "Export to PC, Mobile, Headsets",
+          "Monetize: Ads, Steam, Patreon",
+          "Share Projects, Devlogs"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Studio"
+        ]
+      }
+    ]
+  },
+  "Web Developer": {
+    "title": "Web Developer",
+    "phases": [
+      {
+        "title": "Phase 1: Learn Web Development (Weeks 1-3)",
+        "topics": [
+          "What is Web Development?",
+          "Languages: HTML, CSS, JavaScript",
+          "Frameworks: React, Angular, Vue",
+          "Practice with Static Websites",
+          "Backend: Node.js, Django",
+          "Database: SQL, MongoDB",
+          "Version Control: Git"
+        ]
+      },
+      {
+        "title": "Phase 2: Build Websites (Weeks 4-6)",
+        "topics": [
+          "Portfolio Sites, Blogs",
+          "E-Commerce Platforms, Dashboards"
+        ]
+      },
+      {
+        "title": "Phase 3: Enhance Features",
+        "topics": [
+          "Responsive Design",
+          "API Integrations",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "title": "Phase 4: Deployment & Monetization",
+        "topics": [
+          "Host on Cloud Platforms",
+          "Monetize via Ads, Subscriptions",
+          "Analyze User Feedback",
+          "Iterate Based on Metrics"
+        ]
+      },
+      {
+        "title": "Phase 5: Launch Your Career",
+        "topics": [
+          "Portfolio, Resume, GitHub",
+          "Apply, Freelance, Build Startup"
+        ]
+      }
+    ]
+  }
+}
