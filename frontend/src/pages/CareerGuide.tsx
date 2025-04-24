@@ -1470,19 +1470,19 @@ ${career.dayToDayTasks || `- Collaborating with cross-functional teams
 
   return (
     <div className="relative min-h-screen bg-gray-50">
-      <button 
-        className="fixed top-4 left-4 md:left-8 lg:left-12 bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 flex items-center group overflow-hidden relative z-50"
-        aria-label="Back to dashboard"
-      >
-        <Link to="/dashboard">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-100 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 relative z-10 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Back</span>
-        </Link>
-      </button>
-      
+      <Link to="/dashboard">
+        <button 
+          className="fixed top-4 left-4 md:left-8 lg:left-12 bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 flex items-center group overflow-hidden relative z-50"
+          aria-label="Back to dashboard"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-100 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 relative z-10 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Back</span>
+        </button>
+      </Link>
+
       <div className="flex flex-col h-screen max-w-4xl mx-auto p-4">
         <div className="flex-1 bg-white rounded-lg shadow-lg flex flex-col">
           <div className="bg-blue-600 text-white py-3 px-4 rounded-t-lg flex items-center">
