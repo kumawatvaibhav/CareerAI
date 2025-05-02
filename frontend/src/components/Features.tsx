@@ -82,14 +82,14 @@ const Features = () => {
       icon: <Brain />,
       title: "AI Career Guide",
       description: "Receive personalized career path recommendations based on your skills, experience, and goals.",
-      link: "/career-guidance",
+      link: "/career-guide",
       color: "blue" as const,
     },
     {
       icon: <FileText />,
       title: "Smart Resume Builder",
       description: "Create ATS-optimized resumes with real-time feedback and keyword suggestions.",
-      link: "/resume-builder",
+      link: "/resumes",
       color: "purple" as const,
     },
     {

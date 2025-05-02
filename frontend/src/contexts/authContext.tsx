@@ -34,6 +34,7 @@ export const useAuth = () => {
 
 // API URL
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const SESSION_TIMEOUT = 60 * 60 * 1000; 
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -42,15 +43,46 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     // Check for saved user in localStorage - FIXED: case-sensitive key "user"
     const savedUser = localStorage.getItem("user");
-    if (savedUser) {
+    const loginTime = localStorage.getItem("loginTime");
+    
+    if (savedUser && loginTime) {
       try {
-        setUser(JSON.parse(savedUser));
+        const parsedUser = JSON.parse(savedUser);
+        const timeSinceLogin = Date.now() - parseInt(loginTime);
+        
+        if (timeSinceLogin < SESSION_TIMEOUT) {
+          setUser(parsedUser);
+        } else {
+          // Session expired
+          localStorage.removeItem("user");
+          localStorage.removeItem("isLoggedIn");
+          localStorage.removeItem("loginTime");
+          toast.error("Your session has expired. Please log in again.");
+        }
       } catch (error) {
         console.error("Failed to parse user data from localStorage:", error);
         localStorage.removeItem("user");
+        localStorage.removeItem("loginTime");
       }
     }
     setLoading(false);
+  }, []);
+
+  // Check for session timeout periodically
+  useEffect(() => {
+    const checkSessionTimeout = () => {
+      const loginTime = localStorage.getItem("loginTime");
+      if (loginTime) {
+        const timeSinceLogin = Date.now() - parseInt(loginTime);
+        if (timeSinceLogin >= SESSION_TIMEOUT) {
+          logout();
+          toast.error("Your session has expired. Please log in again.");
+        }
+      }
+    };
+
+    const interval = setInterval(checkSessionTimeout, 60000); // Check every minute
+    return () => clearInterval(interval);
   }, []);
 
   const login = async (email: string, password: string) => {
@@ -77,14 +109,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const userData = {
         id: data.user._id,
         name: data.user.name,
-        email: data.user.email, // FIXED: use data.user.email instead of data.email
+        email: data.user.email,
         token: data.token
       };
       
       setUser(userData);
-      // FIXED: use lowercase "user" consistently
       localStorage.setItem("user", JSON.stringify(userData));
       localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("loginTime", Date.now().toString());
       toast.success("Logged in successfully");
     } catch (error) {
       console.error("Login error:", error);
@@ -123,6 +155,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       
       setUser(userData);
       localStorage.setItem("user", JSON.stringify(userData));
+      localStorage.setItem("loginTime", Date.now().toString());
       toast.success("Account created successfully");
     } catch (error) {
       console.error("Signup error:", error);
@@ -137,6 +170,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setUser(null);
     localStorage.removeItem("user");
     localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("loginTime");
     toast.success("Logged out successfully");
   };
 

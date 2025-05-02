@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, Navigate } from 'react-router-dom';
+import { useNavigate, Navigate, Link } from 'react-router-dom';
 import {
   Box,
   Container,
@@ -36,6 +36,7 @@ import {
   AccessTime as RecentIcon,
   Star as FavoriteIcon,
   StarBorder as UnfavoriteIcon,
+  Home as HomeIcon,
 } from '@mui/icons-material';
 import { useAuth } from '../contexts/authContext';
 import { resumeService } from '../services/api';
@@ -137,8 +138,7 @@ const ResumeDashboard = () => {
       const resumeToDuplicate = resumes.find(resume => resume._id === id);
       if (!resumeToDuplicate) return;
       
-      // In a real app, you'd call an API endpoint to duplicate
-      // This is a mock implementation
+      
       const newResume = {
         ...resumeToDuplicate,
         _id: `temp-${Date.now()}`,
@@ -316,26 +316,50 @@ const ResumeDashboard = () => {
         <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', color: theme.palette.primary.main }}>
           My Resumes
         </Typography>
-        <Button
-          variant="contained"
-          startIcon={<AddIcon />}
-          onClick={() => navigate('/resume-builder')}
-          sx={{
-            borderRadius: 2,
-            px: 3,
-            py: 1,
-            textTransform: 'none',
-            fontWeight: 600,
-            boxShadow: 2,
-            '&:hover': {
-              boxShadow: 4,
-              transform: 'translateY(-1px)',
-              transition: 'all 0.2s ease-in-out',
-            },
-          }}
-        >
-          Create New Resume
-        </Button>
+        <Box sx={{ display: 'flex', gap: 2 }}>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+          <Button
+            variant="contained"
+            startIcon={<HomeIcon />}
+            onClick={() => navigate('/')}
+            sx={{
+              borderRadius: 2,
+              px: 3,
+              py: 1,
+              textTransform: 'none',
+              fontWeight: 600,
+              boxShadow: 2,
+              '&:hover': {
+                boxShadow: 4,
+                transform: 'translateY(-1px)',
+                transition: 'all 0.2s ease-in-out',
+              },
+            }}
+          >
+            Home
+          </Button>
+          </Link>
+          <Button
+            variant="contained"
+            startIcon={<AddIcon />}
+            onClick={() => navigate('/resume-builder')}
+            sx={{
+              borderRadius: 2,
+              px: 3,
+              py: 1,
+              textTransform: 'none',
+              fontWeight: 600,
+              boxShadow: 2,
+              '&:hover': {
+                boxShadow: 4,
+                transform: 'translateY(-1px)',
+                transition: 'all 0.2s ease-in-out',
+              },
+            }}
+          >
+            Create New Resume
+          </Button>
+        </Box>
       </Box>
       
       <Box sx={{ mb: 3 }}>

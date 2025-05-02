@@ -16,8 +16,8 @@ const Footer = () => {
       title: 'Product',
       links: [
         { name: 'Features', href: '#features' },
-        { name: 'Resume Builder', href: '#resume-builder' },
-        { name: 'Career Guide', href: '#career-guide' },
+        { name: 'Resume Builder', href: '/resumes' },
+        { name: 'Career Guide', href: '/career-guide' },
         { name: 'Get Started', href: '#cta' },
       ],
     },

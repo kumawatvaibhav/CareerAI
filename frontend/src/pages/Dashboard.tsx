@@ -70,7 +70,7 @@ const Dashboard = () => {
 
   // Handle profile navigation
   const navigateToProfile = () => {
-    navigate('/dashboard/profile');
+    navigate('/dashboard');
   };
 
   // Fetch dashboard data

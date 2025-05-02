@@ -4,6 +4,7 @@ import html2pdf from "html2pdf.js";
 import { Download as DownloadIcon, Save as SaveIcon } from "@mui/icons-material";
 import { useEffect } from "react";
 import { resumeService } from "../services/api";
+import { toast } from 'react-hot-toast';
 
 interface ResumePreviewProps {
   data: ResumeData;
@@ -70,6 +71,22 @@ const ResumePreview = ({
   };
 
   const handleSave = async () => {
+    // Validate email
+    if (!data.personalInfo.email) {
+      toast.error('Please add your email before saving the resume', {
+        duration: 4000,
+        position: 'top-right',
+        style: {
+          background: '#f44336',
+          color: '#fff',
+          padding: '16px',
+          borderRadius: '8px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        },
+      });
+      return;
+    }
+
     try {
       const resumeData = {
         name: resumeName || `${data.personalInfo.firstName}_${data.personalInfo.lastName}_Resume`,
@@ -81,8 +98,30 @@ const ResumePreview = ({
       };
 
       await resumeService.createResume(resumeData);
+      toast.success('Resume saved successfully!', {
+        duration: 4000,
+        position: 'top-right',
+        style: {
+          background: '#4CAF50',
+          color: '#fff',
+          padding: '16px',
+          borderRadius: '8px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        },
+      });
     } catch (error) {
       console.error('Error saving resume:', error);
+      toast.error('Failed to save resume. Please try again.', {
+        duration: 4000,
+        position: 'top-right',
+        style: {
+          background: '#f44336',
+          color: '#fff',
+          padding: '16px',
+          borderRadius: '8px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        },
+      });
     }
   };
 
