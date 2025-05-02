@@ -30,17 +30,16 @@ import {
   Download as DownloadIcon,
   MoreVert as MoreVertIcon,
   FileCopy as DuplicateIcon,
-  Share as ShareIcon,
-  Visibility as ViewIcon,
+  Home as HomeIcon,
   Description as TemplateIcon,
   AccessTime as RecentIcon,
   Star as FavoriteIcon,
   StarBorder as UnfavoriteIcon,
-  Home as HomeIcon,
 } from '@mui/icons-material';
 import { useAuth } from '../contexts/authContext';
 import { resumeService } from '../services/api';
-import { toast } from 'sonner';
+import { toast } from 'react-hot-toast';
+import html2pdf from 'html2pdf.js';
 
 interface Resume {
   _id: string;
@@ -197,6 +196,64 @@ const ResumeDashboard = () => {
     return filtered.sort((a, b) => 
       new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );
+  };
+
+  const handleDownload = async (resumeId: string) => {
+    try {
+      const resume = await resumeService.getResumeById(resumeId);
+      const element = document.createElement('div');
+      element.innerHTML = `
+        <div style="padding: 20px; max-width: 800px; margin: 0 auto;">
+          <h1 style="text-align: center; margin-bottom: 20px;">${resume.personalInfo.firstName} ${resume.personalInfo.lastName}</h1>
+          <div style="text-align: center; margin-bottom: 20px;">
+            <p>${resume.personalInfo.email} | ${resume.personalInfo.phone || ''} | ${resume.personalInfo.location || ''}</p>
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h2>Professional Summary</h2>
+            <p>${resume.personalInfo.summary || ''}</p>
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h2>Experience</h2>
+            ${resume.experience.map(exp => `
+              <div style="margin-bottom: 10px;">
+                <h3>${exp.position} at ${exp.company}</h3>
+                <p>${exp.startDate} - ${exp.endDate}</p>
+                <p>${exp.description}</p>
+              </div>
+            `).join('')}
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h2>Education</h2>
+            ${resume.education.map(edu => `
+              <div style="margin-bottom: 10px;">
+                <h3>${edu.institution}</h3>
+                <p>${edu.degree} in ${edu.field}</p>
+                <p>${edu.startDate} - ${edu.endDate}</p>
+                ${edu.gpa ? `<p>GPA: ${edu.gpa}</p>` : ''}
+              </div>
+            `).join('')}
+          </div>
+          <div>
+            <h2>Skills</h2>
+            <p>${resume.skills.join(', ')}</p>
+          </div>
+        </div>
+      `;
+
+      const opt = {
+        margin: 0.4,
+        filename: `${resume.name || `${resume.personalInfo.firstName}_${resume.personalInfo.lastName}_Resume`}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' as const }
+      };
+
+      await html2pdf().set(opt).from(element).save();
+      toast.success('Resume downloaded successfully!');
+    } catch (error) {
+      console.error('Error downloading resume:', error);
+      toast.error('Failed to download resume. Please try again.');
+    }
   };
 
   if (loading) {
@@ -505,7 +562,7 @@ const ResumeDashboard = () => {
                       </IconButton>
                     </Tooltip>
                     <Tooltip title="Download PDF">
-                      <IconButton size="small">
+                      <IconButton size="small" onClick={() => handleDownload(resume._id)}>
                         <DownloadIcon fontSize="small" />
                       </IconButton>
                     </Tooltip>
@@ -536,23 +593,11 @@ const ResumeDashboard = () => {
           </ListItemIcon>
           <ListItemText>Edit</ListItemText>
         </MenuItem>
-        <MenuItem onClick={() => navigate(`/resume-preview/${selectedResumeId}`)}>
-          <ListItemIcon>
-            <ViewIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Preview</ListItemText>
-        </MenuItem>
         <MenuItem onClick={() => selectedResumeId && handleDuplicate(selectedResumeId)}>
           <ListItemIcon>
             <DuplicateIcon fontSize="small" />
           </ListItemIcon>
           <ListItemText>Duplicate</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <ShareIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Share</ListItemText>
         </MenuItem>
         <Divider />
         <MenuItem onClick={() => { 
